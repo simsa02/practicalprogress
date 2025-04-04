@@ -1,0 +1,7054 @@
+{
+  "Maria Cantwell": {
+    "bioguide": "C000127",
+    "party": "Democrat",
+    "state": "WA",
+    "chamber": "senate",
+    "committees": [
+      "SSCM",
+      "SSEG",
+      "SSFI",
+      "SLIA",
+      "SSSB",
+      "JSTX"
+    ],
+    "leadership_committees": [
+      "SSCM"
+    ]
+  },
+  "Amy Klobuchar": {
+    "bioguide": "K000367",
+    "party": "Democrat",
+    "state": "MN",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF14",
+      "SSAF16",
+      "SSAF17",
+      "SSAF15",
+      "SSCM",
+      "SSRA",
+      "SSJU",
+      "JSPR",
+      "JSLC",
+      "JSEC"
+    ],
+    "leadership_committees": [
+      "SSAF",
+      "JSLC"
+    ]
+  },
+  "Bernard Sanders": {
+    "bioguide": "S000033",
+    "party": "Independent",
+    "state": "VT",
+    "chamber": "senate",
+    "committees": [
+      "SSEV",
+      "SSFI",
+      "SSHR",
+      "SSHR09",
+      "SSHR11",
+      "SSHR12",
+      "SSBU",
+      "SSVA"
+    ],
+    "leadership_committees": [
+      "SSHR"
+    ]
+  },
+  "Sheldon Whitehouse": {
+    "bioguide": "W000802",
+    "party": "Democrat",
+    "state": "RI",
+    "chamber": "senate",
+    "committees": [
+      "SSEV",
+      "SSFI",
+      "SSBU",
+      "SSJU",
+      "SCNC",
+      "JCSE"
+    ],
+    "leadership_committees": [
+      "SSEV",
+      "SCNC"
+    ]
+  },
+  "John Barrasso": {
+    "bioguide": "B001261",
+    "party": "Republican",
+    "state": "WY",
+    "chamber": "senate",
+    "committees": [
+      "SSEG",
+      "SSEG01",
+      "SSEG04",
+      "SSEG03",
+      "SSFI",
+      "SSFR"
+    ],
+    "leadership_committees": [
+      "SSEG03"
+    ]
+  },
+  "Roger F. Wicker": {
+    "bioguide": "W000437",
+    "party": "Republican",
+    "state": "MS",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS14",
+      "SSAS21",
+      "SSAS20",
+      "SSAS17",
+      "SSAS15",
+      "SSAS13",
+      "SSAS16",
+      "SSCM",
+      "SSEV",
+      "SSRA",
+      "SLIN",
+      "JCSE"
+    ],
+    "leadership_committees": [
+      "SSAS"
+    ]
+  },
+  "Susan M. Collins": {
+    "bioguide": "C001035",
+    "party": "Republican",
+    "state": "ME",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSHR",
+      "SSHR12",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSAP"
+    ]
+  },
+  "John Cornyn": {
+    "bioguide": "C001056",
+    "party": "Republican",
+    "state": "TX",
+    "chamber": "senate",
+    "committees": [
+      "SSFI",
+      "SSFR",
+      "SSBU",
+      "SSJU",
+      "JSTX",
+      "SLIN",
+      "SCNC"
+    ],
+    "leadership_committees": [
+      "SCNC"
+    ]
+  },
+  "Richard J. Durbin": {
+    "bioguide": "D000563",
+    "party": "Democrat",
+    "state": "IL",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF17",
+      "SSAP",
+      "SSJU"
+    ],
+    "leadership_committees": [
+      "SSJU"
+    ]
+  },
+  "Lindsey Graham": {
+    "bioguide": "G000359",
+    "party": "Republican",
+    "state": "SC",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSEV",
+      "SSBU",
+      "SSJU"
+    ],
+    "leadership_committees": [
+      "SSBU"
+    ]
+  },
+  "Mitch McConnell": {
+    "bioguide": "M000355",
+    "party": "Republican",
+    "state": "KY",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF16",
+      "SSAF15",
+      "SSAP",
+      "SSRA"
+    ],
+    "leadership_committees": [
+      "SSAF16",
+      "SSRA"
+    ]
+  },
+  "Jeff Merkley": {
+    "bioguide": "M001176",
+    "party": "Democrat",
+    "state": "OR",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSEV",
+      "SSFR",
+      "SSRA",
+      "SSBU",
+      "JSPR"
+    ],
+    "leadership_committees": [
+      "SSBU"
+    ]
+  },
+  "Jack Reed": {
+    "bioguide": "R000122",
+    "party": "Democrat",
+    "state": "RI",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSAS",
+      "SSAS14",
+      "SSAS21",
+      "SSAS20",
+      "SSAS17",
+      "SSAS15",
+      "SSAS13",
+      "SSAS16",
+      "SSBK",
+      "SSBK12",
+      "SSBK08",
+      "SSBK04",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSAS"
+    ]
+  },
+  "James E. Risch": {
+    "bioguide": "R000584",
+    "party": "Republican",
+    "state": "ID",
+    "chamber": "senate",
+    "committees": [
+      "SSEG",
+      "SSEG01",
+      "SSEG03",
+      "SSEG07",
+      "SSFR",
+      "SSSB",
+      "SLET",
+      "SLIN",
+      "SCNC"
+    ],
+    "leadership_committees": [
+      "SSFR"
+    ]
+  },
+  "Jeanne Shaheen": {
+    "bioguide": "S001181",
+    "party": "Democrat",
+    "state": "NH",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSAS",
+      "SSAS20",
+      "SSAS15",
+      "SSAS13",
+      "SSFR",
+      "SSSB",
+      "SLET",
+      "JCSE"
+    ],
+    "leadership_committees": [
+      "SSFR"
+    ]
+  },
+  "Mark R. Warner": {
+    "bioguide": "W000805",
+    "party": "Democrat",
+    "state": "VA",
+    "chamber": "senate",
+    "committees": [
+      "SSBK",
+      "SSBK08",
+      "SSBK04",
+      "SSFI",
+      "SSRA",
+      "SSBU",
+      "JSLC",
+      "SLIN",
+      "SSBK13"
+    ],
+    "leadership_committees": [
+      "SSBK04"
+    ]
+  },
+  "Kirsten E. Gillibrand": {
+    "bioguide": "G000555",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSAS",
+      "SSAS21",
+      "SSAS20",
+      "SSAS16",
+      "SLIN",
+      "SPAG"
+    ],
+    "leadership_committees": [
+      "SPAG"
+    ]
+  },
+  "Christopher A. Coons": {
+    "bioguide": "C001088",
+    "party": "Democrat",
+    "state": "DE",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSFR",
+      "SSSB",
+      "SSJU",
+      "SLET"
+    ],
+    "leadership_committees": []
+  },
+  "Robert B. Aderholt": {
+    "bioguide": "A000055",
+    "party": "Republican",
+    "state": "AL",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Tammy Baldwin": {
+    "bioguide": "B001230",
+    "party": "Democrat",
+    "state": "WI",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSCM",
+      "SSHR",
+      "SSHR11",
+      "SSHR12"
+    ],
+    "leadership_committees": []
+  },
+  "Michael F. Bennet": {
+    "bioguide": "B001267",
+    "party": "Democrat",
+    "state": "CO",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF14",
+      "SSAF15",
+      "SSFI",
+      "SSRA",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSAF14"
+    ]
+  },
+  "Gus M. Bilirakis": {
+    "bioguide": "B001257",
+    "party": "Republican",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSIF",
+      "HSZS"
+    ],
+    "leadership_committees": []
+  },
+  "Sanford D. Bishop, Jr.": {
+    "bioguide": "B000490",
+    "party": "Democrat",
+    "state": "GA",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Marsha Blackburn": {
+    "bioguide": "B001243",
+    "party": "Republican",
+    "state": "TN",
+    "chamber": "senate",
+    "committees": [
+      "SSCM",
+      "SSFI",
+      "SSJU",
+      "SSVA",
+      "JSEC"
+    ],
+    "leadership_committees": []
+  },
+  "Richard Blumenthal": {
+    "bioguide": "B001277",
+    "party": "Democrat",
+    "state": "CT",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS14",
+      "SSAS17",
+      "SSAS13",
+      "SSGA",
+      "SSGA01",
+      "SSGA20",
+      "SSJU",
+      "SSVA",
+      "SCNC"
+    ],
+    "leadership_committees": [
+      "SSGA01",
+      "SSVA"
+    ]
+  },
+  "John Boozman": {
+    "bioguide": "B001236",
+    "party": "Republican",
+    "state": "AR",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF14",
+      "SSAF16",
+      "SSAF17",
+      "SSAF15",
+      "SSAP",
+      "SSEV",
+      "SSRA",
+      "SSVA",
+      "JCSE"
+    ],
+    "leadership_committees": [
+      "SSAF"
+    ]
+  },
+  "Vern Buchanan": {
+    "bioguide": "B001260",
+    "party": "Republican",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "JSTX",
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Ken Calvert": {
+    "bioguide": "C000059",
+    "party": "Republican",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Shelley Moore Capito": {
+    "bioguide": "C001047",
+    "party": "Republican",
+    "state": "WV",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSCM",
+      "SSEV",
+      "SSRA"
+    ],
+    "leadership_committees": [
+      "SSEV"
+    ]
+  },
+  "Andr\u00e9 Carson": {
+    "bioguide": "C001072",
+    "party": "Democrat",
+    "state": "IN",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HLIG",
+      "HSZS"
+    ],
+    "leadership_committees": []
+  },
+  "John R. Carter": {
+    "bioguide": "C001051",
+    "party": "Republican",
+    "state": "TX",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Bill Cassidy": {
+    "bioguide": "C001075",
+    "party": "Republican",
+    "state": "LA",
+    "chamber": "senate",
+    "committees": [
+      "SSEG",
+      "SSEG01",
+      "SSEG04",
+      "SSEG07",
+      "SSFI",
+      "SSHR",
+      "SSHR09",
+      "SSHR11",
+      "SSHR12",
+      "SSVA"
+    ],
+    "leadership_committees": [
+      "SSHR"
+    ]
+  },
+  "Kathy Castor": {
+    "bioguide": "C001066",
+    "party": "Democrat",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSIF",
+      "HSZS"
+    ],
+    "leadership_committees": []
+  },
+  "Judy Chu": {
+    "bioguide": "C001080",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSWM",
+      "HSBU"
+    ],
+    "leadership_committees": []
+  },
+  "Yvette D. Clarke": {
+    "bioguide": "C001067",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Emanuel Cleaver": {
+    "bioguide": "C001061",
+    "party": "Democrat",
+    "state": "MO",
+    "chamber": "house",
+    "committees": [
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "James E. Clyburn": {
+    "bioguide": "C000537",
+    "party": "Democrat",
+    "state": "SC",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Steve Cohen": {
+    "bioguide": "C001068",
+    "party": "Democrat",
+    "state": "TN",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSJU"
+    ],
+    "leadership_committees": []
+  },
+  "Tom Cole": {
+    "bioguide": "C001053",
+    "party": "Republican",
+    "state": "OK",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": [
+      "HSAP"
+    ]
+  },
+  "Gerald E. Connolly": {
+    "bioguide": "C001078",
+    "party": "Democrat",
+    "state": "VA",
+    "chamber": "house",
+    "committees": [
+      "HSGO",
+      "HSFA"
+    ],
+    "leadership_committees": [
+      "HSGO"
+    ]
+  },
+  "Jim Costa": {
+    "bioguide": "C001059",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSFA",
+      "HSAG15",
+      "HSAG29"
+    ],
+    "leadership_committees": [
+      "HSAG29"
+    ]
+  },
+  "Joe Courtney": {
+    "bioguide": "C001069",
+    "party": "Democrat",
+    "state": "CT",
+    "chamber": "house",
+    "committees": [
+      "HSAS",
+      "HSED"
+    ],
+    "leadership_committees": []
+  },
+  "Mike Crapo": {
+    "bioguide": "C000880",
+    "party": "Republican",
+    "state": "ID",
+    "chamber": "senate",
+    "committees": [
+      "SSBK",
+      "SSBK08",
+      "SSBK09",
+      "SSBK04",
+      "SSFI",
+      "SSBU",
+      "JSTX"
+    ],
+    "leadership_committees": [
+      "SSFI"
+    ]
+  },
+  "Eric A. \"Rick\" Crawford": {
+    "bioguide": "C001087",
+    "party": "Republican",
+    "state": "AR",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSAG",
+      "HLIG",
+      "HSAG16"
+    ],
+    "leadership_committees": [
+      "HLIG"
+    ]
+  },
+  "Henry Cuellar": {
+    "bioguide": "C001063",
+    "party": "Democrat",
+    "state": "TX",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Danny K. Davis": {
+    "bioguide": "D000096",
+    "party": "Democrat",
+    "state": "IL",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Diana DeGette": {
+    "bioguide": "D000197",
+    "party": "Democrat",
+    "state": "CO",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Rosa L. DeLauro": {
+    "bioguide": "D000216",
+    "party": "Democrat",
+    "state": "CT",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": [
+      "HSAP"
+    ]
+  },
+  "Scott DesJarlais": {
+    "bioguide": "D000616",
+    "party": "Republican",
+    "state": "TN",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSAS",
+      "HSAG29",
+      "HSAG03"
+    ],
+    "leadership_committees": []
+  },
+  "Mario Diaz-Balart": {
+    "bioguide": "D000600",
+    "party": "Republican",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Lloyd Doggett": {
+    "bioguide": "D000399",
+    "party": "Democrat",
+    "state": "TX",
+    "chamber": "house",
+    "committees": [
+      "JSTX",
+      "HSWM",
+      "HSBU"
+    ],
+    "leadership_committees": []
+  },
+  "Charles J. \"Chuck\" Fleischmann": {
+    "bioguide": "F000459",
+    "party": "Republican",
+    "state": "TN",
+    "chamber": "house",
+    "committees": [
+      "HSSY",
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Virginia Foxx": {
+    "bioguide": "F000450",
+    "party": "Republican",
+    "state": "NC",
+    "chamber": "house",
+    "committees": [
+      "HSGO",
+      "HSED",
+      "HSRU"
+    ],
+    "leadership_committees": [
+      "HSRU"
+    ]
+  },
+  "John Garamendi": {
+    "bioguide": "G000559",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSAS"
+    ],
+    "leadership_committees": []
+  },
+  "Paul A. Gosar": {
+    "bioguide": "G000565",
+    "party": "Republican",
+    "state": "AZ",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSGO",
+      "HSII06",
+      "HSII15"
+    ],
+    "leadership_committees": [
+      "HSII15"
+    ]
+  },
+  "Chuck Grassley": {
+    "bioguide": "G000386",
+    "party": "Republican",
+    "state": "IA",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF16",
+      "SSAF15",
+      "SSFI",
+      "SSBU",
+      "SSJU",
+      "JSTX",
+      "SCNC"
+    ],
+    "leadership_committees": [
+      "SSJU"
+    ]
+  },
+  "Sam Graves": {
+    "bioguide": "G000546",
+    "party": "Republican",
+    "state": "MO",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSAS"
+    ],
+    "leadership_committees": [
+      "HSPW"
+    ]
+  },
+  "Al Green": {
+    "bioguide": "G000553",
+    "party": "Democrat",
+    "state": "TX",
+    "chamber": "house",
+    "committees": [
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "H. Morgan Griffith": {
+    "bioguide": "G000568",
+    "party": "Republican",
+    "state": "VA",
+    "chamber": "house",
+    "committees": [
+      "HSIF",
+      "HSRU",
+      "HSHA"
+    ],
+    "leadership_committees": []
+  },
+  "Brett Guthrie": {
+    "bioguide": "G000558",
+    "party": "Republican",
+    "state": "KY",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": [
+      "HSIF"
+    ]
+  },
+  "Andy Harris": {
+    "bioguide": "H001052",
+    "party": "Republican",
+    "state": "MD",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Martin Heinrich": {
+    "bioguide": "H001046",
+    "party": "Democrat",
+    "state": "NM",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSEG",
+      "SSEG01",
+      "SSEG04",
+      "SSEG03",
+      "SSEG07",
+      "JSEC",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSEG"
+    ]
+  },
+  "James A. Himes": {
+    "bioguide": "H001047",
+    "party": "Democrat",
+    "state": "CT",
+    "chamber": "house",
+    "committees": [
+      "HLIG",
+      "HSBA"
+    ],
+    "leadership_committees": [
+      "HLIG"
+    ]
+  },
+  "Mazie K. Hirono": {
+    "bioguide": "H001042",
+    "party": "Democrat",
+    "state": "HI",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS17",
+      "SSAS15",
+      "SSAS13",
+      "SSEG",
+      "SSEG01",
+      "SSEG04",
+      "SSEG03",
+      "SSSB",
+      "SSJU",
+      "SSVA"
+    ],
+    "leadership_committees": [
+      "SSAS15"
+    ]
+  },
+  "John Hoeven": {
+    "bioguide": "H001061",
+    "party": "Republican",
+    "state": "ND",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF14",
+      "SSAF16",
+      "SSAF17",
+      "SSAP",
+      "SSEG",
+      "SSEG01",
+      "SSEG07",
+      "SLIA"
+    ],
+    "leadership_committees": [
+      "SSAF17",
+      "SSEG07"
+    ]
+  },
+  "Steny H. Hoyer": {
+    "bioguide": "H000874",
+    "party": "Democrat",
+    "state": "MD",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Bill Huizenga": {
+    "bioguide": "H001058",
+    "party": "Republican",
+    "state": "MI",
+    "chamber": "house",
+    "committees": [
+      "HSBA",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Henry C. \"Hank\" Johnson, Jr.": {
+    "bioguide": "J000288",
+    "party": "Democrat",
+    "state": "GA",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSJU"
+    ],
+    "leadership_committees": []
+  },
+  "Ron Johnson": {
+    "bioguide": "J000293",
+    "party": "Republican",
+    "state": "WI",
+    "chamber": "senate",
+    "committees": [
+      "SSFI",
+      "SSGA",
+      "SSGA01",
+      "SSGA22",
+      "SSBU",
+      "SPAG"
+    ],
+    "leadership_committees": [
+      "SSGA01"
+    ]
+  },
+  "Jim Jordan": {
+    "bioguide": "J000289",
+    "party": "Republican",
+    "state": "OH",
+    "chamber": "house",
+    "committees": [
+      "HSJU",
+      "HSGO"
+    ],
+    "leadership_committees": [
+      "HSJU"
+    ]
+  },
+  "Marcy Kaptur": {
+    "bioguide": "K000009",
+    "party": "Democrat",
+    "state": "OH",
+    "chamber": "house",
+    "committees": [
+      "HSAP",
+      "HSBU"
+    ],
+    "leadership_committees": []
+  },
+  "William R. Keating": {
+    "bioguide": "K000375",
+    "party": "Democrat",
+    "state": "MA",
+    "chamber": "house",
+    "committees": [
+      "HSAS",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Mike Kelly": {
+    "bioguide": "K000376",
+    "party": "Republican",
+    "state": "PA",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "James Lankford": {
+    "bioguide": "L000575",
+    "party": "Republican",
+    "state": "OK",
+    "chamber": "senate",
+    "committees": [
+      "SSFI",
+      "SSGA",
+      "SSGA01",
+      "SSGA22",
+      "SLET",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSGA22",
+      "SLET"
+    ]
+  },
+  "Rick Larsen": {
+    "bioguide": "L000560",
+    "party": "Democrat",
+    "state": "WA",
+    "chamber": "house",
+    "committees": [
+      "HSPW"
+    ],
+    "leadership_committees": [
+      "HSPW"
+    ]
+  },
+  "John B. Larson": {
+    "bioguide": "L000557",
+    "party": "Democrat",
+    "state": "CT",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Robert E. Latta": {
+    "bioguide": "L000566",
+    "party": "Republican",
+    "state": "OH",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Mike Lee": {
+    "bioguide": "L000577",
+    "party": "Republican",
+    "state": "UT",
+    "chamber": "senate",
+    "committees": [
+      "SSEG",
+      "SSEG01",
+      "SSEG04",
+      "SSEG03",
+      "SSEG07",
+      "SSFR",
+      "SSBU",
+      "SSJU"
+    ],
+    "leadership_committees": [
+      "SSEG"
+    ]
+  },
+  "Zoe Lofgren": {
+    "bioguide": "L000397",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSSY",
+      "HSJU"
+    ],
+    "leadership_committees": [
+      "HSSY"
+    ]
+  },
+  "Frank D. Lucas": {
+    "bioguide": "L000491",
+    "party": "Republican",
+    "state": "OK",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSBA",
+      "HSAG03",
+      "HSAG22",
+      "HSAG14"
+    ],
+    "leadership_committees": [
+      "HSAG14"
+    ]
+  },
+  "Ben Ray Luj\u00e1n": {
+    "bioguide": "L000570",
+    "party": "Democrat",
+    "state": "NM",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF14",
+      "SSAF16",
+      "SSAF15",
+      "SSCM",
+      "SSFI",
+      "SLIA",
+      "SSBU",
+      "SCNC"
+    ],
+    "leadership_committees": [
+      "SSAF16"
+    ]
+  },
+  "Stephen F. Lynch": {
+    "bioguide": "L000562",
+    "party": "Democrat",
+    "state": "MA",
+    "chamber": "house",
+    "committees": [
+      "HSGO",
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "Edward J. Markey": {
+    "bioguide": "M000133",
+    "party": "Democrat",
+    "state": "MA",
+    "chamber": "senate",
+    "committees": [
+      "SSCM",
+      "SSEV",
+      "SSHR",
+      "SSHR09",
+      "SSHR12",
+      "SSSB"
+    ],
+    "leadership_committees": [
+      "SSHR12",
+      "SSSB"
+    ]
+  },
+  "Doris O. Matsui": {
+    "bioguide": "M001163",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Michael T. McCaul": {
+    "bioguide": "M001157",
+    "party": "Republican",
+    "state": "TX",
+    "chamber": "house",
+    "committees": [
+      "HSHM",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Tom McClintock": {
+    "bioguide": "M001177",
+    "party": "Republican",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSJU",
+      "HSBU",
+      "HSII13",
+      "HSII10"
+    ],
+    "leadership_committees": []
+  },
+  "Betty McCollum": {
+    "bioguide": "M001143",
+    "party": "Democrat",
+    "state": "MN",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "James P. McGovern": {
+    "bioguide": "M000312",
+    "party": "Democrat",
+    "state": "MA",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSRU",
+      "HSAG03"
+    ],
+    "leadership_committees": [
+      "HSRU"
+    ]
+  },
+  "Gregory W. Meeks": {
+    "bioguide": "M001137",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [
+      "HSBA",
+      "HSFA"
+    ],
+    "leadership_committees": [
+      "HSFA"
+    ]
+  },
+  "Gwen Moore": {
+    "bioguide": "M001160",
+    "party": "Democrat",
+    "state": "WI",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Jerry Moran": {
+    "bioguide": "M000934",
+    "party": "Republican",
+    "state": "KS",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF15",
+      "SSAP",
+      "SSCM",
+      "SLIA",
+      "SSVA",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSVA"
+    ]
+  },
+  "Lisa Murkowski": {
+    "bioguide": "M001153",
+    "party": "Republican",
+    "state": "AK",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSEG",
+      "SSEG04",
+      "SSEG03",
+      "SSHR",
+      "SSHR09",
+      "SSHR12",
+      "SLIA"
+    ],
+    "leadership_committees": [
+      "SLIA"
+    ]
+  },
+  "Christopher Murphy": {
+    "bioguide": "M001169",
+    "party": "Democrat",
+    "state": "CT",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSFR",
+      "SSHR",
+      "SSHR11",
+      "SSHR12"
+    ],
+    "leadership_committees": []
+  },
+  "Patty Murray": {
+    "bioguide": "M001111",
+    "party": "Democrat",
+    "state": "WA",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSHR",
+      "SSHR09",
+      "SSHR12",
+      "SSBU",
+      "SSVA"
+    ],
+    "leadership_committees": [
+      "SSAP"
+    ]
+  },
+  "Jerrold Nadler": {
+    "bioguide": "N000002",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSJU"
+    ],
+    "leadership_committees": []
+  },
+  "Richard E. Neal": {
+    "bioguide": "N000015",
+    "party": "Democrat",
+    "state": "MA",
+    "chamber": "house",
+    "committees": [
+      "JSTX",
+      "HSWM"
+    ],
+    "leadership_committees": [
+      "HSWM"
+    ]
+  },
+  "Eleanor Holmes Norton": {
+    "bioguide": "N000147",
+    "party": "Democrat",
+    "state": "DC",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSGO"
+    ],
+    "leadership_committees": []
+  },
+  "Frank Pallone, Jr.": {
+    "bioguide": "P000034",
+    "party": "Democrat",
+    "state": "NJ",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": [
+      "HSIF"
+    ]
+  },
+  "Rand Paul": {
+    "bioguide": "P000603",
+    "party": "Republican",
+    "state": "KY",
+    "chamber": "senate",
+    "committees": [
+      "SSFR",
+      "SSHR",
+      "SSHR09",
+      "SSHR12",
+      "SSGA",
+      "SSGA01",
+      "SSGA20",
+      "SSGA22",
+      "SSSB"
+    ],
+    "leadership_committees": [
+      "SSGA"
+    ]
+  },
+  "Nancy Pelosi": {
+    "bioguide": "P000197",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [],
+    "leadership_committees": []
+  },
+  "Gary C. Peters": {
+    "bioguide": "P000595",
+    "party": "Democrat",
+    "state": "MI",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSAS",
+      "SSAS14",
+      "SSAS21",
+      "SSAS20",
+      "SSCM",
+      "SSGA",
+      "SSGA01",
+      "SSGA20",
+      "SSGA22"
+    ],
+    "leadership_committees": [
+      "SSGA"
+    ]
+  },
+  "Chellie Pingree": {
+    "bioguide": "P000597",
+    "party": "Democrat",
+    "state": "ME",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Mike Quigley": {
+    "bioguide": "Q000023",
+    "party": "Democrat",
+    "state": "IL",
+    "chamber": "house",
+    "committees": [
+      "HSAP",
+      "HLIG"
+    ],
+    "leadership_committees": []
+  },
+  "Harold Rogers": {
+    "bioguide": "R000395",
+    "party": "Republican",
+    "state": "KY",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Mike Rogers": {
+    "bioguide": "R000575",
+    "party": "Republican",
+    "state": "AL",
+    "chamber": "house",
+    "committees": [
+      "HSAS"
+    ],
+    "leadership_committees": [
+      "HSAS"
+    ]
+  },
+  "Steve Scalise": {
+    "bioguide": "S001176",
+    "party": "Republican",
+    "state": "LA",
+    "chamber": "house",
+    "committees": [],
+    "leadership_committees": []
+  },
+  "Janice D. Schakowsky": {
+    "bioguide": "S001145",
+    "party": "Democrat",
+    "state": "IL",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Adam B. Schiff": {
+    "bioguide": "S001150",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF14",
+      "SSEV",
+      "SSSB",
+      "SSJU"
+    ],
+    "leadership_committees": []
+  },
+  "Charles E. Schumer": {
+    "bioguide": "S000148",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "senate",
+    "committees": [
+      "SSRA",
+      "SLIN"
+    ],
+    "leadership_committees": []
+  },
+  "David Schweikert": {
+    "bioguide": "S001183",
+    "party": "Republican",
+    "state": "AZ",
+    "chamber": "house",
+    "committees": [
+      "JSEC",
+      "HSWM"
+    ],
+    "leadership_committees": [
+      "JSEC"
+    ]
+  },
+  "Austin Scott": {
+    "bioguide": "S001189",
+    "party": "Republican",
+    "state": "GA",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSAS",
+      "HLIG",
+      "HSRU",
+      "HSAG16",
+      "HSAG03",
+      "HSAG22"
+    ],
+    "leadership_committees": [
+      "HSAG16"
+    ]
+  },
+  "David Scott": {
+    "bioguide": "S001157",
+    "party": "Democrat",
+    "state": "GA",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSBA",
+      "HSAG22"
+    ],
+    "leadership_committees": []
+  },
+  "Robert C. \"Bobby\" Scott": {
+    "bioguide": "S000185",
+    "party": "Democrat",
+    "state": "VA",
+    "chamber": "house",
+    "committees": [
+      "HSED",
+      "HSBU"
+    ],
+    "leadership_committees": [
+      "HSED"
+    ]
+  },
+  "Tim Scott": {
+    "bioguide": "S001184",
+    "party": "Republican",
+    "state": "SC",
+    "chamber": "senate",
+    "committees": [
+      "SSBK",
+      "SSBK12",
+      "SSBK08",
+      "SSBK09",
+      "SSBK05",
+      "SSBK04",
+      "SSFI",
+      "SSHR",
+      "SSHR09",
+      "SSHR11",
+      "SSSB",
+      "JCSE",
+      "SSBK13"
+    ],
+    "leadership_committees": [
+      "SSBK"
+    ]
+  },
+  "Terri A. Sewell": {
+    "bioguide": "S001185",
+    "party": "Democrat",
+    "state": "AL",
+    "chamber": "house",
+    "committees": [
+      "HSWM",
+      "HSHA"
+    ],
+    "leadership_committees": []
+  },
+  "Brad Sherman": {
+    "bioguide": "S000344",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSBA",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Michael K. Simpson": {
+    "bioguide": "S001148",
+    "party": "Republican",
+    "state": "ID",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Adam Smith": {
+    "bioguide": "S000510",
+    "party": "Democrat",
+    "state": "WA",
+    "chamber": "house",
+    "committees": [
+      "HSAS"
+    ],
+    "leadership_committees": [
+      "HSAS"
+    ]
+  },
+  "Adrian Smith": {
+    "bioguide": "S001172",
+    "party": "Republican",
+    "state": "NE",
+    "chamber": "house",
+    "committees": [
+      "JSTX",
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Christopher H. Smith": {
+    "bioguide": "S000522",
+    "party": "Republican",
+    "state": "NJ",
+    "chamber": "house",
+    "committees": [
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Linda T. S\u00e1nchez": {
+    "bioguide": "S001156",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Bennie G. Thompson": {
+    "bioguide": "T000193",
+    "party": "Democrat",
+    "state": "MS",
+    "chamber": "house",
+    "committees": [
+      "HSHM"
+    ],
+    "leadership_committees": [
+      "HSHM"
+    ]
+  },
+  "Mike Thompson": {
+    "bioguide": "T000460",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Glenn Thompson": {
+    "bioguide": "T000467",
+    "party": "Republican",
+    "state": "PA",
+    "chamber": "house",
+    "committees": [
+      "HSAG",
+      "HSED"
+    ],
+    "leadership_committees": [
+      "HSAG"
+    ]
+  },
+  "John Thune": {
+    "bioguide": "T000250",
+    "party": "Republican",
+    "state": "SD",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF13",
+      "SSAF14",
+      "SSAF17",
+      "SSCM",
+      "SSFI",
+      "SLIN"
+    ],
+    "leadership_committees": []
+  },
+  "Paul Tonko": {
+    "bioguide": "T000469",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [
+      "HSIF",
+      "HSBU"
+    ],
+    "leadership_committees": []
+  },
+  "Michael R. Turner": {
+    "bioguide": "T000463",
+    "party": "Republican",
+    "state": "OH",
+    "chamber": "house",
+    "committees": [
+      "HSAS",
+      "HSGO"
+    ],
+    "leadership_committees": []
+  },
+  "Chris Van Hollen": {
+    "bioguide": "V000128",
+    "party": "Democrat",
+    "state": "MD",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSBK",
+      "SSBK09",
+      "SSBK05",
+      "SSFR",
+      "SSBU",
+      "SSBK13"
+    ],
+    "leadership_committees": []
+  },
+  "Nydia M. Vel\u00e1zquez": {
+    "bioguide": "V000081",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSBA",
+      "HSSM",
+      "HSII06",
+      "HSII24"
+    ],
+    "leadership_committees": [
+      "HSSM"
+    ]
+  },
+  "Tim Walberg": {
+    "bioguide": "W000798",
+    "party": "Republican",
+    "state": "MI",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSED",
+      "HSII13",
+      "HSII24"
+    ],
+    "leadership_committees": [
+      "HSED"
+    ]
+  },
+  "Debbie Wasserman Schultz": {
+    "bioguide": "W000797",
+    "party": "Democrat",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Maxine Waters": {
+    "bioguide": "W000187",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSBA"
+    ],
+    "leadership_committees": [
+      "HSBA"
+    ]
+  },
+  "Daniel Webster": {
+    "bioguide": "W000806",
+    "party": "Republican",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSPW",
+      "HSSY",
+      "HSII06",
+      "HSII13"
+    ],
+    "leadership_committees": []
+  },
+  "Peter Welch": {
+    "bioguide": "W000800",
+    "party": "Democrat",
+    "state": "VT",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF14",
+      "SSAF17",
+      "SSAF15",
+      "SSFI",
+      "SSRA",
+      "SSJU"
+    ],
+    "leadership_committees": [
+      "SSAF15"
+    ]
+  },
+  "Joe Wilson": {
+    "bioguide": "W000795",
+    "party": "Republican",
+    "state": "SC",
+    "chamber": "house",
+    "committees": [
+      "HSAS",
+      "HSFA",
+      "HSED"
+    ],
+    "leadership_committees": []
+  },
+  "Frederica S. Wilson": {
+    "bioguide": "W000808",
+    "party": "Democrat",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSED"
+    ],
+    "leadership_committees": []
+  },
+  "Robert J. Wittman": {
+    "bioguide": "W000804",
+    "party": "Republican",
+    "state": "VA",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSAS",
+      "HSII06",
+      "HSII13",
+      "HSZS"
+    ],
+    "leadership_committees": [
+      "HSII"
+    ]
+  },
+  "Steve Womack": {
+    "bioguide": "W000809",
+    "party": "Republican",
+    "state": "AR",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Ron Wyden": {
+    "bioguide": "W000779",
+    "party": "Democrat",
+    "state": "OR",
+    "chamber": "senate",
+    "committees": [
+      "SSEG",
+      "SSEG01",
+      "SSEG03",
+      "SSEG07",
+      "SSFI",
+      "SSBU",
+      "JSTX",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSEG07",
+      "SSFI"
+    ]
+  },
+  "Todd Young": {
+    "bioguide": "Y000064",
+    "party": "Republican",
+    "state": "IN",
+    "chamber": "senate",
+    "committees": [
+      "SSCM",
+      "SSFI",
+      "SSSB",
+      "SLIN"
+    ],
+    "leadership_committees": []
+  },
+  "Mark E. Amodei": {
+    "bioguide": "A000369",
+    "party": "Republican",
+    "state": "NV",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSAP",
+      "HSII15",
+      "HSII10"
+    ],
+    "leadership_committees": []
+  },
+  "Suzanne Bonamici": {
+    "bioguide": "B001278",
+    "party": "Democrat",
+    "state": "OR",
+    "chamber": "house",
+    "committees": [
+      "HSSY",
+      "HSED"
+    ],
+    "leadership_committees": []
+  },
+  "Suzan K. DelBene": {
+    "bioguide": "D000617",
+    "party": "Democrat",
+    "state": "WA",
+    "chamber": "house",
+    "committees": [
+      "HSWM"
+    ],
+    "leadership_committees": []
+  },
+  "Thomas Massie": {
+    "bioguide": "M001184",
+    "party": "Republican",
+    "state": "KY",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSJU"
+    ],
+    "leadership_committees": []
+  },
+  "Brian Schatz": {
+    "bioguide": "S001194",
+    "party": "Democrat",
+    "state": "HI",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSCM",
+      "SSFR",
+      "SLIA",
+      "SLET"
+    ],
+    "leadership_committees": []
+  },
+  "Bill Foster": {
+    "bioguide": "F000454",
+    "party": "Democrat",
+    "state": "IL",
+    "chamber": "house",
+    "committees": [
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "Dina Titus": {
+    "bioguide": "T000468",
+    "party": "Democrat",
+    "state": "NV",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Tom Cotton": {
+    "bioguide": "C001095",
+    "party": "Republican",
+    "state": "AR",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS14",
+      "SSAS21",
+      "SSAS20",
+      "SSAS16",
+      "SSEG",
+      "SSEG01",
+      "SSEG03",
+      "JSEC",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SLIN"
+    ]
+  },
+  "Doug LaMalfa": {
+    "bioguide": "L000578",
+    "party": "Republican",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSPW",
+      "HSAG",
+      "HSAG15",
+      "HSAG16",
+      "HSII13",
+      "HSII24"
+    ],
+    "leadership_committees": [
+      "HSAG15"
+    ]
+  },
+  "Jared Huffman": {
+    "bioguide": "H001068",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSPW",
+      "HSII06"
+    ],
+    "leadership_committees": [
+      "HSII"
+    ]
+  },
+  "Ami Bera": {
+    "bioguide": "B001287",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HLIG",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Eric Swalwell": {
+    "bioguide": "S001193",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSJU",
+      "HSHM"
+    ],
+    "leadership_committees": []
+  },
+  "Julia Brownley": {
+    "bioguide": "B001285",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSII",
+      "HSPW",
+      "HSVR",
+      "HSII13"
+    ],
+    "leadership_committees": []
+  },
+  "Raul Ruiz": {
+    "bioguide": "R000599",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Mark Takano": {
+    "bioguide": "T000472",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSVR",
+      "HSED"
+    ],
+    "leadership_committees": [
+      "HSVR"
+    ]
+  },
+  "Juan Vargas": {
+    "bioguide": "V000130",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "Scott H. Peters": {
+    "bioguide": "P000608",
+    "party": "Democrat",
+    "state": "CA",
+    "chamber": "house",
+    "committees": [
+      "HSIF",
+      "HSBU"
+    ],
+    "leadership_committees": []
+  },
+  "Lois Frankel": {
+    "bioguide": "F000462",
+    "party": "Democrat",
+    "state": "FL",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Tammy Duckworth": {
+    "bioguide": "D000622",
+    "party": "Democrat",
+    "state": "IL",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS14",
+      "SSAS17",
+      "SSAS15",
+      "SSCM",
+      "SSFR",
+      "SSVA"
+    ],
+    "leadership_committees": []
+  },
+  "Andy Barr": {
+    "bioguide": "B001282",
+    "party": "Republican",
+    "state": "KY",
+    "chamber": "house",
+    "committees": [
+      "HSBA",
+      "HSFA",
+      "HSZS"
+    ],
+    "leadership_committees": []
+  },
+  "Elizabeth Warren": {
+    "bioguide": "W000817",
+    "party": "Democrat",
+    "state": "MA",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS17",
+      "SSAS15",
+      "SSAS16",
+      "SSBK",
+      "SSBK12",
+      "SSBK08",
+      "SSBK09",
+      "SSBK05",
+      "SSBK04",
+      "SSFI",
+      "SPAG",
+      "SSBK13"
+    ],
+    "leadership_committees": [
+      "SSAS17",
+      "SSBK"
+    ]
+  },
+  "Angus S. King, Jr.": {
+    "bioguide": "K000383",
+    "party": "Independent",
+    "state": "ME",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS14",
+      "SSAS13",
+      "SSAS16",
+      "SSEG",
+      "SSEG01",
+      "SSEG04",
+      "SSEG03",
+      "SSVA",
+      "SLIN"
+    ],
+    "leadership_committees": [
+      "SSAS16",
+      "SSEG04"
+    ]
+  },
+  "Ann Wagner": {
+    "bioguide": "W000812",
+    "party": "Republican",
+    "state": "MO",
+    "chamber": "house",
+    "committees": [
+      "HLIG",
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "Steve Daines": {
+    "bioguide": "D000618",
+    "party": "Republican",
+    "state": "MT",
+    "chamber": "senate",
+    "committees": [
+      "SSEG",
+      "SSEG04",
+      "SSEG03",
+      "SSEG07",
+      "SSFI",
+      "SSFR",
+      "SLIA"
+    ],
+    "leadership_committees": [
+      "SSEG04"
+    ]
+  },
+  "Richard Hudson": {
+    "bioguide": "H001067",
+    "party": "Republican",
+    "state": "NC",
+    "chamber": "house",
+    "committees": [
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+  "Kevin Cramer": {
+    "bioguide": "C001096",
+    "party": "Republican",
+    "state": "ND",
+    "chamber": "senate",
+    "committees": [
+      "SSAS",
+      "SSAS14",
+      "SSAS20",
+      "SSAS15",
+      "SSAS16",
+      "SSBK",
+      "SSBK08",
+      "SSBK09",
+      "SSBK04",
+      "SSEV",
+      "SSVA"
+    ],
+    "leadership_committees": [
+      "SSAS14"
+    ]
+  },
+  "Deb Fischer": {
+    "bioguide": "F000463",
+    "party": "Republican",
+    "state": "NE",
+    "chamber": "senate",
+    "committees": [
+      "SSAF",
+      "SSAF17",
+      "SSAF15",
+      "SSAP",
+      "SSAS",
+      "SSAS14",
+      "SSAS15",
+      "SSAS16",
+      "SSCM",
+      "SSRA",
+      "JSPR",
+      "JSLC",
+      "SLET"
+    ],
+    "leadership_committees": [
+      "SSAS16"
+    ]
+  },
+  "Grace Meng": {
+    "bioguide": "M001188",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Hakeem S. Jeffries": {
+    "bioguide": "J000294",
+    "party": "Democrat",
+    "state": "NY",
+    "chamber": "house",
+    "committees": [],
+    "leadership_committees": []
+  },
+  "Joyce Beatty": {
+    "bioguide": "B001281",
+    "party": "Democrat",
+    "state": "OH",
+    "chamber": "house",
+    "committees": [
+      "HSBA"
+    ],
+    "leadership_committees": []
+  },
+  "David P. Joyce": {
+    "bioguide": "J000295",
+    "party": "Republican",
+    "state": "OH",
+    "chamber": "house",
+    "committees": [
+      "HSAP"
+    ],
+    "leadership_committees": []
+  },
+  "Markwayne Mullin": {
+    "bioguide": "M001190",
+    "party": "Republican",
+    "state": "OK",
+    "chamber": "senate",
+    "committees": [
+      "SSAP",
+      "SSAS",
+      "SSAS14",
+      "SSAS20",
+      "SSAS13",
+      "SSHR",
+      "SSHR11",
+      "SSHR12",
+      "SLIA"
+    ],
+    "leadership_committees": [
+      "SSHR11"
+    ]
+  },
+  "Scott Perry": {
+    "bioguide": "P000605",
+    "party": "Republican",
+    "state": "PA",
+    "chamber": "house",
+    "committees": [
+      "HSPW",
+      "HSGO",
+      "HLIG",
+      "HSFA"
+    ],
+    "leadership_committees": []
+  },
+  "Ted Cruz": {
+    "bioguide": "C001098",
+    "party": "Republican",
+    "state": "TX",
+    "chamber": "senate",
+    "committees": [
+      "SSCM",
+      "SSFR",
+      "SSRA",
+      "SSJU"
+    ],
+    "leadership_committees": [
+      "SSCM"
+    ]
+  },
+  "Randy K. Weber, Sr.": {
+    "bioguide": "W000814",
+    "party": "Republican",
+    "state": "TX",
+    "chamber": "house",
+    "committees": [
+      "HSSY",
+      "HSIF"
+    ],
+    "leadership_committees": []
+  },
+    "Joaquin Castro": {
+      "bioguide": "C001091",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HLIG",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Roger Williams": {
+      "bioguide": "W000816",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSSM"
+      ],
+      "leadership_committees": [
+        "HSSM"
+      ]
+    },
+    "Marc A. Veasey": {
+      "bioguide": "V000131",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Tim Kaine": {
+      "bioguide": "K000384",
+      "party": "Democrat",
+      "state": "VA",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS20",
+        "SSAS15",
+        "SSAS13",
+        "SSFR",
+        "SSHR",
+        "SSHR09",
+        "SSHR11",
+        "SSBU"
+      ],
+      "leadership_committees": [
+        "SSAS13"
+      ]
+    },
+    "Mark Pocan": {
+      "bioguide": "P000607",
+      "party": "Democrat",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Robin L. Kelly": {
+      "bioguide": "K000385",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Jason Smith": {
+      "bioguide": "S001195",
+      "party": "Republican",
+      "state": "MO",
+      "chamber": "house",
+      "committees": [
+        "JSTX",
+        "HSWM"
+      ],
+      "leadership_committees": [
+        "HSWM"
+      ]
+    },
+    "Cory Booker": {
+      "bioguide": "B001288",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF13",
+        "SSAF16",
+        "SSAF17",
+        "SSFR",
+        "SSSB",
+        "SSJU"
+      ],
+      "leadership_committees": [
+        "SSAF13"
+      ]
+    },
+    "Katherine M. Clark": {
+      "bioguide": "C001101",
+      "party": "Democrat",
+      "state": "MA",
+      "chamber": "house",
+      "committees": [],
+      "leadership_committees": []
+    },
+    "Donald Norcross": {
+      "bioguide": "N000188",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Alma S. Adams": {
+      "bioguide": "A000370",
+      "party": "Democrat",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSED",
+        "HSAG03",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Gary J. Palmer": {
+      "bioguide": "P000609",
+      "party": "Republican",
+      "state": "AL",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "J. French Hill": {
+      "bioguide": "H001072",
+      "party": "Republican",
+      "state": "AR",
+      "chamber": "house",
+      "committees": [
+        "HLIG",
+        "HSBA"
+      ],
+      "leadership_committees": [
+        "HSBA"
+      ]
+    },
+    "Bruce Westerman": {
+      "bioguide": "W000821",
+      "party": "Republican",
+      "state": "AR",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW"
+      ],
+      "leadership_committees": [
+        "HSII"
+      ]
+    },
+    "Ruben Gallego": {
+      "bioguide": "G000574",
+      "party": "Democrat",
+      "state": "AZ",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK08",
+        "SSBK09",
+        "SSEG",
+        "SSEG01",
+        "SSEG04",
+        "SSEG07",
+        "SSGA",
+        "SSGA22",
+        "SSVA",
+        "SSBK13"
+      ],
+      "leadership_committees": [
+        "SSEG01",
+        "SSBK13"
+      ]
+    },
+    "Mark DeSaulnier": {
+      "bioguide": "D000623",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSED",
+        "HSSO"
+      ],
+      "leadership_committees": [
+        "HSSO"
+      ]
+    },
+    "Pete Aguilar": {
+      "bioguide": "A000371",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Ted Lieu": {
+      "bioguide": "L000582",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Norma J. Torres": {
+      "bioguide": "T000474",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Earl L. \"Buddy\" Carter": {
+      "bioguide": "C001103",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Barry Loudermilk": {
+      "bioguide": "L000583",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Rick W. Allen": {
+      "bioguide": "A000372",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Bost": {
+      "bioguide": "B001295",
+      "party": "Republican",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSVR",
+        "HSAG16"
+      ],
+      "leadership_committees": [
+        "HSVR"
+      ]
+    },
+    "Seth Moulton": {
+      "bioguide": "M001196",
+      "party": "Democrat",
+      "state": "MA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAS",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "John R. Moolenaar": {
+      "bioguide": "M001194",
+      "party": "Republican",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSZS"
+      ],
+      "leadership_committees": [
+        "HSZS"
+      ]
+    },
+    "Debbie Dingell": {
+      "bioguide": "D000624",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSIF",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Tom Emmer": {
+      "bioguide": "E000294",
+      "party": "Republican",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "David Rouzer": {
+      "bioguide": "R000603",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY",
+        "HSAG",
+        "HSAG15",
+        "HSAG16",
+        "HSAG22"
+      ],
+      "leadership_committees": [
+        "HSAG16"
+      ]
+    },
+    "Bonnie Watson Coleman": {
+      "bioguide": "W000822",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Elise M. Stefanik": {
+      "bioguide": "S001196",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Brendan F. Boyle": {
+      "bioguide": "B001296",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU"
+      ],
+      "leadership_committees": [
+        "HSBU"
+      ]
+    },
+    "Brian Babin": {
+      "bioguide": "B001291",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY"
+      ],
+      "leadership_committees": [
+        "HSSY"
+      ]
+    },
+    "Donald S. Beyer, Jr.": {
+      "bioguide": "B001292",
+      "party": "Democrat",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "JSEC",
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Stacey E. Plaskett": {
+      "bioguide": "P000610",
+      "party": "Democrat",
+      "state": "VI",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HLIG",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Dan Newhouse": {
+      "bioguide": "N000189",
+      "party": "Republican",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAP",
+        "HSAG15",
+        "HSZS",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Glenn Grothman": {
+      "bioguide": "G000576",
+      "party": "Republican",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSGO",
+        "HSED",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Aumua Amata Coleman Radewagen": {
+      "bioguide": "R000600",
+      "party": "Republican",
+      "state": "AS",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSFA",
+        "HSVR",
+        "HSII13",
+        "HSII24"
+      ],
+      "leadership_committees": [
+        "HSII24"
+      ]
+    },
+    "Dan Sullivan": {
+      "bioguide": "S001198",
+      "party": "Republican",
+      "state": "AK",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS14",
+        "SSAS15",
+        "SSAS13",
+        "SSCM",
+        "SSEV",
+        "SSVA"
+      ],
+      "leadership_committees": [
+        "SSAS15"
+      ]
+    },
+    "Joni Ernst": {
+      "bioguide": "E000295",
+      "party": "Republican",
+      "state": "IA",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF14",
+        "SSAF17",
+        "SSAF15",
+        "SSAS",
+        "SSAS21",
+        "SSAS20",
+        "SSAS17",
+        "SSGA",
+        "SSGA20",
+        "SSGA22",
+        "SSSB"
+      ],
+      "leadership_committees": [
+        "SSAF15",
+        "SSAS20",
+        "SSSB"
+      ]
+    },
+    "Thom Tillis": {
+      "bioguide": "T000476",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK12",
+        "SSBK08",
+        "SSFI",
+        "SSJU",
+        "SSVA",
+        "JCSE",
+        "SSBK13"
+      ],
+      "leadership_committees": [
+        "SSBK08"
+      ]
+    },
+    "Mike Rounds": {
+      "bioguide": "R000605",
+      "party": "Republican",
+      "state": "SD",
+      "chamber": "senate",
+      "committees": [
+        "SSAP",
+        "SSAS",
+        "SSAS21",
+        "SSAS20",
+        "SSAS16",
+        "SSBK",
+        "SSBK12",
+        "SSBK09",
+        "SSBK04",
+        "SLIA",
+        "SLIN"
+      ],
+      "leadership_committees": [
+        "SSAS21",
+        "SSBK04"
+      ]
+    },
+    "Trent Kelly": {
+      "bioguide": "K000388",
+      "party": "Republican",
+      "state": "MS",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HLIG",
+        "HSAG15",
+        "HSAG29"
+      ],
+      "leadership_committees": []
+    },
+    "Darin LaHood": {
+      "bioguide": "L000585",
+      "party": "Republican",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HLIG",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Warren Davidson": {
+      "bioguide": "D000626",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "James Comer": {
+      "bioguide": "C001108",
+      "party": "Republican",
+      "state": "KY",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSED"
+      ],
+      "leadership_committees": [
+        "HSGO"
+      ]
+    },
+    "Dwight Evans": {
+      "bioguide": "E000296",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "John Kennedy": {
+      "bioguide": "K000393",
+      "party": "Republican",
+      "state": "LA",
+      "chamber": "senate",
+      "committees": [
+        "SSAP",
+        "SSBK",
+        "SSBK12",
+        "SSBK08",
+        "SSBK04",
+        "SSBU",
+        "SSJU"
+      ],
+      "leadership_committees": [
+        "SSBK12"
+      ]
+    },
+    "Margaret Wood Hassan": {
+      "bioguide": "H001076",
+      "party": "Democrat",
+      "state": "NH",
+      "chamber": "senate",
+      "committees": [
+        "SSFI",
+        "SSHR",
+        "SSHR11",
+        "SSHR12",
+        "SSGA",
+        "SSGA01",
+        "SSGA22",
+        "SSVA",
+        "JSEC"
+      ],
+      "leadership_committees": [
+        "JSEC"
+      ]
+    },
+    "Catherine Cortez Masto": {
+      "bioguide": "C001113",
+      "party": "Democrat",
+      "state": "NV",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK08",
+        "SSBK05",
+        "SSBK04",
+        "SSEG",
+        "SSEG01",
+        "SSEG03",
+        "SSEG07",
+        "SSFI",
+        "SLIA"
+      ],
+      "leadership_committees": [
+        "SSBK08",
+        "SSEG03"
+      ]
+    },
+    "Bradley Scott Schneider": {
+      "bioguide": "S001190",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Andy Biggs": {
+      "bioguide": "B001302",
+      "party": "Republican",
+      "state": "AZ",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Ro Khanna": {
+      "bioguide": "K000389",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSGO",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Jimmy Panetta": {
+      "bioguide": "P000613",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Salud O. Carbajal": {
+      "bioguide": "C001112",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Nanette Diaz Barrag\u00e1n": {
+      "bioguide": "B001300",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "J. Luis Correa": {
+      "bioguide": "C001110",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSHM"
+      ],
+      "leadership_committees": []
+    },
+    "Lisa Blunt Rochester": {
+      "bioguide": "B001303",
+      "party": "Democrat",
+      "state": "DE",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK12",
+        "SSBK09",
+        "SSBK04",
+        "SSCM",
+        "SSEV",
+        "SSHR",
+        "SSHR09",
+        "SSHR12"
+      ],
+      "leadership_committees": [
+        "SSHR09"
+      ]
+    },
+    "Neal P. Dunn": {
+      "bioguide": "D000628",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "John H. Rutherford": {
+      "bioguide": "R000609",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Darren Soto": {
+      "bioguide": "S001200",
+      "party": "Democrat",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSIF",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Brian J. Mast": {
+      "bioguide": "M001199",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSFA"
+      ],
+      "leadership_committees": [
+        "HSFA"
+      ]
+    },
+    "Raja Krishnamoorthi": {
+      "bioguide": "K000391",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HLIG",
+        "HSZS"
+      ],
+      "leadership_committees": [
+        "HSZS"
+      ]
+    },
+    "Jim Banks": {
+      "bioguide": "B001299",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS17",
+        "SSAS13",
+        "SSAS16",
+        "SSBK",
+        "SSBK12",
+        "SSBK05",
+        "SSBK04",
+        "SSHR",
+        "SSHR09",
+        "SSHR11",
+        "SSHR12",
+        "SSVA"
+      ],
+      "leadership_committees": []
+    },
+    "Roger Marshall": {
+      "bioguide": "M001198",
+      "party": "Republican",
+      "state": "KS",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF14",
+        "SSAF16",
+        "SSFI",
+        "SSHR",
+        "SSHR11",
+        "SSHR12",
+        "SSBU"
+      ],
+      "leadership_committees": [
+        "SSAF14",
+        "SSHR12"
+      ]
+    },
+    "Clay Higgins": {
+      "bioguide": "H001077",
+      "party": "Republican",
+      "state": "LA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSHM",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Johnson": {
+      "bioguide": "J000299",
+      "party": "Republican",
+      "state": "LA",
+      "chamber": "house",
+      "committees": [],
+      "leadership_committees": []
+    },
+    "Jamie Raskin": {
+      "bioguide": "R000606",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "house",
+      "committees": [
+        "HSJU"
+      ],
+      "leadership_committees": [
+        "HSJU"
+      ]
+    },
+    "Jack Bergman": {
+      "bioguide": "B001301",
+      "party": "Republican",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSVR",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Ted Budd": {
+      "bioguide": "B001305",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS14",
+        "SSAS21",
+        "SSAS20",
+        "SSAS17",
+        "SSCM",
+        "SSSB",
+        "JSEC",
+        "SLIN"
+      ],
+      "leadership_committees": []
+    },
+    "Don Bacon": {
+      "bioguide": "B001298",
+      "party": "Republican",
+      "state": "NE",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSAG29",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Josh Gottheimer": {
+      "bioguide": "G000583",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HLIG",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Jacky Rosen": {
+      "bioguide": "R000608",
+      "party": "Democrat",
+      "state": "NV",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS21",
+        "SSAS20",
+        "SSAS16",
+        "SSCM",
+        "SSFR",
+        "SSSB"
+      ],
+      "leadership_committees": [
+        "SSAS21"
+      ]
+    },
+    "Adriano Espaillat": {
+      "bioguide": "E000297",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Brian K. Fitzpatrick": {
+      "bioguide": "F000466",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "Lloyd Smucker": {
+      "bioguide": "S001199",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "David Kustoff": {
+      "bioguide": "K000392",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Vicente Gonzalez": {
+      "bioguide": "G000581",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Jodey C. Arrington": {
+      "bioguide": "A000375",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU"
+      ],
+      "leadership_committees": [
+        "HSBU"
+      ]
+    },
+    "Pramila Jayapal": {
+      "bioguide": "J000298",
+      "party": "Democrat",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSFA",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Ron Estes": {
+      "bioguide": "E000298",
+      "party": "Republican",
+      "state": "KS",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Ralph Norman": {
+      "bioguide": "N000190",
+      "party": "Republican",
+      "state": "SC",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSRU",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Jimmy Gomez": {
+      "bioguide": "G000585",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "John R. Curtis": {
+      "bioguide": "C001114",
+      "party": "Republican",
+      "state": "UT",
+      "chamber": "senate",
+      "committees": [
+        "SSCM",
+        "SSEV",
+        "SSFR",
+        "SSSB"
+      ],
+      "leadership_committees": []
+    },
+    "Tina Smith": {
+      "bioguide": "S001203",
+      "party": "Democrat",
+      "state": "MN",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF16",
+        "SSAF17",
+        "SSAF15",
+        "SSBK",
+        "SSBK12",
+        "SSBK09",
+        "SSFI",
+        "SLIA",
+        "JCSE",
+        "SSBK13"
+      ],
+      "leadership_committees": [
+        "SSBK09"
+      ]
+    },
+    "Cindy Hyde-Smith": {
+      "bioguide": "H001079",
+      "party": "Republican",
+      "state": "MS",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF13",
+        "SSAF14",
+        "SSAF17",
+        "SSAP",
+        "SSEG",
+        "SSEG01",
+        "SSEG03",
+        "SSRA",
+        "JSLC"
+      ],
+      "leadership_committees": [
+        "SSAF13"
+      ]
+    },
+    "Michael Cloud": {
+      "bioguide": "C001115",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Troy Balderson": {
+      "bioguide": "B001306",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Kevin Hern": {
+      "bioguide": "H001082",
+      "party": "Republican",
+      "state": "OK",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Joseph D. Morelle": {
+      "bioguide": "M001206",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSHA"
+      ],
+      "leadership_committees": [
+        "HSHA"
+      ]
+    },
+    "Mary Gay Scanlon": {
+      "bioguide": "S001205",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSRU"
+      ],
+      "leadership_committees": []
+    },
+    "Ed Case": {
+      "bioguide": "C001055",
+      "party": "Democrat",
+      "state": "HI",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Steven Horsford": {
+      "bioguide": "H001066",
+      "party": "Democrat",
+      "state": "NV",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Greg Stanton": {
+      "bioguide": "S001211",
+      "party": "Democrat",
+      "state": "AZ",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSFA",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Josh Harder": {
+      "bioguide": "H001090",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Levin": {
+      "bioguide": "L000593",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Joe Neguse": {
+      "bioguide": "N000191",
+      "party": "Democrat",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSJU",
+        "HSRU",
+        "HSII13",
+        "HSII10"
+      ],
+      "leadership_committees": [
+        "HSII10"
+      ]
+    },
+    "Jason Crow": {
+      "bioguide": "C001121",
+      "party": "Democrat",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "Jahana Hayes": {
+      "bioguide": "H001081",
+      "party": "Democrat",
+      "state": "CT",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSED",
+        "HSAG29",
+        "HSAG03"
+      ],
+      "leadership_committees": [
+        "HSAG03"
+      ]
+    },
+    "W. Gregory Steube": {
+      "bioguide": "S001214",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "Lucy McBath": {
+      "bioguide": "M001208",
+      "party": "Democrat",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Russ Fulcher": {
+      "bioguide": "F000469",
+      "party": "Republican",
+      "state": "ID",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSIF",
+        "HSII06",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Jes\u00fas G. \"Chuy\" Garc\u00eda": {
+      "bioguide": "G000586",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSJU"
+      ],
+      "leadership_committees": []
+    },
+    "Sean Casten": {
+      "bioguide": "C001117",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Lauren Underwood": {
+      "bioguide": "U000040",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "James R. Baird": {
+      "bioguide": "B001307",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAG",
+        "HSFA",
+        "HSAG15",
+        "HSAG29",
+        "HSAG03",
+        "HSAG14"
+      ],
+      "leadership_committees": [
+        "HSAG14"
+      ]
+    },
+    "Sharice Davids": {
+      "bioguide": "D000629",
+      "party": "Democrat",
+      "state": "KS",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSAG16",
+        "HSAG14"
+      ],
+      "leadership_committees": [
+        "HSAG16"
+      ]
+    },
+    "Lori Trahan": {
+      "bioguide": "T000482",
+      "party": "Democrat",
+      "state": "MA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Ayanna Pressley": {
+      "bioguide": "P000617",
+      "party": "Democrat",
+      "state": "MA",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Elissa Slotkin": {
+      "bioguide": "S001208",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF13",
+        "SSAF17",
+        "SSAS",
+        "SSAS14",
+        "SSAS21",
+        "SSAS20",
+        "SSGA",
+        "SSGA20",
+        "SSGA22",
+        "SSVA"
+      ],
+      "leadership_committees": [
+        "SSAF17",
+        "SSAS20"
+      ]
+    },
+    "Haley M. Stevens": {
+      "bioguide": "S001215",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSED",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Rashida Tlaib": {
+      "bioguide": "T000481",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Angie Craig": {
+      "bioguide": "C001119",
+      "party": "Democrat",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSAG"
+      ],
+      "leadership_committees": [
+        "HSAG"
+      ]
+    },
+    "Ilhan Omar": {
+      "bioguide": "O000173",
+      "party": "Democrat",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSED",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Pete Stauber": {
+      "bioguide": "S001212",
+      "party": "Republican",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSSM",
+        "HSII06",
+        "HSII10",
+        "HSSM21",
+        "HSSM24"
+      ],
+      "leadership_committees": [
+        "HSII06"
+      ]
+    },
+    "Michael Guest": {
+      "bioguide": "G000591",
+      "party": "Republican",
+      "state": "MS",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSHM",
+        "HSSO"
+      ],
+      "leadership_committees": [
+        "HSSO"
+      ]
+    },
+    "Chris Pappas": {
+      "bioguide": "P000614",
+      "party": "Democrat",
+      "state": "NH",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Jefferson Van Drew": {
+      "bioguide": "V000133",
+      "party": "Republican",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSJU"
+      ],
+      "leadership_committees": []
+    },
+    "Andy Kim": {
+      "bioguide": "K000394",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK08",
+        "SSBK05",
+        "SSBK04",
+        "SSCM",
+        "SSHR",
+        "SSHR09",
+        "SSHR12",
+        "SSGA",
+        "SSGA01",
+        "SSGA20",
+        "SPAG"
+      ],
+      "leadership_committees": [
+        "SSBK05",
+        "SSGA20"
+      ]
+    },
+    "Mikie Sherrill": {
+      "bioguide": "S001207",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Susie Lee": {
+      "bioguide": "L000590",
+      "party": "Democrat",
+      "state": "NV",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Alexandria Ocasio-Cortez": {
+      "bioguide": "O000172",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Madeleine Dean": {
+      "bioguide": "D000631",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Chrissy Houlahan": {
+      "bioguide": "H001085",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "Daniel Meuser": {
+      "bioguide": "M001204",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSSM",
+        "HSSM23",
+        "HSSM27"
+      ],
+      "leadership_committees": []
+    },
+    "John Joyce": {
+      "bioguide": "J000302",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Guy Reschenthaler": {
+      "bioguide": "R000610",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "William R. Timmons IV": {
+      "bioguide": "T000480",
+      "party": "Republican",
+      "state": "SC",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Dusty Johnson": {
+      "bioguide": "J000301",
+      "party": "Republican",
+      "state": "SD",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSAG16",
+        "HSAG22",
+        "HSZS"
+      ],
+      "leadership_committees": [
+        "HSAG22"
+      ]
+    },
+    "Tim Burchett": {
+      "bioguide": "B001309",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSGO",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "John W. Rose": {
+      "bioguide": "R000612",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSBA",
+        "HSAG16",
+        "HSAG22",
+        "HSAG14"
+      ],
+      "leadership_committees": [
+        "HSAG22"
+      ]
+    },
+    "Mark E. Green": {
+      "bioguide": "G000590",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSFA"
+      ],
+      "leadership_committees": [
+        "HSHM"
+      ]
+    },
+    "Dan Crenshaw": {
+      "bioguide": "C001120",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "Lance Gooden": {
+      "bioguide": "G000589",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Lizzie Fletcher": {
+      "bioguide": "F000468",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Veronica Escobar": {
+      "bioguide": "E000299",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Chip Roy": {
+      "bioguide": "R000614",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSRU",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Sylvia R. Garcia": {
+      "bioguide": "G000587",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Ben Cline": {
+      "bioguide": "C001118",
+      "party": "Republican",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSAP",
+        "HLIG",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Kim Schrier": {
+      "bioguide": "S001216",
+      "party": "Democrat",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Bryan Steil": {
+      "bioguide": "S001213",
+      "party": "Republican",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSHA"
+      ],
+      "leadership_committees": [
+        "HSHA"
+      ]
+    },
+    "Carol D. Miller": {
+      "bioguide": "M001205",
+      "party": "Republican",
+      "state": "WV",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Rick Scott": {
+      "bioguide": "S001217",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS17",
+        "SSAS15",
+        "SSAS13",
+        "SSFR",
+        "SSGA",
+        "SSGA01",
+        "SSGA20",
+        "SSBU",
+        "SPAG"
+      ],
+      "leadership_committees": [
+        "SSAS13",
+        "SPAG"
+      ]
+    },
+    "Josh Hawley": {
+      "bioguide": "H001089",
+      "party": "Republican",
+      "state": "MO",
+      "chamber": "senate",
+      "committees": [
+        "SSHR",
+        "SSHR11",
+        "SSHR12",
+        "SSGA",
+        "SSGA01",
+        "SSGA20",
+        "SSSB",
+        "SSJU"
+      ],
+      "leadership_committees": [
+        "SSGA20"
+      ]
+    },
+    "Jared F. Golden": {
+      "bioguide": "G000592",
+      "party": "Democrat",
+      "state": "ME",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSAS",
+        "HSII06",
+        "HSII13",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Gregory F. Murphy": {
+      "bioguide": "M001210",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSVR",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Kweisi Mfume": {
+      "bioguide": "M000687",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Thomas P. Tiffany": {
+      "bioguide": "T000165",
+      "party": "Republican",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSJU",
+        "HSII06",
+        "HSII10"
+      ],
+      "leadership_committees": [
+        "HSII10"
+      ]
+    },
+    "Mark Kelly": {
+      "bioguide": "K000377",
+      "party": "Democrat",
+      "state": "AZ",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS14",
+        "SSAS20",
+        "SSAS16",
+        "SSEV",
+        "JSEC",
+        "SLIN",
+        "SPAG"
+      ],
+      "leadership_committees": [
+        "SSAS14"
+      ]
+    },
+    "Cynthia M. Lummis": {
+      "bioguide": "L000571",
+      "party": "Republican",
+      "state": "WY",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK08",
+        "SSBK04",
+        "SSCM",
+        "SSEV",
+        "SSBK13"
+      ],
+      "leadership_committees": [
+        "SSBK13"
+      ]
+    },
+    "Darrell Issa": {
+      "bioguide": "I000056",
+      "party": "Republican",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSJU",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Pete Sessions": {
+      "bioguide": "S000250",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "David G. Valadao": {
+      "bioguide": "V000129",
+      "party": "Republican",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Tommy Tuberville": {
+      "bioguide": "T000278",
+      "party": "Republican",
+      "state": "AL",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF13",
+        "SSAF16",
+        "SSAF15",
+        "SSAS",
+        "SSAS17",
+        "SSAS13",
+        "SSAS16",
+        "SSHR",
+        "SSHR09",
+        "SSHR11",
+        "SSVA",
+        "SPAG"
+      ],
+      "leadership_committees": [
+        "SSAS17",
+        "SSHR09"
+      ]
+    },
+    "John W. Hickenlooper": {
+      "bioguide": "H000273",
+      "party": "Democrat",
+      "state": "CO",
+      "chamber": "senate",
+      "committees": [
+        "SSCM",
+        "SSEG",
+        "SSEG01",
+        "SSEG03",
+        "SSEG07",
+        "SSHR",
+        "SSHR11",
+        "SSHR12",
+        "SSSB"
+      ],
+      "leadership_committees": [
+        "SSHR11"
+      ]
+    },
+    "Bill Hagerty": {
+      "bioguide": "H000601",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "senate",
+      "committees": [
+        "SSAP",
+        "SSBK",
+        "SSBK08",
+        "SSBK05",
+        "SSFR",
+        "SSRA",
+        "JSPR",
+        "SSBK13"
+      ],
+      "leadership_committees": [
+        "SSBK05"
+      ]
+    },
+    "Barry Moore": {
+      "bioguide": "M001212",
+      "party": "Republican",
+      "state": "AL",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSJU",
+        "HSAG15",
+        "HSAG16",
+        "HSAG29"
+      ],
+      "leadership_committees": [
+        "HSAG15"
+      ]
+    },
+    "Jay Obernolte": {
+      "bioguide": "O000019",
+      "party": "Republican",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSIF",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Young Kim": {
+      "bioguide": "K000397",
+      "party": "Republican",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSFA",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Sara Jacobs": {
+      "bioguide": "J000305",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Lauren Boebert": {
+      "bioguide": "B000825",
+      "party": "Republican",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSGO",
+        "HSII15",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Kat Cammack": {
+      "bioguide": "C001039",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSIF",
+        "HSAG22"
+      ],
+      "leadership_committees": []
+    },
+    "Scott Franklin": {
+      "bioguide": "F000472",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Byron Donalds": {
+      "bioguide": "D000032",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Carlos A. Gimenez": {
+      "bioguide": "G000593",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSHM",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Maria Elvira Salazar": {
+      "bioguide": "S000168",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Nikema Williams": {
+      "bioguide": "W000788",
+      "party": "Democrat",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Andrew S. Clyde": {
+      "bioguide": "C001116",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Marjorie Taylor Greene": {
+      "bioguide": "G000596",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Ashley Hinson": {
+      "bioguide": "H001091",
+      "party": "Republican",
+      "state": "IA",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Mariannette Miller-Meeks": {
+      "bioguide": "M001215",
+      "party": "Republican",
+      "state": "IA",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Randy Feenstra": {
+      "bioguide": "F000446",
+      "party": "Republican",
+      "state": "IA",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSWM",
+        "HSAG29",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Mary E. Miller": {
+      "bioguide": "M001211",
+      "party": "Republican",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSED",
+        "HSHA",
+        "HSAG16",
+        "HSAG29",
+        "HSAG03",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Frank J. Mrvan": {
+      "bioguide": "M001214",
+      "party": "Democrat",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Victoria Spartz": {
+      "bioguide": "S000929",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [],
+      "leadership_committees": []
+    },
+    "Tracey Mann": {
+      "bioguide": "M000871",
+      "party": "Republican",
+      "state": "KS",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSAG29",
+        "HSAG03",
+        "HSAG22"
+      ],
+      "leadership_committees": [
+        "HSAG29"
+      ]
+    },
+    "Jake Auchincloss": {
+      "bioguide": "A000148",
+      "party": "Democrat",
+      "state": "MA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Lisa C. McClain": {
+      "bioguide": "M001136",
+      "party": "Republican",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Michelle Fischbach": {
+      "bioguide": "F000470",
+      "party": "Republican",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSRU"
+      ],
+      "leadership_committees": []
+    },
+    "Deborah K. Ross": {
+      "bioguide": "R000305",
+      "party": "Democrat",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSJU"
+      ],
+      "leadership_committees": []
+    },
+    "Teresa Leger Fernandez": {
+      "bioguide": "L000273",
+      "party": "Democrat",
+      "state": "NM",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSRU",
+        "HSII24",
+        "HSII10"
+      ],
+      "leadership_committees": [
+        "HSII24"
+      ]
+    },
+    "Andrew R. Garbarino": {
+      "bioguide": "G000597",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Nicole Malliotakis": {
+      "bioguide": "M000317",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Ritchie Torres": {
+      "bioguide": "T000486",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Stephanie I. Bice": {
+      "bioguide": "B000740",
+      "party": "Republican",
+      "state": "OK",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Cliff Bentz": {
+      "bioguide": "B000668",
+      "party": "Republican",
+      "state": "OR",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSIF",
+        "HSII13",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Nancy Mace": {
+      "bioguide": "M000194",
+      "party": "Republican",
+      "state": "SC",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSGO",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Diana Harshbarger": {
+      "bioguide": "H001086",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Pat Fallon": {
+      "bioguide": "F000246",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSGO",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "August Pfluger": {
+      "bioguide": "P000048",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Ronny Jackson": {
+      "bioguide": "J000304",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HLIG",
+        "HSFA",
+        "HSAG29",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Troy E. Nehls": {
+      "bioguide": "N000026",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSJU"
+      ],
+      "leadership_committees": []
+    },
+    "Tony Gonzales": {
+      "bioguide": "G000594",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSHM"
+      ],
+      "leadership_committees": []
+    },
+    "Beth Van Duyne": {
+      "bioguide": "V000134",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSSM",
+        "HSSM27"
+      ],
+      "leadership_committees": [
+        "HSSM27"
+      ]
+    },
+    "Blake D. Moore": {
+      "bioguide": "M001213",
+      "party": "Republican",
+      "state": "UT",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Burgess Owens": {
+      "bioguide": "O000086",
+      "party": "Republican",
+      "state": "UT",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Marilyn Strickland": {
+      "bioguide": "S001159",
+      "party": "Democrat",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Scott Fitzgerald": {
+      "bioguide": "F000471",
+      "party": "Republican",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Alex Padilla": {
+      "bioguide": "P000145",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "senate",
+      "committees": [
+        "SSEG",
+        "SSEG01",
+        "SSEG03",
+        "SSEG07",
+        "SSEV",
+        "SSRA",
+        "SSBU",
+        "SSJU",
+        "JSPR"
+      ],
+      "leadership_committees": [
+        "SSRA"
+      ]
+    },
+    "Jon Ossoff": {
+      "bioguide": "O000174",
+      "party": "Democrat",
+      "state": "GA",
+      "chamber": "senate",
+      "committees": [
+        "SSAP",
+        "SSRA",
+        "JSLC",
+        "SLIN"
+      ],
+      "leadership_committees": []
+    },
+    "Raphael G. Warnock": {
+      "bioguide": "W000790",
+      "party": "Democrat",
+      "state": "GA",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF14",
+        "SSAF16",
+        "SSAF15",
+        "SSBK",
+        "SSBK12",
+        "SSBK08",
+        "SSBK04",
+        "SSFI",
+        "SPAG"
+      ],
+      "leadership_committees": [
+        "SSBK12"
+      ]
+    },
+    "Claudia Tenney": {
+      "bioguide": "T000478",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSWM",
+        "HLIG"
+      ],
+      "leadership_committees": []
+    },
+    "Julia Letlow": {
+      "bioguide": "L000595",
+      "party": "Republican",
+      "state": "LA",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Troy A. Carter": {
+      "bioguide": "C001125",
+      "party": "Democrat",
+      "state": "LA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Melanie A. Stansbury": {
+      "bioguide": "S001218",
+      "party": "Democrat",
+      "state": "NM",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSGO",
+        "HSII13",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Jake Ellzey": {
+      "bioguide": "E000071",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSSM",
+        "HSSM21"
+      ],
+      "leadership_committees": [
+        "HSSM21"
+      ]
+    },
+    "Shontel M. Brown": {
+      "bioguide": "B001313",
+      "party": "Democrat",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSGO",
+        "HSAG16",
+        "HSAG03",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Carey": {
+      "bioguide": "C001126",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSBU",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Sheila Cherfilus-McCormick": {
+      "bioguide": "C001127",
+      "party": "Democrat",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSFA",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Flood": {
+      "bioguide": "F000474",
+      "party": "Republican",
+      "state": "NE",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Brad Finstad": {
+      "bioguide": "F000475",
+      "party": "Republican",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSSM",
+        "HSAG16",
+        "HSAG29",
+        "HSAG03",
+        "HSAG22",
+        "HSSM21",
+        "HSSM24"
+      ],
+      "leadership_committees": [
+        "HSAG03"
+      ]
+    },
+    "Patrick Ryan": {
+      "bioguide": "R000579",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Rudy Yakym III": {
+      "bioguide": "Y000067",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Ryan K. Zinke": {
+      "bioguide": "Z000018",
+      "party": "Republican",
+      "state": "MT",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Katie Boyd Britt": {
+      "bioguide": "B001319",
+      "party": "Republican",
+      "state": "AL",
+      "chamber": "senate",
+      "committees": [
+        "SSAP",
+        "SSBK",
+        "SSBK08",
+        "SSBK09",
+        "SSBK04",
+        "SSRA",
+        "SSJU"
+      ],
+      "leadership_committees": [
+        "SSBK09"
+      ]
+    },
+    "Eric Schmitt": {
+      "bioguide": "S001227",
+      "party": "Republican",
+      "state": "MO",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS14",
+        "SSAS21",
+        "SSAS20",
+        "SSAS15",
+        "SSCM",
+        "SSJU",
+        "JSEC"
+      ],
+      "leadership_committees": []
+    },
+    "John Fetterman": {
+      "bioguide": "F000479",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF13",
+        "SSAF16",
+        "SSCM",
+        "SSGA",
+        "SSGA01",
+        "SSGA22",
+        "JCSE"
+      ],
+      "leadership_committees": [
+        "SSGA22"
+      ]
+    },
+    "Dale W. Strong": {
+      "bioguide": "S001220",
+      "party": "Republican",
+      "state": "AL",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSHM"
+      ],
+      "leadership_committees": []
+    },
+    "Elijah Crane": {
+      "bioguide": "C001132",
+      "party": "Republican",
+      "state": "AZ",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Juan Ciscomani": {
+      "bioguide": "C001133",
+      "party": "Republican",
+      "state": "AZ",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Kevin Kiley": {
+      "bioguide": "K000401",
+      "party": "Republican",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSJU",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Kevin Mullin": {
+      "bioguide": "M001225",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Sydney Kamlager-Dove": {
+      "bioguide": "K000400",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Robert Garcia": {
+      "bioguide": "G000598",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Brittany Pettersen": {
+      "bioguide": "P000620",
+      "party": "Democrat",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Aaron Bean": {
+      "bioguide": "B001314",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Cory Mills": {
+      "bioguide": "M001216",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Maxwell Frost": {
+      "bioguide": "F000476",
+      "party": "Democrat",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Anna Paulina Luna": {
+      "bioguide": "L000596",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Laurel M. Lee": {
+      "bioguide": "L000597",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSIF",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Jared Moskowitz": {
+      "bioguide": "M001217",
+      "party": "Democrat",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Richard McCormick": {
+      "bioguide": "M001218",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Collins": {
+      "bioguide": "C001129",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSSY",
+        "HSII06",
+        "HSII15"
+      ],
+      "leadership_committees": []
+    },
+    "James C. Moylan": {
+      "bioguide": "M001219",
+      "party": "Republican",
+      "state": "GU",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSFA",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Jill N. Tokuda": {
+      "bioguide": "T000487",
+      "party": "Democrat",
+      "state": "HI",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSAG03",
+        "HSZS",
+        "HSAG14"
+      ],
+      "leadership_committees": [
+        "HSAG14"
+      ]
+    },
+    "Zachary Nunn": {
+      "bioguide": "N000193",
+      "party": "Republican",
+      "state": "IA",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSBA",
+        "HSAG16",
+        "HSAG22",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Jonathan L. Jackson": {
+      "bioguide": "J000309",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSFA",
+        "HSAG03",
+        "HSAG22"
+      ],
+      "leadership_committees": []
+    },
+    "Delia C. Ramirez": {
+      "bioguide": "R000617",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Nikki Budzinski": {
+      "bioguide": "B001315",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSVR",
+        "HSAG16",
+        "HSAG22",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Eric Sorensen": {
+      "bioguide": "S001225",
+      "party": "Democrat",
+      "state": "IL",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSAG16",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Erin Houchin": {
+      "bioguide": "H001093",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSED",
+        "HSRU",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Morgan McGarvey": {
+      "bioguide": "M001220",
+      "party": "Democrat",
+      "state": "KY",
+      "chamber": "house",
+      "committees": [
+        "HSVR",
+        "HSSM",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Glenn Ivey": {
+      "bioguide": "I000058",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Hillary J. Scholten": {
+      "bioguide": "S001221",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "John James": {
+      "bioguide": "J000307",
+      "party": "Republican",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Shri Thanedar": {
+      "bioguide": "T000488",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSHM",
+        "HSAG22"
+      ],
+      "leadership_committees": []
+    },
+    "Mark Alford": {
+      "bioguide": "A000379",
+      "party": "Republican",
+      "state": "MO",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSSM",
+        "HSSM24"
+      ],
+      "leadership_committees": [
+        "HSSM24"
+      ]
+    },
+    "Eric Burlison": {
+      "bioguide": "B001316",
+      "party": "Republican",
+      "state": "MO",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Ezell": {
+      "bioguide": "E000235",
+      "party": "Republican",
+      "state": "MS",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": [
+        "HSII13"
+      ]
+    },
+    "Donald G. Davis": {
+      "bioguide": "D000230",
+      "party": "Democrat",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSAG16",
+        "HSAG29",
+        "HSAG22"
+      ],
+      "leadership_committees": [
+        "HSAG22"
+      ]
+    },
+    "Valerie P. Foushee": {
+      "bioguide": "F000477",
+      "party": "Democrat",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY"
+      ],
+      "leadership_committees": []
+    },
+    "Chuck Edwards": {
+      "bioguide": "E000246",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Thomas H. Kean, Jr.": {
+      "bioguide": "K000398",
+      "party": "Republican",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Robert Menendez": {
+      "bioguide": "M001226",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Gabe Vasquez": {
+      "bioguide": "V000136",
+      "party": "Democrat",
+      "state": "NM",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSAG15",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Nick LaLota": {
+      "bioguide": "L000598",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSAP",
+        "HSSM",
+        "HSSM23",
+        "HSSM27"
+      ],
+      "leadership_committees": [
+        "HSSM23"
+      ]
+    },
+    "Daniel S. Goldman": {
+      "bioguide": "G000599",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSHM"
+      ],
+      "leadership_committees": []
+    },
+    "Michael Lawler": {
+      "bioguide": "L000599",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Nicholas A. Langworthy": {
+      "bioguide": "L000600",
+      "party": "Republican",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSIF",
+        "HSRU"
+      ],
+      "leadership_committees": []
+    },
+    "Greg Landsman": {
+      "bioguide": "L000601",
+      "party": "Democrat",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Max L. Miller": {
+      "bioguide": "M001222",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Emilia Strong Sykes": {
+      "bioguide": "S001223",
+      "party": "Democrat",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY"
+      ],
+      "leadership_committees": []
+    },
+    "Josh Brecheen": {
+      "bioguide": "B001317",
+      "party": "Republican",
+      "state": "OK",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Val T. Hoyle": {
+      "bioguide": "H001094",
+      "party": "Democrat",
+      "state": "OR",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSII13",
+        "HSII24"
+      ],
+      "leadership_committees": [
+        "HSII13"
+      ]
+    },
+    "Andrea Salinas": {
+      "bioguide": "S001226",
+      "party": "Democrat",
+      "state": "OR",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAG",
+        "HSAG15",
+        "HSAG03"
+      ],
+      "leadership_committees": [
+        "HSAG15"
+      ]
+    },
+    "Summer L. Lee": {
+      "bioguide": "L000602",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Christopher R. Deluzio": {
+      "bioguide": "D000530",
+      "party": "Democrat",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Seth Magaziner": {
+      "bioguide": "M001223",
+      "party": "Democrat",
+      "state": "RI",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSHM",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Russell Fry": {
+      "bioguide": "F000478",
+      "party": "Republican",
+      "state": "SC",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Andrew Ogles": {
+      "bioguide": "O000175",
+      "party": "Republican",
+      "state": "TN",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Nathaniel Moran": {
+      "bioguide": "M001224",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSWM",
+        "HSZS"
+      ],
+      "leadership_committees": []
+    },
+    "Keith Self": {
+      "bioguide": "S001224",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSFA",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Morgan Luttrell": {
+      "bioguide": "L000603",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSHM",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Monica De La Cruz": {
+      "bioguide": "D000594",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSBA",
+        "HSAG16",
+        "HSAG03"
+      ],
+      "leadership_committees": [
+        "HSAG03"
+      ]
+    },
+    "Jasmine Crockett": {
+      "bioguide": "C001130",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Greg Casar": {
+      "bioguide": "C001131",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Wesley Hunt": {
+      "bioguide": "H001095",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSJU",
+        "HSII06",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Jennifer A. Kiggans": {
+      "bioguide": "K000399",
+      "party": "Republican",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSAS",
+        "HSVR",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Becca Balint": {
+      "bioguide": "B001318",
+      "party": "Democrat",
+      "state": "VT",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Marie Gluesenkamp Perez": {
+      "bioguide": "G000600",
+      "party": "Democrat",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "Derrick Van Orden": {
+      "bioguide": "V000135",
+      "party": "Republican",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSVR",
+        "HSAG29",
+        "HSAG03"
+      ],
+      "leadership_committees": [
+        "HSAG29"
+      ]
+    },
+    "Harriet M. Hageman": {
+      "bioguide": "H001096",
+      "party": "Republican",
+      "state": "WY",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSJU",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": [
+        "HSII13"
+      ]
+    },
+    "Pete Ricketts": {
+      "bioguide": "R000618",
+      "party": "Republican",
+      "state": "NE",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK12",
+        "SSBK08",
+        "SSBK05",
+        "SSEV",
+        "SSFR",
+        "SSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Jennifer L. McClellan": {
+      "bioguide": "M001227",
+      "party": "Democrat",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Gabe Amo": {
+      "bioguide": "A000380",
+      "party": "Democrat",
+      "state": "RI",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSFA",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Celeste Maloy": {
+      "bioguide": "M001228",
+      "party": "Republican",
+      "state": "UT",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSAP",
+        "HSII13",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Thomas R. Suozzi": {
+      "bioguide": "S001201",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSWM"
+      ],
+      "leadership_committees": []
+    },
+    "Timothy M. Kennedy": {
+      "bioguide": "K000402",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Vince Fong": {
+      "bioguide": "F000480",
+      "party": "Republican",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY"
+      ],
+      "leadership_committees": []
+    },
+    "Michael A. Rulli": {
+      "bioguide": "R000619",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSIF",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "LaMonica McIver": {
+      "bioguide": "M001229",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Tony Wied": {
+      "bioguide": "W000829",
+      "party": "Republican",
+      "state": "WI",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSSM",
+        "HSAG15",
+        "HSAG29",
+        "HSAG03",
+        "HSSM22",
+        "HSSM21"
+      ],
+      "leadership_committees": []
+    },
+    "Cleo Fields": {
+      "bioguide": "F000110",
+      "party": "Democrat",
+      "state": "LA",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Marlin A. Stutzman": {
+      "bioguide": "S001188",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Gilbert Ray Cisneros, Jr.": {
+      "bioguide": "C001123",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Angela D. Alsobrooks": {
+      "bioguide": "A000382",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK08",
+        "SSBK09",
+        "SSBK04",
+        "SSEV",
+        "SSHR",
+        "SSHR09",
+        "SSHR11",
+        "SPAG"
+      ],
+      "leadership_committees": []
+    },
+    "Tim Sheehy": {
+      "bioguide": "S001232",
+      "party": "Republican",
+      "state": "MT",
+      "chamber": "senate",
+      "committees": [
+        "SSAS",
+        "SSAS20",
+        "SSAS15",
+        "SSAS13",
+        "SSCM",
+        "SSVA"
+      ],
+      "leadership_committees": []
+    },
+    "Bernie Moreno": {
+      "bioguide": "M001242",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK09",
+        "SSBK04",
+        "SSCM",
+        "SSGA",
+        "SSGA01",
+        "SSGA22",
+        "SSBU",
+        "SCNC",
+        "SSBK13"
+      ],
+      "leadership_committees": []
+    },
+    "David McCormick": {
+      "bioguide": "M001243",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "senate",
+      "committees": [
+        "SSBK",
+        "SSBK09",
+        "SSBK05",
+        "SSEG",
+        "SSEG01",
+        "SSEG07",
+        "SSFR",
+        "JSEC",
+        "SPAG",
+        "SSBK13"
+      ],
+      "leadership_committees": [
+        "SSEG01"
+      ]
+    },
+    "Nicholas J. Begich III": {
+      "bioguide": "B001323",
+      "party": "Republican",
+      "state": "AK",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSSY",
+        "HSII06",
+        "HSII15"
+      ],
+      "leadership_committees": [
+        "HSII06"
+      ]
+    },
+    "Shomari Figures": {
+      "bioguide": "F000481",
+      "party": "Democrat",
+      "state": "AL",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSAG03",
+        "HSAG22"
+      ],
+      "leadership_committees": []
+    },
+    "Yassamin Ansari": {
+      "bioguide": "A000381",
+      "party": "Democrat",
+      "state": "AZ",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSGO",
+        "HSII06",
+        "HSII15"
+      ],
+      "leadership_committees": [
+        "HSII06"
+      ]
+    },
+    "Abraham J. Hamadeh": {
+      "bioguide": "H001098",
+      "party": "Republican",
+      "state": "AZ",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Lateefah Simon": {
+      "bioguide": "S001231",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Adam Gray": {
+      "bioguide": "G000605",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSAG",
+        "HSII15",
+        "HSAG15",
+        "HSAG29",
+        "HSAG22",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Sam T. Liccardo": {
+      "bioguide": "L000607",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "George Whitesides": {
+      "bioguide": "W000830",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Luz M. Rivas": {
+      "bioguide": "R000620",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSSY",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Laura Friedman": {
+      "bioguide": "F000483",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY"
+      ],
+      "leadership_committees": []
+    },
+    "Derek Tran": {
+      "bioguide": "T000491",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Dave Min": {
+      "bioguide": "M001241",
+      "party": "Democrat",
+      "state": "CA",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSGO",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Jeff Hurd": {
+      "bioguide": "H001100",
+      "party": "Republican",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSSY",
+        "HSII06",
+        "HSII24"
+      ],
+      "leadership_committees": [
+        "HSII24"
+      ]
+    },
+    "Jeff Crank": {
+      "bioguide": "C001137",
+      "party": "Republican",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSAS",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "Gabe Evans": {
+      "bioguide": "E000300",
+      "party": "Republican",
+      "state": "CO",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Sarah McBride": {
+      "bioguide": "M001238",
+      "party": "Democrat",
+      "state": "DE",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Haridopolos": {
+      "bioguide": "H001099",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Brian Jack": {
+      "bioguide": "J000311",
+      "party": "Republican",
+      "state": "GA",
+      "chamber": "house",
+      "committees": [
+        "HSGO",
+        "HSSM",
+        "HSRU",
+        "HSSM22",
+        "HSSM23"
+      ],
+      "leadership_committees": [
+        "HSSM22"
+      ]
+    },
+    "Jefferson Shreve": {
+      "bioguide": "S001229",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Mark B. Messmer": {
+      "bioguide": "M001233",
+      "party": "Republican",
+      "state": "IN",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSED",
+        "HSAG29",
+        "HSAG22",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Derek Schmidt": {
+      "bioguide": "S001228",
+      "party": "Republican",
+      "state": "KS",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSAS",
+        "HSSM",
+        "HSSM22",
+        "HSSM21"
+      ],
+      "leadership_committees": []
+    },
+    "Johnny Olszewski, Jr.": {
+      "bioguide": "O000176",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "house",
+      "committees": [
+        "HSFA",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Sarah Elfreth": {
+      "bioguide": "E000301",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSAS",
+        "HSII06",
+        "HSII13"
+      ],
+      "leadership_committees": []
+    },
+    "April McClain Delaney": {
+      "bioguide": "M001232",
+      "party": "Democrat",
+      "state": "MD",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAG",
+        "HSAG22",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Tom Barrett": {
+      "bioguide": "B001321",
+      "party": "Republican",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSVR"
+      ],
+      "leadership_committees": []
+    },
+    "Kristen McDonald Rivet": {
+      "bioguide": "M001237",
+      "party": "Democrat",
+      "state": "MI",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSAG16",
+        "HSAG22"
+      ],
+      "leadership_committees": []
+    },
+    "Kelly Morrison": {
+      "bioguide": "M001234",
+      "party": "Democrat",
+      "state": "MN",
+      "chamber": "house",
+      "committees": [
+        "HSVR",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Wesley Bell": {
+      "bioguide": "B001324",
+      "party": "Democrat",
+      "state": "MO",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Robert F. Onder, Jr.": {
+      "bioguide": "O000177",
+      "party": "Republican",
+      "state": "MO",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSJU",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Kimberlyn King-Hinds": {
+      "bioguide": "K000404",
+      "party": "Republican",
+      "state": "MP",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSVR",
+        "HSSM",
+        "HSSM23",
+        "HSSM27"
+      ],
+      "leadership_committees": []
+    },
+    "Troy Downing": {
+      "bioguide": "D000634",
+      "party": "Republican",
+      "state": "MT",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSSM",
+        "HSSM22",
+        "HSSM24"
+      ],
+      "leadership_committees": []
+    },
+    "Addison P. McDowell": {
+      "bioguide": "M001240",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSBU",
+        "HSII13",
+        "HSII24"
+      ],
+      "leadership_committees": []
+    },
+    "Mark Harris": {
+      "bioguide": "H001102",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSJU",
+        "HSED",
+        "HSAG16",
+        "HSAG29",
+        "HSAG03"
+      ],
+      "leadership_committees": []
+    },
+    "Pat Harrigan": {
+      "bioguide": "H001101",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAS"
+      ],
+      "leadership_committees": []
+    },
+    "Brad Knott": {
+      "bioguide": "K000405",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSJU",
+        "HSHM"
+      ],
+      "leadership_committees": []
+    },
+    "Tim Moore": {
+      "bioguide": "M001236",
+      "party": "Republican",
+      "state": "NC",
+      "chamber": "house",
+      "committees": [
+        "HSBA",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Julie Fedorchak": {
+      "bioguide": "F000482",
+      "party": "Republican",
+      "state": "ND",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Maggie Goodlander": {
+      "bioguide": "G000604",
+      "party": "Democrat",
+      "state": "NH",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Herbert C. Conaway, Jr.": {
+      "bioguide": "C001136",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSVR",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Nellie Pou": {
+      "bioguide": "P000621",
+      "party": "Democrat",
+      "state": "NJ",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSHM"
+      ],
+      "leadership_committees": []
+    },
+    "Laura Gillen": {
+      "bioguide": "G000602",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSSY"
+      ],
+      "leadership_committees": []
+    },
+    "George Latimer": {
+      "bioguide": "L000606",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSFA",
+        "HSSM"
+      ],
+      "leadership_committees": []
+    },
+    "Josh Riley": {
+      "bioguide": "R000622",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSAG",
+        "HSAG15",
+        "HSAG29"
+      ],
+      "leadership_committees": []
+    },
+    "John W. Mannion": {
+      "bioguide": "M001231",
+      "party": "Democrat",
+      "state": "NY",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSED",
+        "HSAG22",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "David J. Taylor": {
+      "bioguide": "T000490",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSAG16",
+        "HSAG22"
+      ],
+      "leadership_committees": []
+    },
+    "Maxine Dexter": {
+      "bioguide": "D000635",
+      "party": "Democrat",
+      "state": "OR",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSVR",
+        "HSII15",
+        "HSII10"
+      ],
+      "leadership_committees": [
+        "HSII15"
+      ]
+    },
+    "Janelle S. Bynum": {
+      "bioguide": "B001326",
+      "party": "Democrat",
+      "state": "OR",
+      "chamber": "house",
+      "committees": [
+        "HSBA"
+      ],
+      "leadership_committees": []
+    },
+    "Ryan Mackenzie": {
+      "bioguide": "M001230",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSFA",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Robert P. Bresnahan, Jr.": {
+      "bioguide": "B001327",
+      "party": "Republican",
+      "state": "PA",
+      "chamber": "house",
+      "committees": [
+        "HSPW",
+        "HSAG",
+        "HSSM",
+        "HSAG22",
+        "HSSM22",
+        "HSAG14",
+        "HSSM27"
+      ],
+      "leadership_committees": []
+    },
+    "Pablo Jos\u00e9 Hern\u00e1ndez": {
+      "bioguide": "H001103",
+      "party": "Democrat",
+      "state": "PR",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSHM",
+        "HSII15",
+        "HSII24"
+      ],
+      "leadership_committees": []
+    },
+    "Sheri Biggs": {
+      "bioguide": "B001325",
+      "party": "Republican",
+      "state": "SC",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSHM",
+        "HSFA"
+      ],
+      "leadership_committees": []
+    },
+    "Craig A. Goldman": {
+      "bioguide": "G000601",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSIF"
+      ],
+      "leadership_committees": []
+    },
+    "Brandon Gill": {
+      "bioguide": "G000603",
+      "party": "Republican",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSGO",
+        "HSBU"
+      ],
+      "leadership_committees": []
+    },
+    "Julie Johnson": {
+      "bioguide": "J000310",
+      "party": "Democrat",
+      "state": "TX",
+      "chamber": "house",
+      "committees": [
+        "HSHM",
+        "HSFA",
+        "HSHA"
+      ],
+      "leadership_committees": []
+    },
+    "Mike Kennedy": {
+      "bioguide": "K000403",
+      "party": "Republican",
+      "state": "UT",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSPW",
+        "HSSY",
+        "HSII24",
+        "HSII10"
+      ],
+      "leadership_committees": [
+        "HSII10"
+      ]
+    },
+    "John J. McGuire III": {
+      "bioguide": "M001239",
+      "party": "Republican",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "HSAS",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Eugene Simon Vindman": {
+      "bioguide": "V000138",
+      "party": "Democrat",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "HSAG",
+        "HSAS",
+        "HSAG22",
+        "HSAG14"
+      ],
+      "leadership_committees": []
+    },
+    "Suhas Subramanyam": {
+      "bioguide": "S001230",
+      "party": "Democrat",
+      "state": "VA",
+      "chamber": "house",
+      "committees": [
+        "HSSY",
+        "HSGO"
+      ],
+      "leadership_committees": []
+    },
+    "Michael Baumgartner": {
+      "bioguide": "B001322",
+      "party": "Republican",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSJU",
+        "HSFA",
+        "HSED"
+      ],
+      "leadership_committees": []
+    },
+    "Emily Randall": {
+      "bioguide": "R000621",
+      "party": "Democrat",
+      "state": "WA",
+      "chamber": "house",
+      "committees": [
+        "HSII",
+        "HSGO",
+        "HSII24",
+        "HSII10"
+      ],
+      "leadership_committees": []
+    },
+    "Riley M. Moore": {
+      "bioguide": "M001235",
+      "party": "Republican",
+      "state": "WV",
+      "chamber": "house",
+      "committees": [
+        "HSAP"
+      ],
+      "leadership_committees": []
+    },
+    "James C. Justice": {
+      "bioguide": "J000312",
+      "party": "Republican",
+      "state": "WV",
+      "chamber": "senate",
+      "committees": [
+        "SSAF",
+        "SSAF14",
+        "SSAF16",
+        "SSAF17",
+        "SSEG",
+        "SSEG01",
+        "SSEG03",
+        "SSEG07",
+        "SSSB",
+        "SPAG"
+      ],
+      "leadership_committees": []
+    },
+    "Jon Husted": {
+      "bioguide": "H001104",
+      "party": "Republican",
+      "state": "OH",
+      "chamber": "senate",
+      "committees": [
+        "SSEV",
+        "SSHR",
+        "SSHR09",
+        "SSHR11",
+        "SSHR12",
+        "SSSB",
+        "SPAG"
+      ],
+      "leadership_committees": []
+    },
+    "Ashley Moody": {
+      "bioguide": "M001244",
+      "party": "Republican",
+      "state": "FL",
+      "chamber": "senate",
+      "committees": [
+        "SSHR",
+        "SSHR09",
+        "SSHR12",
+        "SSGA",
+        "SSGA20",
+        "SSGA22",
+        "SSJU",
+        "JSEC",
+        "SPAG"
+      ],
+      "leadership_committees": []
+    }
+  }
