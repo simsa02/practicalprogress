@@ -8,6 +8,16 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Main content container */
+.main {
+  padding: 1rem;
+}
+
+/* Ranking row container */
+.rankingRow {
+  margin-bottom: 1rem;
+}
+
 /* Social Share Bar */
 .shareBar {
   display: flex;

@@ -16,10 +16,13 @@ export default function Home() {
           muted
           loop
           playsInline
+          preload="auto"
           className={styles.video}
           poster="/fallback.jpg"
+          onError={(e) => console.error("Video failed to load:", e)}
         >
           <source src="/background.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
 
         <div className={styles.overlay}>
@@ -33,3 +36,4 @@ export default function Home() {
     </>
   );
 }
+g

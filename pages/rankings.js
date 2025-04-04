@@ -276,106 +276,108 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
       </div>
 
       <main className={styles.main}>
-        {/* Table header */}
-        <div className={styles.tableHeader}>
-          <div className={styles.cellRank}>Rank</div>
-          <div className={styles.cellPhoto}>Photo</div>
-          <div className={styles.cellMetascore}>Metascore</div>
-          <div className={styles.cellWeekly}>Weekly Change</div>
-          <div className={styles.cellBaseline}>Baseline Score</div>
-          <div className={styles.cellNews}>Media Impact</div>
-          <div className={styles.cellLegislation}>Legislative Floor</div>
-        </div>
-        {/* Ranking rows */}
-        {filteredRankings.length > 0 ? (
-          filteredRankings.map((p) => (
-            <div key={p._id} className={styles.rankingRow} onClick={() => toggle(p._id)}>
-              <div className={styles.row}>
-                <div className={styles.cellRank}>#{p.rank}</div>
-                <div className={styles.cellPhoto}>
-                  <img
-                    src={getCongressPhotoUrl(p.name, legislatorsCache, "225x275")}
-                    alt={`Headshot of ${p.name}`}
-                    className={styles.photo}
-                    onError={(e) => {
-                      e.target.onerror = null
-                      e.target.src = "/images/politicians/default-politician.jpg"
+        <div className={styles.tableWrapper}>
+          {/* Table header */}
+          <div className={styles.tableHeader}>
+            <div className={styles.cellRank}>Rank</div>
+            <div className={styles.cellPhoto}>Photo</div>
+            <div className={styles.cellMetascore}>Metascore</div>
+            <div className={styles.cellWeekly}>Weekly Change</div>
+            <div className={styles.cellBaseline}>Baseline Score</div>
+            <div className={styles.cellNews}>Media Impact</div>
+            <div className={styles.cellLegislation}>Legislative Floor</div>
+          </div>
+          {/* Ranking rows */}
+          {filteredRankings.length > 0 ? (
+            filteredRankings.map((p) => (
+              <div key={p._id} className={styles.rankingRow} onClick={() => toggle(p._id)}>
+                <div className={styles.row}>
+                  <div className={styles.cellRank}>#{p.rank}</div>
+                  <div className={styles.cellPhoto}>
+                    <img
+                      src={getCongressPhotoUrl(p.name, legislatorsCache, "225x275")}
+                      alt={`Headshot of ${p.name}`}
+                      className={styles.photo}
+                      onError={(e) => {
+                        e.target.onerror = null
+                        e.target.src = "/images/politicians/default-politician.jpg"
+                      }}
+                    />
+                    <div className={styles.nameUnderPhoto}>{p.name}</div>
+                    <div className={styles.legislatorDetails}>
+                      {getLegislatorDetails(p.name, legislatorsCache)}
+                    </div>
+                  </div>
+                  <div className={styles.cellMetascore}>
+                    {p.score ? p.score.toFixed(2) : '-'}
+                  </div>
+                  <div className={styles.cellWeekly}>
+                    {p.weekly_change && p.weekly_change !== 0 ? p.weekly_change.toFixed(2) : "-"}
+                  </div>
+                  <div className={styles.cellBaseline}>
+                    {p.baseline_score ? p.baseline_score.toFixed(2) : '-'}
+                  </div>
+                  <div className={styles.cellNews}>
+                    {getMediaImpactDisplay(p.news_score)}
+                  </div>
+                  <div className={styles.cellLegislation}>
+                    {getLegislateFloorDisplay(p.legislation_score)}
+                  </div>
+                </div>
+                {/* "Read More" toggle centered just above the break */}
+                <div className={styles.readMoreContainer}>
+                  <button
+                    className={styles.readMoreButton}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      toggle(p._id)
                     }}
-                  />
-                  <div className={styles.nameUnderPhoto}>{p.name}</div>
-                  <div className={styles.legislatorDetails}>
-                    {getLegislatorDetails(p.name, legislatorsCache)}
+                  >
+                    {expanded === p._id ? "Hide" : "Read More"}
+                  </button>
+                </div>
+                {expanded === p._id && (
+                  <div className={styles.expandedRow}>
+                    <div className={styles.expandedSummary}>
+                      {p.summary ? (
+                        <PortableText
+                          value={
+                            Array.isArray(p.summary)
+                              ? p.summary
+                              : normalizePortableText(p.summary)
+                          }
+                        />
+                      ) : (
+                        "No individual summary available."
+                      )}
+                    </div>
+                    <h4 className={styles.expandedHeading}>Media Impact Breakdown</h4>
+                    <div className={styles.scoreBoxes}>
+                      <div className={styles.scoreBox}>
+                        <span>Policy Impact</span>
+                        <span>{p.policy_impact || 75}</span>
+                      </div>
+                      <div className={styles.scoreBox}>
+                        <span>Public Perception</span>
+                        <span>{p.public_perception || 60}</span>
+                      </div>
+                      <div className={styles.scoreBox}>
+                        <span>Controversy</span>
+                        <span>{p.controversy || 85}</span>
+                      </div>
+                      <div className={styles.scoreBox}>
+                        <span>Media Clout</span>
+                        <span>{p.media_clout || 70}</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className={styles.cellMetascore}>
-                  {p.score ? p.score.toFixed(2) : '-'}
-                </div>
-                <div className={styles.cellWeekly}>
-                  {p.weekly_change && p.weekly_change !== 0 ? p.weekly_change.toFixed(2) : "-"}
-                </div>
-                <div className={styles.cellBaseline}>
-                  {p.baseline_score ? p.baseline_score.toFixed(2) : '-'}
-                </div>
-                <div className={styles.cellNews}>
-                  {getMediaImpactDisplay(p.news_score)}
-                </div>
-                <div className={styles.cellLegislation}>
-                  {getLegislateFloorDisplay(p.legislation_score)}
-                </div>
+                )}
               </div>
-              {/* "Read More" toggle centered just above the break */}
-              <div className={styles.readMoreContainer}>
-                <button
-                  className={styles.readMoreButton}
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    toggle(p._id)
-                  }}
-                >
-                  {expanded === p._id ? "Hide" : "Read More"}
-                </button>
-              </div>
-              {expanded === p._id && (
-                <div className={styles.expandedRow}>
-                  <div className={styles.expandedSummary}>
-                    {p.summary ? (
-                      <PortableText
-                        value={
-                          Array.isArray(p.summary)
-                            ? p.summary
-                            : normalizePortableText(p.summary)
-                        }
-                      />
-                    ) : (
-                      "No individual summary available."
-                    )}
-                  </div>
-                  <h4 className={styles.expandedHeading}>Media Impact Breakdown</h4>
-                  <div className={styles.scoreBoxes}>
-                    <div className={styles.scoreBox}>
-                      <span>Policy Impact</span>
-                      <span>{p.policy_impact || 75}</span>
-                    </div>
-                    <div className={styles.scoreBox}>
-                      <span>Public Perception</span>
-                      <span>{p.public_perception || 60}</span>
-                    </div>
-                    <div className={styles.scoreBox}>
-                      <span>Controversy</span>
-                      <span>{p.controversy || 85}</span>
-                    </div>
-                    <div className={styles.scoreBox}>
-                      <span>Media Clout</span>
-                      <span>{p.media_clout || 70}</span>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          ))
-        ) : (
-          <div className={styles.noResults}>No results match your filters.</div>
-        )}
+            ))
+          ) : (
+            <div className={styles.noResults}>No results match your filters.</div>
+          )}
+        </div>
       </main>
 
       {/* "How the Score Works" Section from Sanity */}
