@@ -7,7 +7,11 @@ export default function Home() {
     <>
       <Head>
         <title>Practical Progress</title>
-        <meta name="description" content="Progressive politics rooted in results, not rhetoric." />
+        <meta
+          name="description"
+          content="Progressive politics rooted in results, not rhetoric."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.hero}>
         <video
@@ -17,7 +21,7 @@ export default function Home() {
           playsInline
           preload="auto"
           className={styles.video}
-          poster="/fallback.jpg"
+          poster="/fallback.png"  // Updated to fallback.png
           onError={(e) => console.error("Video failed to load:", e)}
         >
           <source src="/background.mp4" type="video/mp4" />
