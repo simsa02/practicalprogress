@@ -1,4 +1,5 @@
-import sanityClient from '../lib/sanity/sanity'; // ✅ default import
+// pages/mission.js
+import sanityClient from '../lib/sanity/sanity';
 import MissionContent from '../components/MissionContent';
 
 export default function Mission({ mission }) {

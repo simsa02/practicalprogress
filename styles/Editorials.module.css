@@ -1,26 +1,26 @@
 .editorialsContainer {
-  max-width: 900px;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 100px 20px 60px;
+  padding: 4rem 1rem 3rem;
   color: #002855;
   text-align: center;
 }
 
 .pageHeader {
-  margin-bottom: 60px;
+  margin-bottom: 3rem;
 }
 
 .pageHeader h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 800;
   color: #002855;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pageHeader p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
-  margin-top: 10px;
+  margin-top: 0.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -29,14 +29,14 @@
 .editorialList {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 .editorialItem {
   background: white;
   border-left: 6px solid #002855;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  padding: 30px;
+  padding: 1.5rem;
   border-radius: 12px;
   text-align: left;
   transition: all 0.3s ease;
@@ -48,23 +48,23 @@
 }
 
 .editorialContent h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: #002855;
 }
 
 .datePublished {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #777;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .summary,
 .expandedText {
   color: #333;
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .toggleButton {
@@ -72,8 +72,8 @@
   color: white;
   border: none;
   border-radius: 30px;
-  padding: 10px 25px;
-  font-size: 1rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -85,18 +85,30 @@
   transform: scale(1.05);
 }
 
-/* Responsive */
+/* Social Share Bar styles */
+.shareBar {
+  margin-top: 1rem; /* Adjust this value as needed to move logos lower */
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Social Share Icon styles */
+.shareIcon {
+  width: 24px;  /* Adjust size as needed */
+  height: 24px;
+}
+
+/* Responsive for smaller screens */
 @media (max-width: 768px) {
   .pageHeader h1 {
     font-size: 2.2rem;
   }
-
   .editorialContent h2 {
     font-size: 1.3rem;
   }
-
   .toggleButton {
     font-size: 0.95rem;
-    padding: 8px 20px;
+    padding: 0.5rem 1rem;
   }
 }

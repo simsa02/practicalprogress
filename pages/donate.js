@@ -1,5 +1,7 @@
+// pages/donate.js
 import Head from 'next/head';
 import styles from '../styles/Donate.module.css';
+
 export default function Donate() {
   return (
     <>

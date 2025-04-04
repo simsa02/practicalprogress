@@ -5,7 +5,6 @@ export const powerRanking = defineType({
   title: 'Power Ranking',
   type: 'document',
   fields: [
-    // Existing fields
     {
       name: 'week',
       title: 'Week',
@@ -51,7 +50,6 @@ export const powerRanking = defineType({
       description: 'Whether this ranking should be displayed',
       initialValue: true
     },
-    // Additional fields from your imported data
     {
       name: 'baseline_score',
       title: 'Baseline Score',
@@ -109,8 +107,9 @@ export const powerRanking = defineType({
     {
       name: 'summary',
       title: 'Summary',
-      type: 'text',
-      description: 'Summary analysis of the ranking'
+      type: 'array',
+      of: [{ type: 'block' }],
+      description: 'Rich summary analysis of the ranking'
     },
     {
       name: 'timestamp',

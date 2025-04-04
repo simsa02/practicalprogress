@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-// Temporarily using a plain <img> instead of next/image to avoid the error
-// import Image from 'next/image';
 import styles from '../styles/Mission.module.css';
 
 export default function MissionContent({ mission }) {
@@ -26,7 +24,6 @@ export default function MissionContent({ mission }) {
       <div className={styles.backgroundOverlay} />
       <div className={styles.missionContent}>
         <div className={styles.titleBlock}>
-          {/* Using a plain <img> tag instead of next/image for now */}
           <img
             src="/logo.png"
             alt="Practical Progress Logo"
@@ -56,14 +53,16 @@ export default function MissionContent({ mission }) {
           <p>
             No big donors. No corporate backing. Just us. Chip in and be part of the progress.
           </p>
-          <a
-            href="https://buymeacoffee.com/tsims49i"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.ctaButton}
-          >
-            Donate Now
-          </a>
+          <div style={{ marginTop: '1.5rem' }}>
+            <a
+              href="https://buymeacoffee.com/tsims49i"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.ctaButton}
+            >
+              Donate Now
+            </a>
+          </div>
         </div>
       </div>
     </div>

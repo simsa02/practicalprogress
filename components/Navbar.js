@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.leftSection}>
-        <Link href="/" legacyBehavior>
-          <a className={styles.homeLink}>Home</a>
+        <Link href="/" className={styles.homeLink}>
+          Home
         </Link>
       </div>
 
@@ -15,14 +15,14 @@ export default function Navbar() {
       </div>
 
       <div className={styles.rightSection}>
-        <Link href="/mission" legacyBehavior>
-          <a className={styles.link}>Mission</a>
+        <Link href="/mission" className={styles.link}>
+          Mission
         </Link>
-        <Link href="/rankings" legacyBehavior>
-          <a className={styles.link}>Power Rankings</a>
+        <Link href="/rankings" className={styles.link}>
+          Power Rankings
         </Link>
-        <Link href="/editorials" legacyBehavior>
-          <a className={styles.link}>Editorials</a>
+        <Link href="/editorials" className={styles.link}>
+          Editorials
         </Link>
         <a
           href="https://www.buymeacoffee.com/tsims49i"
