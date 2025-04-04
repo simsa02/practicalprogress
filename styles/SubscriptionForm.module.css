@@ -1,0 +1,104 @@
+.subscriptionContainer {
+  background: linear-gradient(to right, var(--primary-light), var(--secondary-light));
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 40px;
+  text-align: center;
+  border-left: 5px solid var(--primary);
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.subscriptionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.subscriptionText {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscriptionForm {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.inputError {
+  border-color: #e74c3c;
+}
+
+.subscribeButton {
+  padding: 12px 25px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subscribeButton:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.privacyNote {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 10px;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.successMessage {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .inputGroup {
+    flex-direction: column;
+  }
+  
+  .subscribeButton {
+    width: 100%;
+  }
+}

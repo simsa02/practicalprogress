@@ -1,0 +1,111 @@
+/* src/styles/PowerRankingsFilter.module.css */
+.filterContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterSection:last-child {
+  margin-bottom: 0;
+}
+
+.filterTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.filterOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filterButton {
+  padding: 10px 18px;
+  border: 1px solid #e9ecef;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 100px; /* Ensure minimum width for all buttons */
+  text-align: center; /* Center text for better appearance */
+}
+
+.filterButton:hover {
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filterButton.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb, 0, 100, 255), 0.3);
+  font-weight: 700; /* Bolder text for active state */
+  transform: translateY(-2px);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7), /* Stronger text shadow for better visibility */
+               0 0 10px rgba(255, 255, 255, 0.5), /* Add a white glow */
+               0 0 2px rgba(255, 255, 255, 0.8); /* Additional shadow for better contrast */
+  position: relative;
+  letter-spacing: 0.3px; /* Improved letter spacing for readability */
+}
+
+/* Add a pseudo-element to improve contrast behind text */
+.filterButton.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Subtle darkening overlay */
+  border-radius: 7px;
+  z-index: -1;
+}
+
+.weekSelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.weekSelect:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filterOptions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .filterButton {
+    width: 100%;
+    text-align: center;
+  }
+}

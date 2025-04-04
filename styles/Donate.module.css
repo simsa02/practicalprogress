@@ -1,0 +1,103 @@
+/* styles/Donate.module.css */
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #002855, #fdbb2d);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .backgroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    z-index: 1;
+  }
+  
+  .contentWrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+  
+  .donateBox {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2rem;
+  }
+  
+  .buttonContainer {
+    margin: 2rem 0;
+  }
+  
+  .donateButton {
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(255, 94, 98, 0.3);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .donateButton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(255, 94, 98, 0.5);
+  }
+  
+  .backLink {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #fdbb2d;
+  }
+  
+  .backLink a {
+    color: #fdbb2d;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.2rem;
+    }
+    .contentWrapper {
+      padding: 2rem;
+    }
+    .donateButton {
+      font-size: 1rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+  

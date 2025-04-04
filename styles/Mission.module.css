@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f4f7fa, #e9eff5);
+  color: #1c1c1e;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+.missionContent {
+  max-width: 950px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* 💎 Title */
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #002855;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #002855, #fdbb2d);
+  margin: 16px auto 0;
+  border-radius: 2px;
+  display: block;
+}
+
+/* 📦 Content */
+.contentBox {
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.portableTextContainer {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.portableTextContainer p {
+  margin-bottom: 1rem;
+}
+
+.portableTextContainer strong {
+  color: #002855;
+}
+
+.portableTextContainer h2 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 1rem;
+  color: #002855;
+}
+
+/* 🔘 CTA */
+.callToAction {
+  margin-top: 1.8rem;
+}
+
+.ctaButton {
+  padding: 0.75rem 1.8rem;
+  background: #fdbb2d;
+  color: #002855;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+  background: #ffd863;
+  transform: translateY(-2px);
+}
+
+/* 🔄 Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .contentBox {
+    padding: 20px;
+  }
+
+  .portableTextContainer {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
