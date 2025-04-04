@@ -388,6 +388,11 @@
     width: 100%;
     margin-bottom: 0.5rem;
   }
+  
+  /* Hide header on mobile */
+  .header {
+    display: none;
+  }
 }
 
 /* Extra mobile adjustments for very small screens */
