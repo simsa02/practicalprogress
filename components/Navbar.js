@@ -19,7 +19,7 @@ export default function Navbar() {
           Mission
         </Link>
         <Link href="/rankings" className={styles.link}>
-          Power Rankings
+          Rankings
         </Link>
         <Link href="/editorials" className={styles.link}>
           Editorials

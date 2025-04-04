@@ -118,7 +118,7 @@
   color: #333;
 }
 
-/* Table header */
+/* Table header (sticky) */
 .tableHeader {
   display: flex;
   background: #f0f0f0;
@@ -126,6 +126,9 @@
   font-weight: bold;
   border-bottom: 2px solid #ddd;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .cellRank {
   flex: 0 0 60px;
@@ -334,6 +337,10 @@
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
   .pageTitle {
     font-size: 1.75rem;
   }
@@ -354,5 +361,58 @@
   }
   .nameUnderPhoto {
     font-size: 0.9rem;
+  }
+  
+  /* Center the share bar */
+  .shareBar {
+    justify-content: center;
+  }
+  
+  /* Stack filter bar inputs */
+  .filterBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filterInput,
+  .sortSelect {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Extra mobile adjustments for very small screens */
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+  .weekText {
+    font-size: 0.9rem;
+  }
+  .shareBtn {
+    padding: 0.4rem;
+  }
+  .photo {
+    width: 50px;
+    height: 50px;
+  }
+  .nameUnderPhoto {
+    font-size: 0.8rem;
+  }
+  
+  /* Optional: Stack table rows for extremely narrow screens */
+  .tableHeader, .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cellRank,
+  .cellPhoto,
+  .cellMetascore,
+  .cellWeekly,
+  .cellBaseline,
+  .cellNews,
+  .cellLegislation {
+    width: 100%;
+    text-align: left;
+    padding: 0.25rem 0;
   }
 }
