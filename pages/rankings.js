@@ -196,7 +196,7 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
   }, [rankings, filterText, selectedChamber, selectedState, legislatorsCache])
 
   // Social share URLs.
-  const pageUrl = "http://localhost:3000/rankings" // Update for production.
+  const pageUrl = "https://practical-progress.com/rankings" // Updated for production.
   const pageTitle = `Progressive Power Rankings – Week ${
     week ? new Date(week).toLocaleDateString() : "N/A"
   }`
@@ -207,6 +207,7 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content="Professional Progressive Power Rankings" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       {/* Top Social Share Bar */}
