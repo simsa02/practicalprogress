@@ -1,7 +1,6 @@
 // pages/index.js
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
 export default function Home() {
   return (
     <>
@@ -9,7 +8,6 @@ export default function Home() {
         <title>Practical Progress</title>
         <meta name="description" content="Progressive politics rooted in results, not rhetoric." />
       </Head>
-
       <div className={styles.hero}>
         <video
           autoPlay
@@ -24,7 +22,6 @@ export default function Home() {
           <source src="/background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
         <div className={styles.overlay}>
           <h1 className={styles.title}>Practical Progress</h1>
           <p className={styles.tagline}>Real policy. Real people. Real change.</p>
@@ -36,4 +33,3 @@ export default function Home() {
     </>
   );
 }
-g
