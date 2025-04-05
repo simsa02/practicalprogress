@@ -1,4 +1,4 @@
-/* Desktop Styles (unchanged) */
+/* Container */
 .container {
   max-width: 90%;
   margin: 0 auto;
@@ -8,6 +8,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Main content container */
 .main {
   padding: 1rem;
 }
@@ -344,14 +345,18 @@
 
 /* --- MOBILE OVERRIDE STYLES --- */
 @media (max-width: 768px) {
-  /* General container & header adjustments */
+  /* Extend container to full width on mobile */
   .container {
+    max-width: 100%;
+    margin: 0;
     padding: 1rem;
   }
+  
+  /* General header adjustments */
   .header {
     text-align: center;
     margin-bottom: 1rem;
-    display: block; /* Ensure header is visible on mobile */
+    display: block;
   }
   .pageTitle {
     font-size: 1.75rem;
@@ -361,22 +366,24 @@
     font-size: 1rem;
     margin-bottom: 1rem;
   }
-  /* Expand summary on mobile and remove toggle button */
+  
+  /* Always show full summary without toggle, left-align text */
   .summaryContainer {
     max-height: none;
     overflow: visible;
     margin-bottom: 1rem;
+    text-align: left;
   }
   .summaryToggleContainer {
     display: none;
   }
   
-  /* Share Bar centered */
+  /* Center the share bar */
   .shareBar {
     justify-content: center;
   }
   
-  /* Filter Bar inputs stacked */
+  /* Stack filter bar inputs */
   .filterBar {
     flex-direction: column;
     align-items: stretch;
@@ -387,7 +394,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* Hide the desktop table header since we'll use a card layout */
+  /* Hide desktop table header since we use card layout */
   .tableHeader {
     display: none;
   }
@@ -406,7 +413,8 @@
   .row > div {
     margin-bottom: 0.5rem;
   }
-  /* Force each data cell to display as block with its label */
+  
+  /* Force each data cell to display as block with its label, left aligned */
   .cellRank,
   .cellPhoto,
   .cellMetascore,
@@ -417,20 +425,19 @@
     display: block;
     text-align: left;
   }
-  /* Center photo in card view */
+  
+  /* Remove the "Photo:" label for the photo cell */
+  .cellPhoto[data-label]:before {
+    content: "";
+  }
+  
+  /* Center photo in card view and enlarge it */
   .cellPhoto {
     text-align: center;
   }
-  /* Add labels before each cell */
-  .row div[data-label]:before {
-    content: attr(data-label) ": ";
-    font-weight: bold;
-  }
-  
-  /* Adjust photo size on mobile cards */
   .photo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
   }
   .nameUnderPhoto {
@@ -450,8 +457,8 @@
     padding: 0.4rem;
   }
   .photo {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
   .nameUnderPhoto {
     font-size: 0.8rem;
