@@ -420,6 +420,17 @@
     margin-bottom: 0.5rem;
   }
   
+  /* Ensure descriptor labels are shown for each cell */
+  .row div[data-label]:before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+  }
+  
+  /* Remove the "Photo:" label for the photo cell */
+  .cellPhoto[data-label]:before {
+    content: "";
+  }
+  
   /* Display each cell as block, left aligned */
   .cellRank,
   .cellPhoto,
@@ -430,11 +441,6 @@
   .cellLegislation {
     display: block;
     text-align: left;
-  }
-  
-  /* Remove the "Photo:" label for the photo cell */
-  .cellPhoto[data-label]:before {
-    content: "";
   }
   
   /* Center photo in card view and enlarge it */
