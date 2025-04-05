@@ -420,7 +420,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* Ensure descriptor labels are shown for each cell */
+  /* Ensure descriptor labels are shown for each cell (with one line per score) */
   .row div[data-label]:before {
     content: attr(data-label) ": ";
     font-weight: bold;
