@@ -1,114 +1,101 @@
 .editorialsContainer {
+  padding: 1.5rem;
   max-width: 90%;
   margin: 0 auto;
-  padding: 4rem 1rem 3rem;
-  color: #002855;
-  text-align: center;
 }
 
+/* Desktop page header */
 .pageHeader {
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
-
 .pageHeader h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #002855;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-
 .pageHeader p {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 0.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.2rem;
+  color: #666;
 }
 
+/* Grid of editorial cards */
 .editorialList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
 .editorialItem {
-  background: white;
-  border-left: 6px solid #002855;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  padding: 1.5rem;
-  border-radius: 12px;
-  text-align: left;
-  transition: all 0.3s ease;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .editorialItem:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left-color: #fdbb2d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.editorialContent h2 {
-  font-size: 1.3rem;
+.editorialItem h2 {
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #002855;
 }
 
 .datePublished {
-  font-size: 0.8rem;
-  color: #777;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.8rem;
 }
 
-.summary,
-.expandedText {
-  color: #333;
+.summary {
   font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .toggleButton {
-  background-color: #002855;
-  color: white;
+  background: #0070f3;
+  color: #fff;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 30px;
-  padding: 0.6rem 1.25rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
 }
 
-.toggleButton:hover {
-  background-color: #fdbb2d;
-  color: #002855;
-  transform: scale(1.05);
-}
-
-/* Social Share Bar styles */
+/* Social Share Bar for each card */
 .shareBar {
-  margin-top: 1rem; /* Adjust this value as needed to move logos lower */
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: auto;
 }
-
-/* Social Share Icon styles */
-.shareIcon {
-  width: 24px;  /* Adjust size as needed */
+.shareBtn img {
+  width: 24px;
   height: 24px;
 }
 
-/* Responsive for smaller screens */
+/* Mobile Overrides */
 @media (max-width: 768px) {
   .pageHeader h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-  .editorialContent h2 {
+  .pageHeader p {
+    font-size: 1rem;
+  }
+  .editorialItem h2 {
     font-size: 1.3rem;
   }
-  .toggleButton {
+  .summary {
     font-size: 0.95rem;
-    padding: 0.5rem 1rem;
+  }
+  .toggleButton {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
   }
 }

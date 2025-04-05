@@ -8,7 +8,7 @@ const generateShareUrls = (pageUrl, title) => ({
   reddit: `https://www.reddit.com/submit?url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(title)}`,
   x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(pageUrl)}`,
   facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`,
-  instagram: `#`, // Instagram doesn't support URL sharing
+  instagram: `#`,
   tiktok: `#`
 });
 
@@ -28,75 +28,51 @@ export default function Editorials({ editorials }) {
 
       <div className={styles.editorialList}>
         {editorials.map((editorial, index) => {
-          // Compute the URL for the article.
           const pageUrl = `http://localhost:3000/editorials/${editorial.slug.current}`;
           const shareUrls = generateShareUrls(pageUrl, editorial.title);
 
           return (
             <div key={editorial._id} className={styles.editorialItem}>
-              <div className={styles.editorialContent}>
-                <h2>{editorial.title}</h2>
-                <p className={styles.datePublished}>
-                  {new Date(editorial.publishedDate).toLocaleDateString()}
-                </p>
+              <h2>{editorial.title}</h2>
+              <p className={styles.datePublished}>
+                {new Date(editorial.publishedDate).toLocaleDateString()}
+              </p>
 
-                {expandedIndex === index ? (
-                  <div className={styles.expandedText}>
-                    {editorial.content && (
-                      <PortableText
-                        value={editorial.content}
-                        components={{
-                          block: ({ children }) => <p>{children}</p>,
-                        }}
-                      />
-                    )}
-                  </div>
-                ) : (
-                  <p className={styles.summary}>{editorial.description}</p>
-                )}
-
-                <button className={styles.toggleButton} onClick={() => toggleExpand(index)}>
-                  {expandedIndex === index ? 'Collapse ▲' : 'Read Full Article ▼'}
-                </button>
-
-                {/* Social Share Bar for each article */}
-                <div className={styles.shareBar}>
-                  <a href={shareUrls.reddit} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
-                    <img
-                      src="/images/social/PNG/Color/Reddit.png"
-                      alt="Share on Reddit"
-                      className={styles.shareIcon}
+              {expandedIndex === index ? (
+                <div className={styles.expandedText}>
+                  {editorial.content && (
+                    <PortableText
+                      value={editorial.content}
+                      components={{
+                        block: ({ children }) => <p>{children}</p>,
+                      }}
                     />
-                  </a>
-                  <a href={shareUrls.x} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
-                    <img
-                      src="/images/social/PNG/Color/x.png"
-                      alt="Share on X"
-                      className={styles.shareIcon}
-                    />
-                  </a>
-                  <a href={shareUrls.facebook} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
-                    <img
-                      src="/images/social/PNG/Color/Facebook.png"
-                      alt="Share on Facebook"
-                      className={styles.shareIcon}
-                    />
-                  </a>
-                  <a href={shareUrls.instagram} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
-                    <img
-                      src="/images/social/PNG/Color/Instagram.png"
-                      alt="Share on Instagram"
-                      className={styles.shareIcon}
-                    />
-                  </a>
-                  <a href={shareUrls.tiktok} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
-                    <img
-                      src="/images/social/PNG/Color/Tik Tok.png"
-                      alt="Share on TikTok"
-                      className={styles.shareIcon}
-                    />
-                  </a>
+                  )}
                 </div>
+              ) : (
+                <p className={styles.summary}>{editorial.description}</p>
+              )}
+
+              <button className={styles.toggleButton} onClick={() => toggleExpand(index)}>
+                {expandedIndex === index ? 'Collapse ▲' : 'Read Full Article ▼'}
+              </button>
+
+              <div className={styles.shareBar}>
+                <a href={shareUrls.reddit} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
+                  <img src="/images/social/PNG/Color/Reddit.png" alt="Share on Reddit" />
+                </a>
+                <a href={shareUrls.x} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
+                  <img src="/images/social/PNG/Color/x.png" alt="Share on X" />
+                </a>
+                <a href={shareUrls.facebook} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
+                  <img src="/images/social/PNG/Color/Facebook.png" alt="Share on Facebook" />
+                </a>
+                <a href={shareUrls.instagram} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
+                  <img src="/images/social/PNG/Color/Instagram.png" alt="Share on Instagram" />
+                </a>
+                <a href={shareUrls.tiktok} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
+                  <img src="/images/social/PNG/Color/Tik Tok.png" alt="Share on TikTok" />
+                </a>
               </div>
             </div>
           );

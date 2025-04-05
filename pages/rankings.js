@@ -71,7 +71,6 @@ const getLegislatorDetails = (name, legislatorsCache) => {
  * convert it into an array of block objects.
  */
 function generateKey() {
-  // In modern browsers, crypto.randomUUID() is available.
   if (typeof crypto !== 'undefined' && crypto.randomUUID) {
     return crypto.randomUUID()
   }
@@ -81,7 +80,6 @@ function generateKey() {
 function normalizePortableText(value) {
   if (Array.isArray(value)) return value
   if (typeof value === 'string') {
-    // Split on double newlines (paragraph breaks)
     const paragraphs = value.split(/\n\s*\n/).filter((para) => para.trim().length > 0)
     return paragraphs.map((para) => ({
       _type: 'block',
@@ -102,25 +100,20 @@ function normalizePortableText(value) {
 }
 
 export async function getStaticProps() {
-  // Fetch power ranking documents from Sanity.
   const rankingsQuery = groq`*[_type == "powerRanking"] | order(week desc, rank asc)`
   const rankings = await sanityClient.fetch(rankingsQuery)
 
-  // Fetch weekly meta info from Sanity via a "powerRankingWeek" document.
   const metaQuery = groq`*[_type == "powerRankingWeek"] | order(weekDate desc)[0]`
   const meta = await sanityClient.fetch(metaQuery)
   const week = meta?.weekDate || null
-  // Ensure meta summary is normalized: if it's a string, convert to an array of blocks.
   const summary =
     meta?.summary && Array.isArray(meta.summary)
       ? meta.summary
       : normalizePortableText(meta?.summary || "")
 
-  // Fetch the Score Explanation document from Sanity.
   const scoreExplanationQuery = groq`*[_type == "scoreExplanation"][0]`
   const scoreExplanation = await sanityClient.fetch(scoreExplanationQuery)
 
-  // Load legislators cache from the local file system.
   const cachePath = path.join(process.cwd(), "legislators_cache.json")
   let legislatorsCache = {}
   try {
@@ -141,14 +134,11 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
   const [filterText, setFilterText] = useState("")
   const [selectedChamber, setSelectedChamber] = useState("All")
   const [selectedState, setSelectedState] = useState("All")
-  const [summaryExpanded, setSummaryExpanded] = useState(false) // For weekly summary toggle
+  const [summaryExpanded, setSummaryExpanded] = useState(false)
 
-  // Toggle for each politician container.
   const toggle = (id) => setExpanded(expanded === id ? null : id)
-  // Toggle for weekly summary.
   const toggleSummary = () => setSummaryExpanded(!summaryExpanded)
 
-  // Build available filter options.
   const availableChambers = useMemo(() => {
     const chambers = new Set()
     rankings.forEach((p) => {
@@ -169,7 +159,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
     return ["All", ...Array.from(states).sort()]
   }, [rankings, legislatorsCache])
 
-  // Filter rankings.
   const filteredRankings = useMemo(() => {
     let filtered = rankings.filter((p) =>
       p.name.toLowerCase().includes(filterText.toLowerCase())
@@ -190,13 +179,11 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
         return false
       })
     }
-    // Sort by score descending (if available), otherwise by rank.
     filtered.sort((a, b) => (b.score || 0) - (a.score || 0))
     return filtered
   }, [rankings, filterText, selectedChamber, selectedState, legislatorsCache])
 
-  // Social share URLs.
-  const pageUrl = "https://practical-progress.com/rankings" // Updated for production.
+  const pageUrl = "https://practical-progress.com/rankings"
   const pageTitle = `Progressive Power Rankings – Week ${
     week ? new Date(week).toLocaleDateString() : "N/A"
   }`
@@ -210,7 +197,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      {/* Top Social Share Bar */}
       <div className={styles.shareBar}>
         <a href={shareUrls.reddit} target="_blank" rel="noopener noreferrer" className={styles.shareBtn}>
           <img src="/images/social/PNG/Color/Reddit.png" alt="Share on Reddit" className={styles.shareIcon} />
@@ -232,7 +218,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
       <header className={styles.header}>
         <h1 className={styles.pageTitle}>Progressive Power Rankings</h1>
         <p className={styles.weekText}>Week {week ? new Date(week).toLocaleDateString() : "N/A"}</p>
-        {/* Weekly summary with its own toggle */}
         <div className={`${styles.summaryContainer} ${summaryExpanded ? styles.expanded : ''}`}>
           <PortableText value={Array.isArray(summary) ? summary : normalizePortableText(summary)} />
         </div>
@@ -243,7 +228,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
         </div>
       </header>
 
-      {/* Filter Bar */}
       <div className={styles.filterBar}>
         <input
           type="text"
@@ -278,7 +262,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
 
       <main className={styles.main}>
         <div className={styles.tableWrapper}>
-          {/* Table header (hidden on mobile if desired) */}
           <div className={styles.tableHeader}>
             <div className={styles.cellRank}>Rank</div>
             <div className={styles.cellPhoto}>Photo</div>
@@ -288,7 +271,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
             <div className={styles.cellNews}>Media Impact</div>
             <div className={styles.cellLegislation}>Legislative Floor</div>
           </div>
-          {/* Ranking rows */}
           {filteredRankings.length > 0 ? (
             filteredRankings.map((p) => (
               <div key={p._id} className={styles.rankingRow} onClick={() => toggle(p._id)}>
@@ -325,7 +307,6 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
                     {getLegislateFloorDisplay(p.legislation_score)}
                   </div>
                 </div>
-                {/* "Read More" toggle centered just above the break */}
                 <div className={styles.readMoreContainer}>
                   <button
                     className={styles.readMoreButton}
@@ -381,14 +362,12 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
         </div>
       </main>
 
-      {/* "How the Score Works" Section from Sanity */}
       {scoreExplanation?.content && (
         <section className={styles.scoreExplanation}>
           <PortableText value={scoreExplanation.content} />
         </section>
       )}
 
-      {/* Bottom Social Share Bar */}
       <section className={styles.extraSection}>
         <h2 className={styles.extraTitle}>Connect &amp; Share</h2>
         <p className={styles.extraText}>

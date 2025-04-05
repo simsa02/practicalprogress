@@ -1,4 +1,4 @@
-/* Container */
+/* Desktop Styles (unchanged) */
 .container {
   max-width: 90%;
   margin: 0 auto;
@@ -8,17 +8,14 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Main content container */
 .main {
   padding: 1rem;
 }
 
-/* Ranking row container */
 .rankingRow {
   margin-bottom: 1rem;
 }
 
-/* Social Share Bar */
 .shareBar {
   display: flex;
   justify-content: flex-end;
@@ -339,46 +336,47 @@
   to { opacity: 1; }
 }
 
-/* Responsive: Wrap table for mobile */
+/* Responsive: Desktop table wrapper remains the same */
 .tableWrapper {
   overflow-x: auto;
   width: 100%;
 }
 
-/* Mobile adjustments */
+/* --- MOBILE OVERRIDE STYLES --- */
 @media (max-width: 768px) {
+  /* General container & header adjustments */
   .container {
     padding: 1rem;
   }
-  
+  .header {
+    text-align: center;
+    margin-bottom: 1rem;
+    display: block; /* Ensure header is visible on mobile */
+  }
   .pageTitle {
     font-size: 1.75rem;
+    margin-bottom: 0.5rem;
   }
   .weekText {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
-  .cellRank,
-  .cellMetascore,
-  .cellWeekly,
-  .cellBaseline,
-  .cellNews,
-  .cellLegislation {
-    font-size: 0.9rem;
+  /* Expand summary on mobile and remove toggle button */
+  .summaryContainer {
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 1rem;
   }
-  .photo {
-    width: 60px;
-    height: 60px;
-  }
-  .nameUnderPhoto {
-    font-size: 0.9rem;
+  .summaryToggleContainer {
+    display: none;
   }
   
-  /* Center the share bar */
+  /* Share Bar centered */
   .shareBar {
     justify-content: center;
   }
   
-  /* Stack filter bar inputs */
+  /* Filter Bar inputs stacked */
   .filterBar {
     flex-direction: column;
     align-items: stretch;
@@ -389,9 +387,54 @@
     margin-bottom: 0.5rem;
   }
   
-  /* Hide header on mobile */
-  .header {
+  /* Hide the desktop table header since we'll use a card layout */
+  .tableHeader {
     display: none;
+  }
+  
+  /* Convert ranking rows to mobile cards */
+  .rankingRow {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .row {
+    display: block;
+  }
+  .row > div {
+    margin-bottom: 0.5rem;
+  }
+  /* Force each data cell to display as block with its label */
+  .cellRank,
+  .cellPhoto,
+  .cellMetascore,
+  .cellWeekly,
+  .cellBaseline,
+  .cellNews,
+  .cellLegislation {
+    display: block;
+    text-align: left;
+  }
+  /* Center photo in card view */
+  .cellPhoto {
+    text-align: center;
+  }
+  /* Add labels before each cell */
+  .row div[data-label]:before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+  }
+  
+  /* Adjust photo size on mobile cards */
+  .photo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .nameUnderPhoto {
+    font-size: 0.9rem;
   }
 }
 
@@ -412,30 +455,5 @@
   }
   .nameUnderPhoto {
     font-size: 0.8rem;
-  }
-  
-  /* Stack table rows for extremely narrow screens */
-  .tableHeader, .row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .cellRank,
-  .cellPhoto,
-  .cellMetascore,
-  .cellWeekly,
-  .cellBaseline,
-  .cellNews,
-  .cellLegislation {
-    width: 100%;
-    text-align: left;
-    padding: 0.25rem 0;
-  }
-  
-  /* Show descriptors on each cell using data-label */
-  .row div[data-label]:before {
-    content: attr(data-label) ": ";
-    font-weight: bold;
-    display: inline-block;
-    width: 120px;
   }
 }
