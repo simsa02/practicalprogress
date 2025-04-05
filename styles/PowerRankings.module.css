@@ -420,7 +420,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /* Ensure descriptor labels are shown for each cell (with one line per score) */
+  /* Ensure descriptor labels are shown for each cell (one line per score) */
   .row div[data-label]:before {
     content: attr(data-label) ": ";
     font-weight: bold;
@@ -429,9 +429,9 @@
     text-overflow: ellipsis;
   }
   
-  /* Remove the "Photo:" label for the photo cell */
-  .cellPhoto[data-label]:before {
-    content: "";
+  /* Remove the "Photo:" label completely */
+  .cellPhoto::before {
+    display: none !important;
   }
   
   /* Display each cell as block, left aligned, with one-line text */
