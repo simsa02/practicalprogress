@@ -264,7 +264,7 @@ export default function Rankings({ rankings, week, summary, scoreExplanation, le
         <div className={styles.tableWrapper}>
           <div className={styles.tableHeader}>
             <div className={styles.cellRank}>Rank</div>
-            <div className={styles.cellPhoto}>Photo</div>
+            <div className={styles.cellPhoto}></div>
             <div className={styles.cellMetascore}>Metascore</div>
             <div className={styles.cellWeekly}>Weekly Change</div>
             <div className={styles.cellBaseline}>Baseline Score</div>
