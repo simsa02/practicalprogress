@@ -424,6 +424,9 @@
   .row div[data-label]:before {
     content: attr(data-label) ": ";
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   /* Remove the "Photo:" label for the photo cell */
@@ -431,7 +434,7 @@
     content: "";
   }
   
-  /* Display each cell as block, left aligned */
+  /* Display each cell as block, left aligned, with one-line text */
   .cellRank,
   .cellPhoto,
   .cellMetascore,
@@ -441,6 +444,9 @@
   .cellLegislation {
     display: block;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   /* Center photo in card view and enlarge it */
