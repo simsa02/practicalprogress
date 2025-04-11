@@ -21,7 +21,7 @@ const ShareButtons = ({ url, title }) => {
           rel="noopener noreferrer"
           className={styles.iconLink}
         >
-          <Image src="/images/social/PNG/Color/facebook.png" alt="Facebook" width={28} height={28} className={styles.icon} />
+          <Image src="/images/social/PNG/Color/Facebook.png" alt="Facebook" width={28} height={28} className={styles.icon} />
         </a>
         <a
           href={`https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`}
@@ -29,7 +29,7 @@ const ShareButtons = ({ url, title }) => {
           rel="noopener noreferrer"
           className={styles.iconLink}
         >
-          <Image src="/images/social/PNG/Color/reddit.png" alt="Reddit" width={28} height={28} className={styles.icon} />
+          <Image src="/images/social/PNG/Color/Reddit.png" alt="Reddit" width={28} height={28} className={styles.icon} />
         </a>
         <a
           href={`https://www.instagram.com/`}
@@ -37,7 +37,7 @@ const ShareButtons = ({ url, title }) => {
           rel="noopener noreferrer"
           className={styles.iconLink}
         >
-          <Image src="/images/social/PNG/Color/instagram.png" alt="Instagram" width={28} height={28} className={styles.icon} />
+          <Image src="/images/social/PNG/Color/Instagram.png" alt="Instagram" width={28} height={28} className={styles.icon} />
         </a>
       </div>
     </div>
