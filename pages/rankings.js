@@ -328,10 +328,10 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
               <img src="/images/social/PNG/Color/x.png" alt="Share on X" width={24} height={24} />
             </a>
             <a href={`https://www.facebook.com/sharer/sharer.php?u=https://practicalprogress.org/rankings#${name.replace(/\s+/g, '-')}`} target="_blank" rel="noopener noreferrer">
-              <img src="/images/social/PNG/Color/facebook.png" alt="Share on Facebook" width={24} height={24} />
+              <img src="/images/social/PNG/Color/Facebook.png" alt="Share on Facebook" width={24} height={24} />
             </a>
             <a href={`https://reddit.com/submit?url=https://practicalprogress.org/rankings#${name.replace(/\s+/g, '-')}&title=Check out ${name}'s ranking!`} target="_blank" rel="noopener noreferrer">
-              <img src="/images/social/PNG/Color/reddit.png" alt="Share on Reddit" width={24} height={24} />
+              <img src="/images/social/PNG/Color/Reddit.png" alt="Share on Reddit" width={24} height={24} />
             </a>
           </div>
         </div>
