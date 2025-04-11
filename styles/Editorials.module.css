@@ -1,10 +1,13 @@
+/* Editorials.module.css */
+
+/* Container for the listing page */
 .editorialsContainer {
   padding: 1.5rem;
   max-width: 90%;
   margin: 0 auto;
 }
 
-/* Desktop page header */
+/* Page Header */
 .pageHeader {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -18,13 +21,14 @@
   color: #666;
 }
 
-/* Grid of editorial cards */
+/* Grid of Editorial Cards */
 .editorialList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
+/* Individual Editorial Card */
 .editorialItem {
   background: #fff;
   border: 1px solid #ddd;
@@ -34,30 +38,30 @@
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .editorialItem:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
-
 .editorialItem h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
 .datePublished {
   font-size: 0.9rem;
   color: #999;
   margin-bottom: 0.8rem;
 }
 
+/* Summary text – using pre-wrap to preserve spaces and line breaks */
 .summary {
   font-size: 1rem;
   color: #333;
   margin-bottom: 1rem;
   flex-grow: 1;
+  white-space: pre-wrap !important;
 }
 
+/* Toggle Button for Expanding/Collapsing Card Content */
 .toggleButton {
   background: #0070f3;
   color: #fff;
@@ -68,7 +72,7 @@
   margin-bottom: 1rem;
 }
 
-/* Social Share Bar for each card */
+/* Social Share Bar at the bottom of each card */
 .shareBar {
   display: flex;
   justify-content: center;

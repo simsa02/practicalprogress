@@ -28,7 +28,11 @@ export default function Editorials({ editorials }) {
 
       <div className={styles.editorialList}>
         {editorials.map((editorial, index) => {
-          const pageUrl = `http://localhost:3000/editorials/${editorial.slug.current}`;
+          // Use optional chaining to safely access slug.current.
+          const slugCurrent = editorial.slug?.current;
+          // If there is no valid slug, skip rendering this item.
+          if (!slugCurrent) return null;
+          const pageUrl = `http://localhost:3000/editorials/${slugCurrent}`;
           const shareUrls = generateShareUrls(pageUrl, editorial.title);
 
           return (
@@ -83,7 +87,8 @@ export default function Editorials({ editorials }) {
 }
 
 export async function getStaticProps() {
-  const query = `*[_type == "editorial"] | order(publishedDate desc) {
+  // Filter to only include editorials with a defined slug.current.
+  const query = `*[_type == "editorial" && defined(slug.current)] | order(publishedDate desc) {
     _id,
     title,
     description,

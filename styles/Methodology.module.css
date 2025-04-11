@@ -1,0 +1,58 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.content {
+  font-size: 1rem;
+  color: #333;
+  white-space: pre-wrap; /* preserves spacing + line breaks */
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+.expandButtonLarge {
+  background-color: #0046aa;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.expandButtonLarge:hover {
+  background-color: #003580;
+  transform: translateY(-1px);
+}

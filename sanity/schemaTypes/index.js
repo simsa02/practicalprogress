@@ -2,15 +2,19 @@
 import { editorial } from "./editorial";
 import { homePage } from "./homePage";
 import { missionPage } from "./missionPage";
-import { powerRanking } from "./powerRanking";
-import { powerRankingWeek } from "./powerRankingWeek";
 import { scoreExplanation } from './scoreExplanation';
+import weeklyPowerRanking from './weeklyPowerRanking'
+import politicianRankingEntry from './politicianRankingEntry'
+import blockContent from './blockContent';
+import methodology from './methodology'
 
 export const schemaTypes = [
   editorial, 
   homePage, 
   missionPage, 
-  powerRanking, 
-  powerRankingWeek,
-  scoreExplanation
-];;
+  scoreExplanation,
+  weeklyPowerRanking,
+  blockContent,
+  methodology,
+  politicianRankingEntry
+];

@@ -1,0 +1,36 @@
+.shareWrapper {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .iconLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .iconLink:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+  }
+  

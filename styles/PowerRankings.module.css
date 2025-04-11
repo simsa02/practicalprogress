@@ -1,484 +1,374 @@
-/* Container */
 .container {
   max-width: 90%;
   margin: 0 auto;
-  padding: 1.5rem;
-  background: #ffffff;
-  color: #333;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
 }
 
-/* Main content container */
-.main {
-  padding: 1rem;
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.25rem;
 }
 
-.rankingRow {
-  margin-bottom: 1rem;
+.week {
+  text-align: left;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
 }
 
-.shareBar {
+.pageSummary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.headerRow {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.shareBtn {
-  background: rgba(150, 150, 150, 0.1);
-  padding: 0.5rem;
+
+.rank {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #222;
+  width: 3rem;
+  text-align: center;
+}
+
+.photo {
+  margin: 0 1rem;
+  width: 90px;
+  height: 100px;
   border-radius: 4px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.metaBlock {
+  flex-grow: 1;
+  min-width: 180px;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.chamber {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+}
+
+.metascore {
+  font-weight: 600;
+  color: #111;
+}
+
+.change {
+  font-size: 0.9rem;
+  color: #555;
+}
+.expandButton {
+  background: #f5f5f5;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.expandButton:hover {
+  background: #eee;
+}
+
+.levelOne {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #ccc;
+}
+
+.levelTwo {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.coreScores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.coreScores span {
+  background: #eef1f5;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.badgeList {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0.75rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.badge {
+  background: #dce2ec;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.paragraph {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.voteList {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.loadMoreButton {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #0058cc;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: #0045a0;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.filters label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.dropdown,
+.searchInput {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.searchInput {
+  min-width: 180px;
+}
+
+.noResults {
+  text-align: center;
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: #888;
+}
+
+.shareSmall {
+  margin-top: 0.35rem;
+}
+
+.shareSmall a {
   display: inline-block;
-  transition: background 0.3s ease;
+  margin-right: 0.4rem;
 }
-.shareBtn:hover {
-  background: #005bb5;
-}
-.shareIcon {
+
+.shareSmall img {
   width: 20px;
   height: 20px;
 }
 
-/* Header */
-.header {
-  text-align: left;
-  margin-bottom: 1.5rem;
-}
-.pageTitle {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-  color: #222;
-}
-.weekText {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #555;
-}
-.metaArticle {
-  max-width: 100%;
-  margin: 0 auto 1.5rem;
-  padding: 1rem;
-  border-left: 4px solid #0070f3;
-  background: #f9f9f9;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-}
-.metaParagraph {
-  margin: 0.5rem 0;
+.fullHeader {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(-50vw + 50%);
+  padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
-/* Weekly Summary Toggle */
-.summaryContainer {
-  overflow: hidden;
-  max-height: 200px;
-  transition: max-height 0.3s ease;
-}
-.summaryContainer.expanded {
-  max-height: none;
-}
-.summaryToggleContainer {
-  text-align: center;
-  margin: 0.5rem 0;
-}
-.summaryToggleButton {
-  background: linear-gradient(to right, #0070f3, #0057c2);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-.summaryToggleButton:hover {
-  transform: scale(1.05);
-  background: linear-gradient(to right, #0057c2, #003f8c);
-}
-
-/* Filter Bar */
-.filterBar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #0070f3, #79b8ff);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.filterInput,
-.sortSelect {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-}
-.filterInput {
-  width: 220px;
-  background: #fff;
-  color: #333;
-}
-.sortSelect {
-  background: #fff;
-  color: #333;
-}
-
-/* Table header (sticky) */
-.tableHeader {
-  display: flex;
-  background: #f0f0f0;
-  padding: 0.75rem;
-  font-weight: bold;
-  border-bottom: 2px solid #ddd;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-.cellRank {
-  flex: 0 0 60px;
-  text-align: center;
-}
-.cellPhoto {
-  flex: 0 0 140px;
-  text-align: center;
-}
-.cellMetascore,
-.cellWeekly,
-.cellBaseline,
-.cellNews,
-.cellLegislation {
-  flex: 1;
-  text-align: center;
-}
-
-/* Row styling */
-.row {
-  display: flex;
-  padding: 0.75rem;
-  border-bottom: 1px solid #eee;
-  align-items: center;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-.row:hover {
-  background: #f9f9f9;
-}
-.cellRank {
-  font-size: 1.1rem;
-  color: #b8860b;
-}
-.cellMetascore {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #0070f3;
-}
-.cellWeekly {
-  font-size: 1.1rem;
-  color: #555;
-}
-.cellNews {
-  font-size: 1.1rem;
-  color: #d9534f;
-}
-.cellLegislation {
-  font-size: 1.1rem;
-  color: #5cb85c;
-}
-.cellBaseline {
-  font-size: 1.1rem;
-  color: #b700ff;
-}
-
-/* Photo styling */
-.photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid #ddd;
-}
-
-/* Name and details under photo */
-.nameUnderPhoto {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  color: #333;
-  text-align: center;
-}
-.legislatorDetails {
-  font-size: 0.9rem;
-  color: #777;
-  text-align: center;
-}
-
-/* Read More toggle */
-.readMoreContainer {
-  text-align: center;
-  margin: 0.5rem 0;
-}
-.readMoreButton {
-  background: linear-gradient(to right, #fdbb2d, #fdbb2d);
-  color: #002855;
+.methodologyButton {
+  display: inline-block;
+  margin: 1rem 0 2rem;
   padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: #0046aa;
+  color: #fff;
   border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-.readMoreButton:hover {
-  transform: scale(1.05);
-  background: linear-gradient(to right, #fdbb2d, #fdbb2d);
-}
-.readMoreButton:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 65, 107, 0.5);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
-/* Expanded row */
-.expandedRow {
-  background-color: #fafafa;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  animation: fadeIn 0.3s ease;
+.methodologyButton:hover {
+  background-color: #003580;
 }
-.expandedHeading {
-  text-align: center;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-.expandedSummary {
-  margin: 0.5rem 0;
-}
-
-/* Score Boxes */
-.scoreBoxes {
-  display: flex;
-  gap: 1rem;
+.expandButtonLarge {
+  background-color: #0046aa;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.2rem;
   margin-top: 1rem;
-  flex-wrap: wrap;
-}
-.scoreBox {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 0.5rem;
-  flex: 1;
-  text-align: center;
-  min-width: 100px;
-}
-.scoreBox span:first-child {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-}
-
-/* Score Explanation Section */
-.scoreExplanation {
-  background-color: #eef6ff;
-  border: 1px solid #cce0ff;
   border-radius: 8px;
-  padding: 1.5rem;
-  margin: 2rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  display: inline-block;
 }
 
-/* Extra Section */
-.extraSection {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: #f7f7f7;
-  border-radius: 8px;
-  text-align: center;
+.expandButtonLarge:hover {
+  background-color: #003580;
+  transform: translateY(-1px);
 }
-.extraTitle {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #222;
-}
-.extraText {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  color: #555;
-}
-.extraShare {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* No Results */
-.noResults {
-  text-align: center;
-  font-size: 1.125rem;
-  color: #777;
-  margin-top: 2rem;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem 0;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Responsive: Desktop table wrapper remains the same */
-.tableWrapper {
-  overflow-x: auto;
-  width: 100%;
-}
-
-/* --- MOBILE OVERRIDE STYLES --- */
-@media (max-width: 768px) {
-  /* Extend container to full width on mobile */
-  .container {
-    max-width: 100%;
-    margin: 0;
-    padding: 1rem;
+/* Mobile Enhancements */
+@media (max-width: 600px) {
+  .headerRow {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  /* General header adjustments */
-  .header {
-    text-align: center;
-    margin-bottom: 1rem;
-    display: block;
-  }
-  .pageTitle {
-    font-size: 1.75rem;
+
+  .photo {
     margin-bottom: 0.5rem;
+    width: 120px;
+    height: 130px;
+    align-items: center;
+
   }
-  .weekText {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Summary: initially truncated, left-aligned, with toggle visible */
-  .summaryContainer {
-    max-height: 200px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    text-align: left;
-    transition: max-height 0.3s ease;
-  }
-  .summaryContainer.expanded {
-    max-height: none;
-  }
-  .summaryToggleContainer {
-    display: block;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-  
-  /* Center the share bar */
-  .shareBar {
-    justify-content: center;
-  }
-  
-  /* Stack filter bar inputs */
-  .filterBar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .filterInput,
-  .sortSelect {
+
+  .metaBlock {
     width: 100%;
-    margin-bottom: 0.5rem;
   }
-  
-  /* Hide desktop table header (we use card layout) */
-  .tableHeader {
-    display: none;
+
+  .coreScores {
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  /* Convert ranking rows to mobile cards */
-  .rankingRow {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
+
+  .levelTwo p,
+  .levelTwo li {
+    font-size: 0.9rem;
   }
-  
-  .row {
-    display: block;
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .row > div {
-    margin-bottom: 0.5rem;
+
+  .filters label {
+    margin-top: 1rem;
   }
-  
-  /* Ensure descriptor labels are shown for each cell (one line per score) */
-  .row div[data-label]:before {
-    content: attr(data-label) ": ";
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  /* Remove the "Photo:" label completely */
-  .cellPhoto::before {
-    display: none !important;
-  }
-  
-  /* Display each cell as block, left aligned, with one-line text */
-  .cellRank,
-  .cellPhoto,
-  .cellMetascore,
-  .cellWeekly,
-  .cellBaseline,
-  .cellNews,
-  .cellLegislation {
-    display: block;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  /* Center photo in card view and enlarge it */
-  .cellPhoto {
+
+  .methodologyButton {
+    width: 100%;
     text-align: center;
   }
-  .photo {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
+  .expandButtonLarge {
+    background-color: #0046aa;
+    color: #fff;
+    border: none;
+    padding: 0.55rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    display: inline-block;
   }
-  .nameUnderPhoto {
-    font-size: 0.9rem;
+  
+  .expandButtonLarge:hover {
+    background-color: #003580;
+    transform: translateY(-1px);
+  }  
+  @media (max-width: 600px) {
+    .badgeList {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .badge {
+      max-width: 100%;
+      word-wrap: break-word;
+      white-space: normal;
+      line-height: 1.6;
+    }
+  
+    .levelTwo .badgeList {
+      gap: 0.5rem 0.25rem;
+    }
   }
-}
-
-/* Extra mobile adjustments for very small screens */
-@media (max-width: 480px) {
-  .pageTitle {
-    font-size: 1.5rem;
-  }
-  .weekText {
-    font-size: 0.9rem;
-  }
-  .shareBtn {
-    padding: 0.4rem;
-  }
-  .photo {
-    width: 70px;
-    height: 70px;
-  }
-  .nameUnderPhoto {
-    font-size: 0.8rem;
-  }
+  
 }

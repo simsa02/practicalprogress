@@ -108,4 +108,71 @@
     width: 100%;
     text-align: center;
   }
+  /* PowerRankings_Part3.module.css */
+
+.expandButtonLarge {
+  background: #f5f5f5;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.expandButton:hover {
+  background: #eee;
+}
+
+.levelOne {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #ccc;
+}
+
+.levelTwo {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.coreScores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.coreScores span {
+  background: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .photo {
+    margin-bottom: 0.5rem;
+  }
+
+  .metaBlock {
+    width: 100%;
+  }
+
+  .coreScores {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 }

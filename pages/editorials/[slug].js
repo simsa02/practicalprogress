@@ -2,12 +2,12 @@ import { sanityClient } from '../../lib/sanity/sanity';
 import styles from '../../styles/Editorial.module.css';
 import { PortableText } from '@portabletext/react';
 
-// Helper to generate a unique key for blocks.
+// Helper to generate a unique key for Portable Text blocks.
 function generateKey() {
   return Math.random().toString(36).substring(2);
 }
 
-// Normalize plain string content (with paragraph breaks) into a Portable Text array.
+// Normalize plain string content into a Portable Text array.
 function normalizePortableText(value) {
   if (Array.isArray(value)) return value;
   if (typeof value === 'string') {
@@ -35,14 +35,11 @@ const generateShareUrls = (pageUrl, title) => ({
   reddit: `https://www.reddit.com/submit?url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(title)}`,
   x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(pageUrl)}`,
   facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`,
-  instagram: `#`,  // Instagram doesn't support URL sharing like this.
-  tiktok: `#`
 });
 
 export default function EditorialArticle({ editorial }) {
   if (!editorial) return <div>Editorial not found</div>;
 
-  // Use publishedDate field from the new schema.
   const formattedDate = editorial.publishedDate
     ? new Date(editorial.publishedDate).toLocaleDateString()
     : 'Date Unknown';
@@ -52,8 +49,8 @@ export default function EditorialArticle({ editorial }) {
     ? editorial.content
     : normalizePortableText(editorial.content);
 
-  // Compute the article's URL; update the domain for production.
-  const pageUrl = `http://localhost:3000/editorials/${editorial.slug.current}`;
+  // Use optional chaining for safety.
+  const pageUrl = `http://localhost:3000/editorials/${editorial.slug?.current}`;
   const shareUrls = generateShareUrls(pageUrl, editorial.title);
 
   return (
@@ -90,7 +87,7 @@ export default function EditorialArticle({ editorial }) {
           <PortableText
             value={content}
             components={{
-              block: ({ children }) => <p>{children}</p>,
+              block: ({ children }) => <p>{children}</p>, // Ensure these <p> tags use styles with "white-space" set appropriately.
             }}
           />
         )}
