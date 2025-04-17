@@ -6,7 +6,7 @@ import fs from 'fs';
 import fsExtra from 'fs-extra';
 import yaml from 'js-yaml';
 import Fuse from 'fuse.js';
-import path from 'path'; // Added missing import
+import path from 'path';
 import styles from '../styles/PowerRankings.module.css';
 import ShareButtons from '../components/ShareButtons';
 import Link from 'next/link';
@@ -35,7 +35,21 @@ const query = groq`*[_type == "weeklyPowerRanking"] | order(week desc)[0]{
     summary,
     newsSummary,
     votes,
-    timestamp
+    timestamp,
+    bills[] {
+      billNumber,
+      title,
+      url,
+      policyKeyword,
+      progressiveScore,
+      statusDate
+    },
+    citations[] {
+      title,
+      url,
+      source,
+      published
+    }
   }
 }`;
 
@@ -90,7 +104,6 @@ export async function getStaticProps() {
   };
 }
 
-// Helper function to convert rich text (Portable Text) to plain text.
 const toPlainText = (blocks) => {
   if (!Array.isArray(blocks)) return '';
   return blocks
@@ -109,7 +122,7 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
   const [sortMetric, setSortMetric] = useState('');
   const [sortOrder, setSortOrder] = useState('desc');
 
-  const truncateSummary = (text, wordLimit = 75) => {
+  const truncateSummary = (text, wordLimit = 40) => {
     if (typeof text !== 'string') return '';
     const words = text.split(' ');
     return words.length > wordLimit
@@ -130,18 +143,15 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
     return stateMatch && chamberMatch && nameMatch;
   });
 
-  const legislativeScores = rankings.map(r => r.coreScores?.legislativePower || 0);
-  const maxScore = Math.max(...legislativeScores);
-  const scaleScore = (score) => maxScore === 0 ? 0 : Math.round((score / maxScore) * 100);
-
   const sorted = [...filtered].sort((a, b) => {
     if (!sortMetric) return 0;
-    const valA = a.coreScores?.[sortMetric] ?? 0;
-    const valB = b.coreScores?.[sortMetric] ?? 0;
+    const valA = sortMetric === 'metascore' ? a.metascore ?? 0 : a.coreScores?.[sortMetric] ?? 0;
+    const valB = sortMetric === 'metascore' ? b.metascore ?? 0 : b.coreScores?.[sortMetric] ?? 0;
     return sortOrder === 'desc' ? valB - valA : valA - valB;
   });
 
   const visibleEntries = sorted.slice(0, visibleCount);
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -154,8 +164,7 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
               : (showFullSummary 
                   ? <PortableText value={summary} />
                   : truncateSummary(toPlainText(summary))
-                )
-            }
+                )}
           </p>
           <button
             className={styles.expandButtonLarge}
@@ -163,10 +172,16 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
           >
             {showFullSummary ? 'Hide Full Summary' : 'Read More'}
           </button>
+
+          <div className={styles.buttonRow}>
+            <Link href="/methodology" className={styles.methodologyButton}>
+              📘 View Methodology
+            </Link>
+            <Link href="/rankings/archive" className={styles.methodologyButton}>
+              📚 View Past Weeks
+            </Link>
+          </div>
         </div>
-        <Link href="/methodology" className={styles.methodologyButton}>
-          📘 View Methodology
-        </Link>
       </div>
 
       <div className={styles.filters}>
@@ -217,8 +232,9 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
           <option value="weeklyMediaImpact">Media Impact</option>
           <option value="progressiveConsistency">Progressive Consistency</option>
           <option value="legislativePower">Legislative Power</option>
-          <option value="finance">Donor Ethics</option>
           <option value="ideology">Ideology</option>
+          <option value="finance">Donor Ethics</option>
+          <option value="metascore">Metascore</option>
         </select>
 
         <label htmlFor="sortOrder">Order:</label>
@@ -242,7 +258,6 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
             entry={entry}
             legislatorsCache={legislatorsCache}
             bioguideMap={bioguideMap}
-            scaledScore={scaleScore(entry.coreScores?.legislativePower || 0)}
           />
         ))
       )}
@@ -264,7 +279,7 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
   );
 }
 
-function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
+function RankingCard({ entry, legislatorsCache, bioguideMap }) {
   const [expanded, setExpanded] = useState(false);
   const [deepExpanded, setDeepExpanded] = useState(false);
 
@@ -281,6 +296,8 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
     legislativeDetails,
     ideologyRaw,
     votes,
+    bills,
+    citations,
   } = entry;
 
   const change = lastRank ? lastRank - rank : 0;
@@ -290,14 +307,18 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
     : 'Chamber';
 
   const bioguide = cached.bioguide || bioguideMap[name];
+  const anchorId = name.replace(/\s+/g, '-');
   let photoUrl = '/images/politicians/default-politician.jpg';
 
   if (bioguide) {
     photoUrl = `https://www.congress.gov/img/member/${bioguide.toLowerCase()}_200.jpg`;
   }
 
+  const shareUrl = `https://practicalprogress.org/rankings#${anchorId}`;
+  const shareText = `Check out ${name}'s ranking on the Progressive Power Rankings!`;
+
   return (
-    <div className={styles.card} id={name.replace(/\s+/g, '-')}>
+    <div className={styles.card} id={anchorId}>
       <div className={styles.headerRow}>
         <div className={styles.rank}>{rank}</div>
         <div className={styles.photo}>
@@ -324,18 +345,20 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
             {change === 0 ? '—' : change > 0 ? `▲ ${change}` : `▼ ${Math.abs(change)}`} from last week
           </p>
           <div className={styles.shareSmall}>
-            <a href={`https://twitter.com/intent/tweet?text=Check out ${name}'s ranking on the Progressive Power Rankings!&url=https://practicalprogress.org/rankings#${name.replace(/\s+/g, '-')}`} target="_blank" rel="noopener noreferrer">
+            <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noopener noreferrer">
               <img src="/images/social/PNG/Color/x.png" alt="Share on X" width={24} height={24} />
             </a>
-            <a href={`https://www.facebook.com/sharer/sharer.php?u=https://practicalprogress.org/rankings#${name.replace(/\s+/g, '-')}`} target="_blank" rel="noopener noreferrer">
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noopener noreferrer">
               <img src="/images/social/PNG/Color/Facebook.png" alt="Share on Facebook" width={24} height={24} />
             </a>
-            <a href={`https://reddit.com/submit?url=https://practicalprogress.org/rankings#${name.replace(/\s+/g, '-')}&title=Check out ${name}'s ranking!`} target="_blank" rel="noopener noreferrer">
+            <a href={`https://reddit.com/submit?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener noreferrer">
               <img src="/images/social/PNG/Color/Reddit.png" alt="Share on Reddit" width={24} height={24} />
+            </a>
+            <a   href={`https://bsky.app/intent/compose?text=${encodeURIComponent(`${shareText} ${shareUrl}`)}`} target="_blank" rel="noopener noreferrer">
+              <img src="/images/social/PNG/Color/Bluesky.png" alt="Share on Bluesky" width={24} height={24} />
             </a>
           </div>
         </div>
-
         <button className={styles.expandButtonLarge} onClick={() => setExpanded(!expanded)}>
           {expanded ? 'Hide' : 'See More'}
         </button>
@@ -346,13 +369,12 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
           <p className={styles.summary}>{summary}</p>
           <h4 className={styles.coreHeader}>⭐ Core Factors</h4>
           <div className={styles.coreScores}>
-            <span className={styles.badge}>📰 Media Impact: {coreScores.weeklyMediaImpact}</span>
-            <span className={styles.badge}>🗳️ Progressive Consistency: {coreScores.progressiveConsistency}</span>
-            <span className={styles.badge}>🏛️ Legislative Power: {scaledScore}</span>
-            <span className={styles.badge}>🧭 Ideology: {coreScores.ideology}</span>
-            <span className={styles.badge}>💰 Donor Ethics: {coreScores.finance}</span>
+            <span className={styles.badge}>📰 Media Impact: {coreScores?.weeklyMediaImpact}</span>
+            <span className={styles.badge}>🗳️ Progressive Consistency: {coreScores?.progressiveConsistency}</span>
+            <span className={styles.badge}>🏛️ Legislative Power: {coreScores?.legislativePower}</span>
+            <span className={styles.badge}>🧭 Ideology: {coreScores?.ideology}</span>
+            <span className={styles.badge}>💰 Donor Ethics: {coreScores?.finance}</span>
           </div>
-
           <button className={styles.expandButtonLarge} onClick={() => setDeepExpanded(!deepExpanded)}>
             {deepExpanded ? 'Hide Breakdown' : 'See Full Breakdown'}
           </button>
@@ -370,10 +392,10 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
 
           <h4 className={styles.sectionTitle}>📰 <strong>Media Impact Breakdown</strong></h4>
           <ul className={styles.badgeList}>
-            <li className={styles.badge}><strong>Policy:</strong> {mediaBreakdown.policyImpact}</li>
-            <li className={styles.badge}><strong>Perception:</strong> {mediaBreakdown.publicPerception}</li>
-            <li className={styles.badge}><strong>Controversy:</strong> {mediaBreakdown.controversy}</li>
-            <li className={styles.badge}><strong>Clout:</strong> {mediaBreakdown.mediaClout}</li>
+            <li className={styles.badge}><strong>Policy:</strong> {mediaBreakdown?.policyImpact}</li>
+            <li className={styles.badge}><strong>Perception:</strong> {mediaBreakdown?.publicPerception}</li>
+            <li className={styles.badge}><strong>Controversy:</strong> {mediaBreakdown?.controversy}</li>
+            <li className={styles.badge}><strong>Clout:</strong> {mediaBreakdown?.mediaClout}</li>
           </ul>
 
           <h4 className={styles.sectionTitle}>🗳️ <strong>Progressive Voting Consistency via ProgressivePunch.org</strong></h4>
@@ -404,10 +426,10 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
 
           <h4 className={styles.sectionTitle}>🏛️ <strong>Legislative Data via Congress.gov</strong></h4>
           <ul className={styles.badgeList}>
-            <li className={styles.badge}><strong>Tenure:</strong> {legislativeDetails.tenure} years</li>
+            <li className={styles.badge}><strong>Tenure:</strong> {legislativeDetails?.tenure} years</li>
           </ul>
 
-          {legislativeDetails.committeeMemberships?.length > 0 && (
+          {legislativeDetails?.committeeMemberships?.length > 0 && (
             <>
               <p className={styles.paragraph}><strong>Committee Memberships:</strong></p>
               <ul className={styles.badgeList}>
@@ -418,12 +440,45 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, scaledScore }) {
             </>
           )}
 
-          {legislativeDetails.committeeLeaderships?.length > 0 && (
+          {legislativeDetails?.committeeLeaderships?.length > 0 && (
             <>
               <p className={styles.paragraph}><strong>Leadership Roles:</strong></p>
               <ul className={styles.badgeList}>
                 {legislativeDetails.committeeLeaderships.map((c, idx) => (
                   <li key={`cl-${idx}`} className={styles.badge}>{c}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {bills?.length > 0 && (
+            <>
+              <h4 className={styles.sectionTitle}>📜 <strong>Sponsored Bills</strong></h4>
+              <ul className={styles.billList}>
+                {bills.map((bill, i) => (
+                  <li key={bill._key || `bill-${i}`} className={styles.billItem}>
+                    <a href={bill.url} className={styles.billLink} target="_blank" rel="noopener noreferrer">
+                      {bill.billNumber}: {bill.title}
+                    </a>
+                    <p className={styles.billMeta}>
+                      <strong>Keyword:</strong> {bill.policyKeyword} | <strong>Score:</strong> {bill.progressiveScore} | <strong>Date:</strong> {bill.statusDate}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {citations?.length > 0 && (
+            <>
+              <h4 className={styles.sectionTitle}>🔗 <strong>News Citations</strong></h4>
+              <ul className={styles.citationList}>
+                {citations.map((c, i) => (
+                  <li key={c._key || `cite-${i}`} className={styles.citationItem}>
+                    <a href={c.url} className={styles.citationLink} target="_blank" rel="noopener noreferrer">
+                      {c.title}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </>

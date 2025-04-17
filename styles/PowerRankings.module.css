@@ -37,6 +37,11 @@
   transition: all 0.3s ease;
 }
 
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+}
+
 .headerRow {
   display: flex;
   align-items: center;
@@ -93,20 +98,34 @@
   font-size: 0.9rem;
   color: #555;
 }
-.expandButton {
-  background: #f5f5f5;
-  border: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.35rem 0.75rem;
-  margin-top: 0.5rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+
+.buttonRow {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.expandButton:hover {
-  background: #eee;
+.expandButton,
+.expandButtonLarge {
+  background-color: #0046aa;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  display: inline-block;
+}
+
+.expandButton:hover,
+.expandButtonLarge:hover {
+  background-color: #003580;
+  transform: translateY(-1px);
 }
 
 .levelOne {
@@ -122,6 +141,14 @@
   border-radius: 8px;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .coreScores {
@@ -157,14 +184,6 @@
   font-weight: 500;
 }
 
-.sectionTitle {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
 .paragraph {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
@@ -179,7 +198,6 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-
 .loadMoreButton {
   display: block;
   margin: 2rem auto;
@@ -197,6 +215,7 @@
 .loadMoreButton:hover {
   background-color: #0045a0;
 }
+
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -222,6 +241,13 @@
 
 .searchInput {
   min-width: 180px;
+}
+
+.sortFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .noResults {
@@ -271,25 +297,59 @@
 .methodologyButton:hover {
   background-color: #003580;
 }
-.expandButtonLarge {
-  background-color: #0046aa;
-  color: #fff;
-  border: none;
-  padding: 0.55rem 1.2rem;
+
+/* Additional Buttons in Full Breakdown */
+.utilityButtons {
+  display: flex;
+  gap: 0.75rem;
   margin-top: 1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-  display: inline-block;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
 }
 
-.expandButtonLarge:hover {
-  background-color: #003580;
-  transform: translateY(-1px);
+.utilityButton {
+  background-color: #e2e8f0;
+  color: #111;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
+
+.utilityButton:hover {
+  background-color: #cbd5e0;
+}
+
+/* Citation Pills */
+.citationList,
+.billList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.citationItem,
+.billItem {
+  background: #edf2f7;
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid #2b6cb0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.citationItem:hover,
+.billItem:hover {
+  background-color: #e2e8f0;
+}
+
 /* Mobile Enhancements */
 @media (max-width: 600px) {
   .headerRow {
@@ -297,14 +357,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  
 
   .photo {
     margin-bottom: 0.5rem;
     width: 120px;
     height: 130px;
     align-items: center;
-
   }
 
   .metaBlock {
@@ -314,11 +372,6 @@
   .coreScores {
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  .levelTwo p,
-  .levelTwo li {
-    font-size: 0.9rem;
   }
 
   .filters {
@@ -334,41 +387,24 @@
     width: 100%;
     text-align: center;
   }
+
   .expandButtonLarge {
-    background-color: #0046aa;
-    color: #fff;
-    border: none;
-    padding: 0.55rem 1.2rem;
-    margin-top: 1rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-    display: inline-block;
+    width: 100%;
   }
-  
-  .expandButtonLarge:hover {
-    background-color: #003580;
-    transform: translateY(-1px);
-  }  
-  @media (max-width: 600px) {
-    .badgeList {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .badge {
-      max-width: 100%;
-      word-wrap: break-word;
-      white-space: normal;
-      line-height: 1.6;
-    }
-  
-    .levelTwo .badgeList {
-      gap: 0.5rem 0.25rem;
-    }
+
+  .badgeList {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .badge {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.6;
+  }
+
+  .utilityButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }

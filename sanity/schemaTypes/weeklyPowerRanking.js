@@ -21,11 +21,6 @@ export default {
       type: 'blockContent'
     },
     {
-      name: 'newsSummary',
-      title: 'News Summary',
-      type: 'blockContent'
-    },
-    {
       name: 'generatedAt',
       title: 'Generated At',
       type: 'datetime'
@@ -46,7 +41,7 @@ export default {
     prepare({ week, weekTitle, generatedAt }) {
       return {
         title: weekTitle || `Week of ${week || 'Unknown'}`,
-        subtitle: `Generated ${new Date(generatedAt).toLocaleDateString()}`,
+        subtitle: `Generated ${new Date(generatedAt).toLocaleDateString()}`
       };
     }
   }

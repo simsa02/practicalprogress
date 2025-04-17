@@ -7,6 +7,12 @@
   background-color: var(--card-bg, #f5f5f5);
   border-radius: 8px;
 }
+.buttonRow {
+  display: flex;
+  gap: 1rem; /* spacing between buttons */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  margin-top: 1rem;
+}
 
 .shareTitle {
   font-size: 1rem;

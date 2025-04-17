@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 16px;
+  padding: 16px;
   background-color: #111;
   color: #fff;
   position: sticky;
@@ -12,39 +12,53 @@
   border-bottom: 1px solid #333;
 }
 
-/* Mobile section defaults */
 .leftSection,
 .centerSection,
 .rightSection {
-  display: flex;
-  align-items: center;
   width: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin: 4px 0;
 }
 
-/* Specific mobile adjustments */
-.leftSection {
-  justify-content: flex-start;
-}
-
-.rightSection {
+/* Mobile menu toggle */
+.mobileToggle {
+  display: flex;
   justify-content: flex-end;
+  width: 100%;
+  padding: 0 16px;
 }
 
-.title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #f3f3f3;
-  text-align: center;
-  margin: 8px 0;
+.mobileIcon {
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
 }
 
-.link {
-  margin-left: 10px;
+/* Dropdown styles for mobile nav */
+.rightSection {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0 16px;
+  transition: max-height 0.3s ease;
+}
+
+.rightSection.open {
+  display: flex;
+}
+
+.link,
+.donateButton {
   text-decoration: none;
   color: #aaa;
-  transition: color 0.3s;
+  font-size: 1rem;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .link:hover {
@@ -52,15 +66,12 @@
 }
 
 .donateButton {
-  margin-left: 10px;
-  padding: 8px 16px;
   background-color: #ff4757;
   color: #fff;
   border: none;
+  padding: 8px 16px;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 500;
-  transition: background-color 0.3s;
 }
 
 .donateButton:hover {
@@ -74,41 +85,36 @@
   font-size: 1rem;
 }
 
-/* For larger screens: reapply the grid layout */
+/* Desktop layout */
 @media (min-width: 768px) {
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    align-items: center;
     padding: 16px 32px;
   }
-  
+
   .leftSection,
   .centerSection,
   .rightSection {
+    flex-direction: row;
+    justify-content: center;
     width: auto;
     margin: 0;
-    display: flex;
-    align-items: center;
+    padding: 0;
   }
-  
-  .centerSection {
-    justify-content: center;
-  }
-  
+
   .leftSection {
     justify-content: flex-start;
   }
-  
+
   .rightSection {
+    display: flex !important;
     justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
   }
-  
-  .link {
-    margin-left: 20px;
-  }
-  
-  .donateButton {
-    margin-left: 20px;
+
+  .mobileToggle {
+    display: none;
   }
 }
