@@ -24,6 +24,7 @@ const query = groq`*[_type == "weeklyPowerRanking"] | order(week desc)[0]{
   entries[] {
     _key,
     name,
+    photoUrl,
     rank,
     lastRank,
     metascore,
@@ -33,10 +34,11 @@ const query = groq`*[_type == "weeklyPowerRanking"] | order(week desc)[0]{
     legislativeDetails,
     ideologyRaw,
     summary,
-    newsSummary,
+    justification,
     votes,
     timestamp,
     bills[] {
+      _key,
       billNumber,
       title,
       url,
@@ -45,6 +47,7 @@ const query = groq`*[_type == "weeklyPowerRanking"] | order(week desc)[0]{
       statusDate
     },
     citations[] {
+      _key,
       title,
       url,
       source,
@@ -289,7 +292,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
     lastRank,
     metascore,
     summary,
-    newsSummary,
+    justification,
     coreScores,
     mediaBreakdown,
     financeBreakdown,
@@ -298,6 +301,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
     votes,
     bills,
     citations,
+    photoUrl: cmsPhotoUrl
   } = entry;
 
   const change = lastRank ? lastRank - rank : 0;
@@ -308,11 +312,20 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
 
   const bioguide = cached.bioguide || bioguideMap[name];
   const anchorId = name.replace(/\s+/g, '-');
-  let photoUrl = '/images/politicians/default-politician.jpg';
-
-  if (bioguide) {
+  
+  // Photo URL handling with fallbacks
+  let photoUrl = cmsPhotoUrl || '/images/politicians/default-politician.jpg';
+  if (!cmsPhotoUrl && bioguide) {
     photoUrl = `https://www.congress.gov/img/member/${bioguide.toLowerCase()}_200.jpg`;
   }
+
+  const handleImageError = (e) => {
+    if (bioguide && e.target.src !== `https://clerk.house.gov/images/members/${bioguide.toUpperCase()}.jpg`) {
+      e.target.src = `https://clerk.house.gov/images/members/${bioguide.toUpperCase()}.jpg`;
+    } else {
+      e.target.src = '/images/politicians/default-politician.jpg';
+    }
+  };
 
   const shareUrl = `https://practicalprogress.org/rankings#${anchorId}`;
   const shareText = `Check out ${name}'s ranking on the Progressive Power Rankings!`;
@@ -327,12 +340,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
             alt={`${name} headshot`}
             className={styles.image}
             loading="lazy"
-            onError={(e) => {
-              if (bioguide) {
-                e.target.onerror = null;
-                e.target.src = `https://clerk.house.gov/images/members/${bioguide.toUpperCase()}.jpg`;
-              }
-            }}
+            onError={handleImageError}
           />
         </div>
         <div className={styles.metaBlock}>
@@ -354,7 +362,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
             <a href={`https://reddit.com/submit?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener noreferrer">
               <img src="/images/social/PNG/Color/Reddit.png" alt="Share on Reddit" width={24} height={24} />
             </a>
-            <a   href={`https://bsky.app/intent/compose?text=${encodeURIComponent(`${shareText} ${shareUrl}`)}`} target="_blank" rel="noopener noreferrer">
+            <a href={`https://bsky.app/intent/compose?text=${encodeURIComponent(`${shareText} ${shareUrl}`)}`} target="_blank" rel="noopener noreferrer">
               <img src="/images/social/PNG/Color/Bluesky.png" alt="Share on Bluesky" width={24} height={24} />
             </a>
           </div>
@@ -383,10 +391,12 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
 
       {deepExpanded && (
         <div className={styles.levelTwo}>
-          {newsSummary && (
+          {justification && (
             <>
               <h4 className={styles.sectionTitle}>🧠 <strong>Weekly News Summary</strong></h4>
-              <p className={styles.paragraph}>{newsSummary}</p>
+              <div className={styles.paragraph}>
+                <PortableText value={justification} />
+              </div>
             </>
           )}
 
@@ -409,8 +419,8 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
           <h4 className={styles.sectionTitle}>💰 <strong>Top 3 Donor Industries via OpenSecrets.org</strong></h4>
           {financeBreakdown?.length > 0 ? (
             <ul className={styles.badgeList}>
-              {financeBreakdown.map((f, i) => (
-                <li key={f._key || `${f.industry}-${i}`} className={styles.badge}>
+              {financeBreakdown.map((f) => (
+                <li key={f._key} className={styles.badge}>
                   {f.industry}
                 </li>
               ))}
@@ -455,8 +465,8 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
             <>
               <h4 className={styles.sectionTitle}>📜 <strong>Sponsored Bills</strong></h4>
               <ul className={styles.billList}>
-                {bills.map((bill, i) => (
-                  <li key={bill._key || `bill-${i}`} className={styles.billItem}>
+                {bills.map((bill) => (
+                  <li key={bill._key} className={styles.billItem}>
                     <a href={bill.url} className={styles.billLink} target="_blank" rel="noopener noreferrer">
                       {bill.billNumber}: {bill.title}
                     </a>
@@ -473,10 +483,10 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
             <>
               <h4 className={styles.sectionTitle}>🔗 <strong>News Citations</strong></h4>
               <ul className={styles.citationList}>
-                {citations.map((c, i) => (
-                  <li key={c._key || `cite-${i}`} className={styles.citationItem}>
+                {citations.map((c) => (
+                  <li key={c._key} className={styles.citationItem}>
                     <a href={c.url} className={styles.citationLink} target="_blank" rel="noopener noreferrer">
-                      {c.title}
+                      {c.title} ({c.source}, {new Date(c.published).toLocaleDateString()})
                     </a>
                   </li>
                 ))}
