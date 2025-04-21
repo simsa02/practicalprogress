@@ -1,16 +1,17 @@
-// practicalprogress‑main/pages/rankings/[id].js
+// practicalprogress-main/pages/rankings/[id].js
 
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { createClient } from 'next-sanity';
 import { groq } from 'next-sanity';
 import { PortableText } from '@portabletext/react';
+import fs from 'fs';
+import path from 'path';
 import styles from '../../styles/PowerRankings.module.css';
-import Link from 'next/link';
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://practical-progress.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://practical-progress.com';
 
 const client = createClient({
   projectId: 'xf8ueo0c',
@@ -19,22 +20,16 @@ const client = createClient({
   useCdn: false,
 });
 
-// 1) Build all the valid detail-page paths at build time:
+// 1) Build all the valid detail-page paths
 export async function getStaticPaths() {
   const doc = await client.fetch(
     groq`*[_type=="weeklyPowerRanking"] | order(week desc)[0] { entries[]{_key} }`
   );
-  const paths = (doc.entries || []).map((e) => ({
-    params: { id: e._key },
-  }));
-
-  return {
-    paths,
-    fallback: 'blocking',
-  };
+  const paths = (doc.entries || []).map(e => ({ params: { id: e._key } }));
+  return { paths, fallback: 'blocking' };
 }
 
-// 2) Fetch one entry by its _key:
+// 2) Fetch one entry by its _key, load bioguide from your cache
 export async function getStaticProps({ params }) {
   const entry = await client.fetch(
     groq`
@@ -43,29 +38,48 @@ export async function getStaticProps({ params }) {
     `,
     { key: params.id }
   );
+  if (!entry) return { notFound: true };
 
-  if (!entry) {
-    return { notFound: true };
+  // load your local name→bioguide map
+  let legislatorsCache = {};
+  try {
+    const cachePath = path.join(process.cwd(), 'legislators_cache.json');
+    legislatorsCache = JSON.parse(fs.readFileSync(cachePath, 'utf-8'));
+  } catch {
+    console.error('Could not load legislator cache.');
   }
+  const bioguide = legislatorsCache[entry.name]?.bioguide || null;
 
   return {
-    props: { entry },
-    revalidate: 60, // rebuild at most once per minute
+    props: { entry, bioguide },
+    revalidate: 60, // re-generate every minute
   };
 }
 
-// 3) Render the detail page with full OG metadata **and** the complete breakdown:
-export default function RankingDetail({ entry }) {
-  const delta =
-    entry.lastRank != null ? entry.lastRank - entry.rank : 0;
+// 3) Render the detail page
+export default function RankingDetail({ entry, bioguide }) {
+  const [expanded, setExpanded] = useState(false);
+  const [deepExpanded, setDeepExpanded] = useState(false);
 
+  // calculate delta arrow
+  const delta = entry.lastRank != null ? entry.lastRank - entry.rank : 0;
+
+  // pick a headshot: local bioguide → CMS → default
+  const localPhotoPath = bioguide
+    ? `/images/politicians/${bioguide.toUpperCase()}.jpg`
+    : null;
+  const photoSrc =
+    localPhotoPath ||
+    entry.photoUrl ||
+    '/images/politicians/default-politician.jpg';
+
+  // prepare OG URLs
   const pageUrl = `${SITE_URL}/rankings/${entry._key}`;
   const ogImage = `${SITE_URL}/api/og/${entry._key}`;
 
   return (
     <>
       <Head>
-        {/* Single text node title */}
         <title>{`Progressive Power Rankings – ${entry.name}`}</title>
         <meta
           name="description"
@@ -77,9 +91,7 @@ export default function RankingDetail({ entry }) {
         <meta property="og:url" content={pageUrl} />
         <meta
           property="og:title"
-          content={`${entry.name} — Metascore ${entry.metascore.toFixed(
-            2
-          )}`}
+          content={`${entry.name} — Metascore ${entry.metascore.toFixed(2)}`}
         />
         <meta
           property="og:description"
@@ -89,27 +101,28 @@ export default function RankingDetail({ entry }) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        {/* Twitter */}
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImage} />
       </Head>
 
       <main className={styles.container}>
         <div className={styles.card} id={entry._key}>
+
           {/* HEADER ROW */}
           <div className={styles.headerRow}>
             <div className={styles.rank}>{entry.rank}</div>
 
             <div className={styles.photo}>
               <Image
-                src={entry.photoUrl}
-                alt={entry.name}
+                src={photoSrc}
+                alt={`${entry.name} headshot`}
                 width={100}
                 height={100}
                 className={styles.image}
-                onError={(e) => {
-                  e.currentTarget.src =
-                    '/images/politicians/default-politician.jpg';
+                loading="lazy"
+                onError={({ currentTarget }) => {
+                  currentTarget.src = '/images/politicians/default-politician.jpg';
                 }}
               />
             </div>
@@ -121,9 +134,7 @@ export default function RankingDetail({ entry }) {
               </p>
               <p
                 className={styles.change}
-                style={{
-                  color: delta >= 0 ? 'green' : 'red',
-                }}
+                style={{ color: delta >= 0 ? 'green' : 'red' }}
               >
                 {delta === 0
                   ? '—'
@@ -132,13 +143,11 @@ export default function RankingDetail({ entry }) {
                   : `▼ ${Math.abs(delta)}`}{' '}
                 from last week
               </p>
+              <Link href="/rankings" legacyBehavior>
+                <a className={styles.backButton}>← Back to Rankings</a>
+              </Link>
             </div>
-
-            <Link href="/rankings" legacyBehavior>
-              <a className={styles.backButton}>← Back to Rankings</a>
-            </Link>
           </div>
-
           {/* LEVEL ONE: Summary & Core Scores */}
           <div className={styles.levelOne}>
             <p className={styles.summary}>{entry.summary}</p>
@@ -149,12 +158,10 @@ export default function RankingDetail({ entry }) {
                 📰 Media Impact: {entry.coreScores?.weeklyMediaImpact}
               </span>
               <span className={styles.badge}>
-                🗳️ Progressive Consistency:{' '}
-                {entry.coreScores?.progressiveConsistency}
+                🗳️ Progressive Consistency: {entry.coreScores?.progressiveConsistency}
               </span>
               <span className={styles.badge}>
-                🏛️ Legislative Power:{' '}
-                {entry.coreScores?.legislativePower}
+                🏛️ Legislative Power: {entry.coreScores?.legislativePower}
               </span>
               <span className={styles.badge}>
                 🧭 Ideology: {entry.coreScores?.ideology}
@@ -185,68 +192,52 @@ export default function RankingDetail({ entry }) {
             </h4>
             <ul className={styles.badgeList}>
               <li className={styles.badge}>
-                <strong>Policy:</strong>{' '}
-                {entry.mediaBreakdown?.policyImpact}
+                <strong>Policy:</strong> {entry.mediaBreakdown?.policyImpact}
               </li>
               <li className={styles.badge}>
-                <strong>Perception:</strong>{' '}
-                {entry.mediaBreakdown?.publicPerception}
+                <strong>Perception:</strong> {entry.mediaBreakdown?.publicPerception}
               </li>
               <li className={styles.badge}>
-                <strong>Controversy:</strong>{' '}
-                {entry.mediaBreakdown?.controversy}
+                <strong>Controversy:</strong> {entry.mediaBreakdown?.controversy}
               </li>
               <li className={styles.badge}>
-                <strong>Clout:</strong>{' '}
-                {entry.mediaBreakdown?.mediaClout}
+                <strong>Clout:</strong> {entry.mediaBreakdown?.mediaClout}
               </li>
             </ul>
 
             {/* Voting Consistency */}
             <h4 className={styles.sectionTitle}>
-              🗳️{' '}
-              <strong>
-                Progressive Voting Consistency via ProgressivePunch.org
-              </strong>
+              🗳️ <strong>Progressive Voting Consistency via ProgressivePunch.org</strong>
             </h4>
             <ul className={styles.badgeList}>
               <li className={styles.badge}>
-                <strong>Crucial (Lifetime):</strong>{' '}
-                {entry.votes?.crucialLifetime ?? 'N/A'}%
+                <strong>Crucial (Lifetime):</strong> {entry.votes?.crucialLifetime ?? 'N/A'}%
               </li>
               <li className={styles.badge}>
-                <strong>Crucial (Current):</strong>{' '}
-                {entry.votes?.crucialCurrent ?? 'N/A'}%
+                <strong>Crucial (Current):</strong> {entry.votes?.crucialCurrent ?? 'N/A'}%
               </li>
               <li className={styles.badge}>
-                <strong>Overall (Lifetime):</strong>{' '}
-                {entry.votes?.overallLifetime ?? 'N/A'}%
+                <strong>Overall (Lifetime):</strong> {entry.votes?.overallLifetime ?? 'N/A'}%
               </li>
               <li className={styles.badge}>
-                <strong>Overall (Current):</strong>{' '}
-                {entry.votes?.overallCurrent ?? 'N/A'}%
+                <strong>Overall (Current):</strong> {entry.votes?.overallCurrent ?? 'N/A'}%
               </li>
             </ul>
 
-            {/* Donor Breakdown */}
+            {/* Donor Industries */}
             <h4 className={styles.sectionTitle}>
               💰 <strong>Top 3 Donor Industries via OpenSecrets.org</strong>
             </h4>
             {entry.financeBreakdown?.length > 0 ? (
               <ul className={styles.badgeList}>
-                {entry.financeBreakdown.map((f) => (
-                  <li
-                    key={f._key}
-                    className={styles.badge}
-                  >
+                {entry.financeBreakdown.map(f => (
+                  <li key={f._key} className={styles.badge}>
                     {f.industry}
                   </li>
                 ))}
               </ul>
             ) : (
-              <p className={styles.paragraph}>
-                No donor data available.
-              </p>
+              <p className={styles.paragraph}>No donor data available.</p>
             )}
 
             {/* Ideology */}
@@ -265,13 +256,10 @@ export default function RankingDetail({ entry }) {
             </h4>
             <ul className={styles.badgeList}>
               <li className={styles.badge}>
-                <strong>Tenure:</strong>{' '}
-                {entry.legislativeDetails?.tenure} years
+                <strong>Tenure:</strong> {entry.legislativeDetails?.tenure} years
               </li>
             </ul>
-
-            {entry.legislativeDetails
-              ?.committeeMemberships?.length > 0 && (
+            {entry.legislativeDetails?.committeeMemberships?.length > 0 && (
               <>
                 <p className={styles.paragraph}>
                   <strong>Committee Memberships:</strong>
@@ -279,10 +267,7 @@ export default function RankingDetail({ entry }) {
                 <ul className={styles.badgeList}>
                   {entry.legislativeDetails.committeeMemberships.map(
                     (c, i) => (
-                      <li
-                        key={`cm-${i}`}
-                        className={styles.badge}
-                      >
+                      <li key={i} className={styles.badge}>
                         {c}
                       </li>
                     )
@@ -290,9 +275,7 @@ export default function RankingDetail({ entry }) {
                 </ul>
               </>
             )}
-
-            {entry.legislativeDetails
-              ?.committeeLeaderships?.length > 0 && (
+            {entry.legislativeDetails?.committeeLeaderships?.length > 0 && (
               <>
                 <p className={styles.paragraph}>
                   <strong>Leadership Roles:</strong>
@@ -300,10 +283,7 @@ export default function RankingDetail({ entry }) {
                 <ul className={styles.badgeList}>
                   {entry.legislativeDetails.committeeLeaderships.map(
                     (c, i) => (
-                      <li
-                        key={`cl-${i}`}
-                        className={styles.badge}
-                      >
+                      <li key={i} className={styles.badge}>
                         {c}
                       </li>
                     )
@@ -319,11 +299,8 @@ export default function RankingDetail({ entry }) {
                   📜 <strong>Sponsored Bills</strong>
                 </h4>
                 <ul className={styles.billList}>
-                  {entry.bills.map((bill) => (
-                    <li
-                      key={bill._key}
-                      className={styles.billItem}
-                    >
+                  {entry.bills.map(bill => (
+                    <li key={bill._key} className={styles.billItem}>
                       <a
                         href={bill.url}
                         className={styles.billLink}
@@ -333,10 +310,8 @@ export default function RankingDetail({ entry }) {
                         {bill.billNumber}: {bill.title}
                       </a>
                       <p className={styles.billMeta}>
-                        <strong>Keyword:</strong>{' '}
-                        {bill.policyKeyword} |{' '}
-                        <strong>Score:</strong>{' '}
-                        {bill.progressiveScore} |{' '}
+                        <strong>Keyword:</strong> {bill.policyKeyword} |{' '}
+                        <strong>Score:</strong> {bill.progressiveScore} |{' '}
                         <strong>Date:</strong> {bill.statusDate}
                       </p>
                     </li>
@@ -352,11 +327,8 @@ export default function RankingDetail({ entry }) {
                   🔗 <strong>News Citations</strong>
                 </h4>
                 <ul className={styles.citationList}>
-                  {entry.citations.map((c) => (
-                    <li
-                      key={c._key}
-                      className={styles.citationItem}
-                    >
+                  {entry.citations.map(c => (
+                    <li key={c._key} className={styles.citationItem}>
                       <a
                         href={c.url}
                         className={styles.citationLink}
