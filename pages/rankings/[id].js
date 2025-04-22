@@ -11,7 +11,8 @@ import fs from 'fs';
 import path from 'path';
 import styles from '../../styles/PowerRankings.module.css';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://practical-progress.com';
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://practical-progress.com';
 
 const client = createClient({
   projectId: 'xf8ueo0c',
@@ -25,28 +26,36 @@ export async function getStaticPaths() {
   const doc = await client.fetch(
     groq`*[_type=="weeklyPowerRanking"] | order(week desc)[0] { entries[]{_key} }`
   );
-  const paths = (doc.entries || []).map(e => ({ params: { id: e._key } }));
+  const paths = (doc.entries || []).map((e) => ({
+    params: { id: e._key },
+  }));
   return { paths, fallback: 'blocking' };
 }
 
-// 2) Fetch one entry by its _key, load bioguide from your cache
+// 2) Fetch one entry by its _key across all weeks, load bioguide from your cache
 export async function getStaticProps({ params }) {
   const entry = await client.fetch(
     groq`
-      *[_type=="weeklyPowerRanking"] | order(week desc)[0]
-        .entries[_key == $key][0]
+      *[
+        _type == "weeklyPowerRanking" &&
+        $key in entries[]._key
+      ]
+      | order(week desc)[0]
+      .entries[_key == $key][0]
     `,
     { key: params.id }
   );
-  if (!entry) return { notFound: true };
+  if (!entry) {
+    return { notFound: true };
+  }
 
   // load your local name→bioguide map
   let legislatorsCache = {};
   try {
-    const cachePath = path.join(process.cwd(), 'legislators_cache.json');
+    const cachePath = path.join(process.cwd(), 'public/data/legislators_cache.json');
     legislatorsCache = JSON.parse(fs.readFileSync(cachePath, 'utf-8'));
-  } catch {
-    console.error('Could not load legislator cache.');
+  } catch (err) {
+    console.error('Could not load legislator cache.', err);
   }
   const bioguide = legislatorsCache[entry.name]?.bioguide || null;
 
@@ -63,6 +72,8 @@ export default function RankingDetail({ entry, bioguide }) {
 
   // calculate delta arrow
   const delta = entry.lastRank != null ? entry.lastRank - entry.rank : 0;
+  const deltaText =
+    delta === 0 ? '—' : delta > 0 ? `▲ ${delta}` : `▼ ${Math.abs(delta)}`;
 
   // pick a headshot: local bioguide → CMS → default
   const localPhotoPath = bioguide
@@ -75,7 +86,7 @@ export default function RankingDetail({ entry, bioguide }) {
 
   // prepare OG URLs
   const pageUrl = `${SITE_URL}/rankings/${entry._key}`;
-  const ogImage = `${SITE_URL}/api/og/${entry._key}`;
+  const ogImage = `${SITE_URL}/api/og/${entry._key}.png`;
 
   return (
     <>
@@ -88,6 +99,7 @@ export default function RankingDetail({ entry, bioguide }) {
 
         {/* Open Graph */}
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Practical Progress" />
         <meta property="og:url" content={pageUrl} />
         <meta
           property="og:title"
@@ -98,17 +110,25 @@ export default function RankingDetail({ entry, bioguide }) {
           content={`See how ${entry.name} moved in this week's Progressive Power Rankings.`}
         />
         <meta property="og:image" content={ogImage} />
+        <meta property="og:image:alt" content={`${entry.name} – Progressive Power Rankings card`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={`${entry.name} — Metascore ${entry.metascore.toFixed(2)}`}
+        />
+        <meta
+          name="twitter:description"
+          content={`See how ${entry.name} moved in this week's Progressive Power Rankings.`}
+        />
         <meta name="twitter:image" content={ogImage} />
       </Head>
 
       <main className={styles.container}>
         <div className={styles.card} id={entry._key}>
-
           {/* HEADER ROW */}
           <div className={styles.headerRow}>
             <div className={styles.rank}>{entry.rank}</div>
@@ -122,7 +142,8 @@ export default function RankingDetail({ entry, bioguide }) {
                 className={styles.image}
                 loading="lazy"
                 onError={({ currentTarget }) => {
-                  currentTarget.src = '/images/politicians/default-politician.jpg';
+                  currentTarget.src =
+                    '/images/politicians/default-politician.jpg';
                 }}
               />
             </div>
@@ -136,18 +157,14 @@ export default function RankingDetail({ entry, bioguide }) {
                 className={styles.change}
                 style={{ color: delta >= 0 ? 'green' : 'red' }}
               >
-                {delta === 0
-                  ? '—'
-                  : delta > 0
-                  ? `▲ ${delta}`
-                  : `▼ ${Math.abs(delta)}`}{' '}
-                from last week
+                {deltaText} from last week
               </p>
               <Link href="/rankings" legacyBehavior>
                 <a className={styles.backButton}>← Back to Rankings</a>
               </Link>
             </div>
           </div>
+
           {/* LEVEL ONE: Summary & Core Scores */}
           <div className={styles.levelOne}>
             <p className={styles.summary}>{entry.summary}</p>
@@ -230,7 +247,7 @@ export default function RankingDetail({ entry, bioguide }) {
             </h4>
             {entry.financeBreakdown?.length > 0 ? (
               <ul className={styles.badgeList}>
-                {entry.financeBreakdown.map(f => (
+                {entry.financeBreakdown.map((f) => (
                   <li key={f._key} className={styles.badge}>
                     {f.industry}
                   </li>
@@ -299,7 +316,7 @@ export default function RankingDetail({ entry, bioguide }) {
                   📜 <strong>Sponsored Bills</strong>
                 </h4>
                 <ul className={styles.billList}>
-                  {entry.bills.map(bill => (
+                  {entry.bills.map((bill) => (
                     <li key={bill._key} className={styles.billItem}>
                       <a
                         href={bill.url}
@@ -327,7 +344,7 @@ export default function RankingDetail({ entry, bioguide }) {
                   🔗 <strong>News Citations</strong>
                 </h4>
                 <ul className={styles.citationList}>
-                  {entry.citations.map(c => (
+                  {entry.citations.map((c) => (
                     <li key={c._key} className={styles.citationItem}>
                       <a
                         href={c.url}
