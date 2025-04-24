@@ -91,7 +91,7 @@ export default function RankingDetail({ entry, bioguide }) {
   return (
     <>
       <Head>
-        <title>{`Progressive Power Rankings – ${entry.name}`}</title>
+        <title>{`Practical Progressive Power Rankings – ${entry.name}`}</title>
         <meta
           name="description"
           content={`Details for ${entry.name}'s Progressive Power Ranking.`}
