@@ -32,11 +32,11 @@ export default function Archive({ weeks }) {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>📚 Weekly Rankings Archive</h1>
-      <p className={styles.pageSummary}>Explore all past Progressive Power Rankings by week.</p>
+      <p className={styles.pageSummary}>Explore all past Practical Progress Power Rankings by week.</p>
       <ul className={styles.badgeList}>
-        {weeks.map((w) => (
+        {weeks && weeks.length > 0 && weeks.map((w) => (
           <li key={w._id} className={styles.badge}>
-            <Link href={`/rankings/${w.slug}`}>
+            <Link href={`/rankings/week/${w.slug}`}>
               {w.weekTitle || `Week of ${format(new Date(w.week), 'MMMM d, yyyy')}`}
             </Link>
           </li>

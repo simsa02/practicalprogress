@@ -187,7 +187,7 @@ export default function PowerRankings({
   return (
     <div className={styles.container}>
       <Head>
-        <title>{`Progressive Power Rankings – Week of ${week}`}</title>
+        <title>{`Practical Progress Power Rankings – Week of ${week}`}</title>
         <meta
           name="description"
           content="Weekly rankings of progressive political performance metrics"
@@ -197,7 +197,7 @@ export default function PowerRankings({
       {/* header & summary */}
       <div className={styles.header}>
         <div className={styles.fullHeader}>
-          <h1 className={styles.title}>Progressive Power Rankings</h1>
+          <h1 className={styles.title}>Practical Progress Power Rankings</h1>
           <p className={styles.week}>Week of {week}</p>
           <p className={styles.pageSummary}>
             {typeof summary === 'string' ? (
@@ -328,7 +328,7 @@ export default function PowerRankings({
       {/* global share */}
       <ShareButtons
         url={`${SITE_URL}/rankings`}
-        title="Check out this week's Progressive Power Rankings!"
+        title="Check out this week's Practical Progress Power Rankings!"
       />
     </div>
   );
@@ -377,7 +377,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap }) {
   const shareUrl = `${SITE_URL}/rankings/${entry._key}`;
   const shareText = `${name} scored ${metascore.toFixed(
     2
-  )} on the Progressive Power Rankings – See details!`;
+  )} on the Practical Progress Power Rankings – See details!`;
 
   return (
     <div className={styles.card} id={name.replace(/\s+/g, '-')}>
