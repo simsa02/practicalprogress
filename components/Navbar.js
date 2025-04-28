@@ -61,7 +61,7 @@ export default function Navbar() {
           X
         </a>
         <a
-          href="https://bsky.app/profile/practicalprogress.bsky.social"
+          href="https://bsky.app/profile/practical-progress.bsky.social"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
