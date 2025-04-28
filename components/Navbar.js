@@ -52,6 +52,22 @@ export default function Navbar() {
         >
           Reddit
         </a>
+        <a
+          href="https://x.com/PractProgOrg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
+          X
+        </a>
+        <a
+          href="https://bsky.app/profile/practicalprogress.bsky.social"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
+          Bluesky
+        </a>
       </div>
     </nav>
   );
