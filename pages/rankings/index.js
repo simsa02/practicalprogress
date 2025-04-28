@@ -421,20 +421,12 @@ export default function PowerRankings({ rankings, week, summary, legislatorsCach
       {/* Share Buttons */}
       <ShareButtons url={`${SITE_URL}/rankings`} title="Check out this week's Practical Progress Power Rankings!" />
 
-      {/* Easter-Egg Popup */}
-      {easterEggMessage && (
-        <div style={{
-          position:'fixed', bottom:'20px', left:'50%',
-          transform:'translateX(-50%)',
-          backgroundColor:'#1D4ED8', color:'white',
-          padding:'12px 24px', borderRadius:'9999px',
-          fontSize:'16px', fontWeight:'bold',
-          boxShadow:'0 4px 12px rgba(0,0,0,0.25)',
-          zIndex:10000, animation:'fadeInOut 5s ease forwards'
-        }}>
-          {easterEggMessage}
-        </div>
-      )}
+     {/* Easter-Egg Popup */}
+{easterEggMessage && (
+  <div className={styles.easterEggMessage}>
+    {easterEggMessage}
+  </div>
+)}
     </div>
   );
 }
