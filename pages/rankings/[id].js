@@ -10,8 +10,7 @@ import { PortableText } from '@portabletext/react'
 import styles from '../../styles/PowerRankings.module.css'
 import legislatorsCache from '../../data/legislators_cache.json'
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://practical-progress.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://practical-progress.com'
 
 const client = createClient({
   projectId: 'xf8ueo0c',
@@ -46,10 +45,7 @@ export async function getStaticProps({ params }) {
 
   const bioguide = legislatorsCache[entry.name]?.bioguide || null
 
-  return {
-    props: { entry, bioguide },
-    revalidate: 60,
-  }
+  return { props: { entry, bioguide }, revalidate: 60 }
 }
 
 export default function RankingDetail({ entry, bioguide }) {
@@ -57,15 +53,10 @@ export default function RankingDetail({ entry, bioguide }) {
   const [deepExpanded, setDeepExpanded] = useState(false)
 
   const delta = entry.lastRank != null ? entry.lastRank - entry.rank : 0
-  const deltaText =
-    delta === 0 ? '—' : delta > 0 ? `▲ ${delta}` : `▼ ${Math.abs(delta)}`
+  const deltaText = delta === 0 ? '—' : delta > 0 ? `▲ ${delta}` : `▼ ${Math.abs(delta)}`
 
-  const localPhoto =
-    bioguide && bioguide.length
-      ? `/images/politicians/${bioguide.toUpperCase()}.jpg`
-      : null
-  const photoSrc =
-    localPhoto || entry.photoUrl || '/images/politicians/default-politician.jpg'
+  const localPhoto = bioguide ? `/images/politicians/${bioguide.toUpperCase()}.jpg` : null
+  const photoSrc = localPhoto || entry.photoUrl || '/images/politicians/default-politician.jpg'
 
   const pageUrl = `${SITE_URL}/rankings/${entry._key}`
   const ogImage = `${SITE_URL}/api/og/${entry._key}.png`
@@ -76,10 +67,11 @@ export default function RankingDetail({ entry, bioguide }) {
         <title>Practical Progress Power Rankings – {entry.name}</title>
         <meta
           name="description"
-          content={`Details for ${entry.name}'s Progressive Power Ranking.`}
+          content={`See how ${entry.name} ranked this week among top progressive leaders.`}
         />
 
-        {/* Open Graph */}
+        {/* Open Graph & Social (Facebook, LinkedIn, Reddit, Bluesky) */}
+        <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Practical Progress" />
         <meta property="og:url" content={pageUrl} />
@@ -89,13 +81,11 @@ export default function RankingDetail({ entry, bioguide }) {
         />
         <meta
           property="og:description"
-          content={`See how ${entry.name} moved in this week's Progressive Power Rankings.`}
+          content={`Check out ${entry.name}'s weekly Progressive Power Ranking.`}
         />
         <meta property="og:image" content={ogImage} />
-        <meta
-          property="og:image:alt"
-          content={`${entry.name} – Progressive Power Rankings card`}
-        />
+        <meta property="og:image:secure_url" content={ogImage} />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -107,17 +97,17 @@ export default function RankingDetail({ entry, bioguide }) {
         />
         <meta
           name="twitter:description"
-          content={`See how ${entry.name} moved in this week's Progressive Power Rankings.`}
+          content={`Where does ${entry.name} stand in the progressive movement this week?`}
         />
         <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:site" content="@PracticalProgress" />
       </Head>
-
       <main className={styles.container}>
         <div className={styles.card} id={entry._key}>
+
           {/* HEADER ROW */}
           <div className={styles.headerRow}>
             <div className={styles.rank}>{entry.rank}</div>
-
             <div className={styles.photo}>
               <Image
                 src={photoSrc}
@@ -127,12 +117,10 @@ export default function RankingDetail({ entry, bioguide }) {
                 className={styles.image}
                 loading="lazy"
                 onError={({ currentTarget }) => {
-                  currentTarget.src =
-                    '/images/politicians/default-politician.jpg'
+                  currentTarget.src = '/images/politicians/default-politician.jpg'
                 }}
               />
             </div>
-
             <div className={styles.metaBlock}>
               <h2 className={styles.name}>{entry.name}</h2>
               <p className={styles.metascore}>
@@ -174,7 +162,6 @@ export default function RankingDetail({ entry, bioguide }) {
               </span>
             </div>
           </div>
-
           {/* LEVEL TWO: Full Breakdown */}
           <div className={styles.levelTwo}>
             {entry.justification && (
@@ -196,40 +183,36 @@ export default function RankingDetail({ entry, bioguide }) {
                 <strong>Policy:</strong> {entry.mediaBreakdown?.policyImpact}
               </li>
               <li className={styles.badge}>
-                <strong>Perception:</strong>{' '}
-                {entry.mediaBreakdown?.publicPerception}
+                <strong>Perception:</strong> {entry.mediaBreakdown?.publicPerception}
               </li>
               <li className={styles.badge}>
-                <strong>Controversy:</strong>{' '}
-                {entry.mediaBreakdown?.controversy}
+                <strong>Controversy:</strong> {entry.mediaBreakdown?.controversy}
               </li>
               <li className={styles.badge}>
                 <strong>Clout:</strong> {entry.mediaBreakdown?.mediaClout}
               </li>
             </ul>
 
+            {/* Progressive Voting */}
             <h4 className={styles.sectionTitle}>
               🗳️ <strong>Progressive Voting Consistency via ProgressivePunch.org</strong>
             </h4>
             <ul className={styles.badgeList}>
               <li className={styles.badge}>
-                <strong>Crucial (Lifetime):</strong>{' '}
-                {entry.votes?.crucialLifetime ?? 'N/A'}%
+                <strong>Crucial (Lifetime):</strong> {entry.votes?.crucialLifetime ?? 'N/A'}%
               </li>
               <li className={styles.badge}>
-                <strong>Crucial (Current):</strong>{' '}
-                {entry.votes?.crucialCurrent ?? 'N/A'}%
+                <strong>Crucial (Current):</strong> {entry.votes?.crucialCurrent ?? 'N/A'}%
               </li>
               <li className={styles.badge}>
-                <strong>Overall (Lifetime):</strong>{' '}
-                {entry.votes?.overallLifetime ?? 'N/A'}%
+                <strong>Overall (Lifetime):</strong> {entry.votes?.overallLifetime ?? 'N/A'}%
               </li>
               <li className={styles.badge}>
-                <strong>Overall (Current):</strong>{' '}
-                {entry.votes?.overallCurrent ?? 'N/A'}%
+                <strong>Overall (Current):</strong> {entry.votes?.overallCurrent ?? 'N/A'}%
               </li>
             </ul>
 
+            {/* Donor Industries */}
             <h4 className={styles.sectionTitle}>
               💰 <strong>Top 3 Donor Industries via OpenSecrets.org</strong>
             </h4>
@@ -245,6 +228,7 @@ export default function RankingDetail({ entry, bioguide }) {
               <p className={styles.paragraph}>No donor data available.</p>
             )}
 
+            {/* Ideology & Legislative Data */}
             <h4 className={styles.sectionTitle}>
               🧭 <strong>Ideology</strong>
             </h4>
@@ -268,10 +252,8 @@ export default function RankingDetail({ entry, bioguide }) {
                   <strong>Committee Memberships:</strong>
                 </p>
                 <ul className={styles.badgeList}>
-                  {entry.legislativeDetails.committeeMemberships.map((c, i) => (
-                    <li key={i} className={styles.badge}>
-                      {c}
-                    </li>
+                  {entry.legislativeDetails.committeeMemberships.map((c,i) => (
+                    <li key={i} className={styles.badge}>{c}</li>
                   ))}
                 </ul>
               </>
@@ -282,15 +264,14 @@ export default function RankingDetail({ entry, bioguide }) {
                   <strong>Leadership Roles:</strong>
                 </p>
                 <ul className={styles.badgeList}>
-                  {entry.legislativeDetails.committeeLeaderships.map((c, i) => (
-                    <li key={i} className={styles.badge}>
-                      {c}
-                    </li>
+                  {entry.legislativeDetails.committeeLeaderships.map((c,i) => (
+                    <li key={i} className={styles.badge}>{c}</li>
                   ))}
                 </ul>
               </>
             )}
 
+            {/* Bills & Citations */}
             {entry.bills?.length > 0 && (
               <>
                 <h4 className={styles.sectionTitle}>
@@ -332,8 +313,7 @@ export default function RankingDetail({ entry, bioguide }) {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {c.title} ({c.source},{' '}
-                        {new Date(c.published).toLocaleDateString()})
+                        {c.title} ({c.source}, {new Date(c.published).toLocaleDateString()})
                       </a>
                     </li>
                   ))}
