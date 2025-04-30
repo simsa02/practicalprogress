@@ -527,7 +527,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, triggerEasterEgg })
           </ul>
 
           {/* Voting */}
-          <h4 className={styles.sectionTitle}>🗳️ Progressive Voting Consistency</h4>
+          <h4 className={styles.sectionTitle}>🗳️ Progressive Voting Consistency via ProgressivePunch.org</h4>
           <ul className={styles.badgeList}>
             <li className={styles.badge}><strong>Crucial (Lifetime):</strong> {votes?.crucialLifetime ?? 'N/A'}%</li>
             <li className={styles.badge}><strong>Crucial (Current):</strong> {votes?.crucialCurrent ?? 'N/A'}%</li>
@@ -536,7 +536,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, triggerEasterEgg })
           </ul>
 
           {/* Finance */}
-          <h4 className={styles.sectionTitle}>💰 Top Donor Industries</h4>
+          <h4 className={styles.sectionTitle}>💰 Top Donor Industries via OpenSecrets</h4>
           {financeBreakdown?.length>0 ? (
             <ul className={styles.badgeList}>
               {financeBreakdown.map(f=>(
@@ -546,7 +546,7 @@ function RankingCard({ entry, legislatorsCache, bioguideMap, triggerEasterEgg })
           ) : <p className={styles.paragraph}>No donor data available.</p>}
 
           {/* Ideology */}
-          <h4 className={styles.sectionTitle}>🧭 Ideology</h4>
+          <h4 className={styles.sectionTitle}>🧭 Ideology via Voteview</h4>
           <ul className={styles.badgeList}>
             <li className={styles.badge}><strong>Raw Score:</strong> {ideologyRaw}</li>
           </ul>

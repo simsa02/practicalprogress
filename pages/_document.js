@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
           />
 
           {/* Reddit (primarily uses Open Graph but can add specific) */}
-          <meta name="reddit:domain" content="yourdomain.com" />
+          <meta name="reddit:domain" content="https://practicalprogress.com" />
 
           {/* Favicon */}
           <link rel="icon" href="/favicon.ico" />
