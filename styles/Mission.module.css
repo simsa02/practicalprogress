@@ -43,7 +43,7 @@
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .portableTextContainer {

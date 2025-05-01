@@ -11,10 +11,12 @@ const missionPage = {
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'array',
+      of: [{ type: 'block' }],
     },
   ],
 };
 
-export default missionPage; // OR this 👇
+export default missionPage;
+// OR
 export { missionPage };

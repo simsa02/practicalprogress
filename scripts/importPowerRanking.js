@@ -18,7 +18,7 @@ const client = createClient({
 });
 
 // Resolve path from project root
-const filePath = path.resolve(process.cwd(), "data", "powerRankings", "combined_rankings_2025-04-23.json");
+const filePath = path.resolve(process.cwd(), "data", "powerRankings", "combined_rankings_2025-04-30.json");
 
 // Convert plain string to blockContent format
 function toBlock(text) {
